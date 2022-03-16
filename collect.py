@@ -24,7 +24,7 @@ from lib.Collect_NbrSingleLang import Collect_NbrSingleLang
 from lib.LangApiSniffer import LangApiSniffer
 from lib.CloneRepo import CloneRepo
 from lib.Sample import Sample
-
+from lib.Collect_SpearMan import Collect_SpearMan
 
 
 def Daemonize(pid_file=None):
@@ -204,6 +204,8 @@ def CollectIssues (StartNo=0, EndNo=65535, repo_stats=None):
     research_data.process_data(list_of_repos=repo_stats)
     research_data.save_data()
 
+def CollectSpearman ():
+    Sm = Collect_SpearMan ()
 
 
 def StatAll ():
@@ -346,6 +348,8 @@ def main(argv):
         CollectSamples ()
     elif (step == "statsample"):
         CollectSamples (True)
+    elif (step == "spearman"):
+        CollectSpearman ()
     else:
         print ("collect.py -s <all/collect/repostats/langstats/discripstats/topics/asso/cmmts/nbr/apisniffer/clone>") 
 
