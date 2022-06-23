@@ -55,7 +55,7 @@ class TextModel:
         # Word Tokenization
         words = text.split()
         # Remove Non-alpha text
-        words = [re.sub(r'[^a-z]', '', word) for word in words if word.isalnum()]
+        words = [re.sub(r'[^a-z]', '', word) for word in words]
         if len (words) > length:
             words = words[0:length]
         # Joins tokenized string into one string

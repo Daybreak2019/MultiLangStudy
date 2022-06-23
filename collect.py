@@ -25,6 +25,8 @@ from lib.LangApiSniffer import LangApiSniffer
 from lib.CloneRepo import CloneRepo
 from lib.Sample import Sample
 from lib.Collect_SpearMan import Collect_SpearMan
+from lib.Sumreadme import Sumreadme
+
 
 
 def Daemonize(pid_file=None):
@@ -207,6 +209,16 @@ def CollectIssues (StartNo=0, EndNo=65535, repo_stats=None):
 def CollectSpearman ():
     Sm = Collect_SpearMan ()
 
+def CollectSumReadMe (StartNo=0, EndNo=65535):
+    TimeTag(">>>>>>>>>>>> Statistic on SumReadMe...")
+    file_path=System.getdir_stat()
+    repo_stats = Process_Data.load_data(file_path=file_path, file_name='Repository_Stats')
+    repo_stats = Process_Data.dict_to_list(repo_stats)
+        
+    research_data = Sumreadme(StartNo, EndNo) 
+    research_data.process_data(list_of_repos=repo_stats)
+    research_data.save_data()
+
 
 def StatAll ():
     original_repo_list = Process_Data.load_data(file_path=System.getdir_collect(), file_name='Repository_List')
@@ -350,6 +362,8 @@ def main(argv):
         CollectSamples (True)
     elif (step == "spearman"):
         CollectSpearman ()
+    elif (step == "readme"):
+        CollectSumReadMe ()
     else:
         print ("collect.py -s <all/collect/repostats/langstats/discripstats/topics/asso/cmmts/nbr/apisniffer/clone>") 
 

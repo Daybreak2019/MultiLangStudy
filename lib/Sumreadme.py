@@ -4,6 +4,7 @@ import re
 import csv
 from lib.Process_Data import Process_Data
 from lib.Collect_Research_Data import Collect_Research_Data
+from lib.TextModel import TextModel
 from eazymind.nlp.eazysum import Summarizer
 
 
@@ -20,6 +21,9 @@ class Sumreadme (Collect_Research_Data):
         self.EndNo   = EndNo
         self.Index   = 0
         self.EasyMind = Summarizer('b889f099ad771f4f693208979f247b1f')
+        self.Filters  = ['](http', '<p', '<a', '<div', '<td', '</td>', '<br', '<img', '<tr', '</tr>', '<!--', '- [',
+                         'src=', '</a>', '/>', 'http://', 'https://']
+        self.TM = TextModel ()
 
         # Default file 
         Header = ['id', 'summarization', 'tokens']
@@ -47,9 +51,33 @@ class Sumreadme (Collect_Research_Data):
         self.SumText(ReppId, RepoDir)
         self.Index += 1
 
+    def IsHtml (self, Line):
+        for filter in self.Filters:
+            if filter in Line:
+                return True
+        return False
 
+    def Rmstring (self, Line, rmstr):
+        while Line.find (rmstr) != -1:
+            Line = Line.replace (rmstr, ' ')
+        return Line
+        
     def CleanText (self, AllLines):
-        return AllLines
+        CleanLines = ""
+        for line in AllLines:
+            if len (line) < 10:
+                continue
+            if line[0:1] == '#':
+                continue
+            if self.IsHtml (line):
+                continue
+                
+            line = self.Rmstring (line, "\n")
+            line = self.Rmstring (line, "  ")
+            line = self.TM.clean_text (line)
+            
+            CleanLines += " " + line
+        return CleanLines
 
     def SumText (self, ReppId, RepoDir):
         RdMe = RepoDir + "/" + "README.md"
@@ -59,18 +87,21 @@ class Sumreadme (Collect_Research_Data):
         with open (RdMe, "r") as RMF:
             AllLines = RMF.readlines ()
             AllLines = self.CleanText (AllLines)
-            self.EasyMind.run (AllLines)
+            
+            Sum = self.EasyMind.run (AllLines)
+            Tokens = self.TM.preprocess_text (Sum)
+            
+            self.research_stats [ReppId] = SumItem (ReppId, Sum, Tokens)
 
     def save_data(self, file_name=None):
         if (len(self.research_stats) == 0):
             return
 
         SfFile = self.file_path + self.file_name + '.csv'
-        with open(SfFile, 'w', encoding='utf-8') as CsvFile:       
+        with open(SfFile, 'a', encoding='utf-8') as CsvFile:       
             writer = csv.writer(CsvFile)
             for Id, SumItem in self.research_stats.items():
                 row = [SumItem.id, SumItem.summarization, SumItem.tokens]
-                print (row)
                 writer.writerow(row)
         self.research_stats = {}
              
