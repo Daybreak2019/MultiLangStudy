@@ -4,6 +4,7 @@ import re
 import csv
 from lib.Process_Data import Process_Data
 from lib.Collect_Research_Data import Collect_Research_Data
+from eazymind.nlp.eazysum import Summarizer
 
 
 class SumItem ():
@@ -18,6 +19,7 @@ class Sumreadme (Collect_Research_Data):
         self.StartNo = StartNo
         self.EndNo   = EndNo
         self.Index   = 0
+        self.EasyMind = Summarizer('b889f099ad771f4f693208979f247b1f')
 
         # Default file 
         Header = ['id', 'summarization', 'tokens']
@@ -40,12 +42,24 @@ class Sumreadme (Collect_Research_Data):
         if not os.path.exists (RepoDir):
             self.Index += 1
             return
-        
+
+        RepoDir += "/" + os.path.basename (repo_item.url)
         self.SumText(ReppId, RepoDir)
         self.Index += 1
 
+
+    def CleanText (self, AllLines):
+        return AllLines
+
     def SumText (self, ReppId, RepoDir):
-        pass
+        RdMe = RepoDir + "/" + "README.md"
+        if not os.path.exists (RdMe):
+            return
+
+        with open (RdMe, "r") as RMF:
+            AllLines = RMF.readlines ()
+            AllLines = self.CleanText (AllLines)
+            self.EasyMind.run (AllLines)
 
     def save_data(self, file_name=None):
         if (len(self.research_stats) == 0):
