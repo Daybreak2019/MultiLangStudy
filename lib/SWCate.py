@@ -1,8 +1,10 @@
 
 import os
 
-
-class Classifier():
+class SWCate():
+	def __init__ (self):
+        pass
+    
     System = ["Boot loaders?", "Compatibility layers?", "driver", "Firmware?", "Graphical user interfaces? ", 
               "Middleware?", "os", "Provisioning? ", "Utility software?", "Windowing systems?"]
     
