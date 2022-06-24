@@ -26,6 +26,7 @@ from lib.CloneRepo import CloneRepo
 from lib.Sample import Sample
 from lib.Collect_SpearMan import Collect_SpearMan
 from lib.Sumreadme import Sumreadme
+from lib.SWCate import SWCate
 
 
 
@@ -218,6 +219,9 @@ def CollectSumReadMe (StartNo=0, EndNo=65535):
     research_data = Sumreadme(StartNo, EndNo) 
     research_data.process_data(list_of_repos=repo_stats)
     research_data.save_data()
+
+    swCt = SWCate ()
+    swCt.Categorize ()
 
 
 def StatAll ():

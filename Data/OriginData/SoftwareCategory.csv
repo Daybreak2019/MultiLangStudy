@@ -1,19 +1,19 @@
 id,category,parent,keywords,example
-1,driver,0,,
-2,programming,0,,
-3,system,0,,
-4,application,0,,
-5,word process,4,,"Google Docs, Microsoft Word, WordPad and Notepad"
-6,database,4,,"MySQL, Microsoft SQL Server, Microsoft Access, Oracle, IBM DB2 and FoxPro"
-7,spreadsheet,4,,"Google Sheets, Apple Numbers and Microsoft Excel"
-8,multimedia,4,,"Media Player, Winamp, QuickTime and VLC Media Player"
-9,presentation,4,,"Google Slides, Microsoft Powerpoint, Keynotes, Prezzy"
-10,enterprise,4,,"customer relationship management (CRM) software (HubSpot, Microsoft Dynamic 365)), project management tools (Jira, Monday), marketing automation tools (Marketo, HubSpot), enterprise resource planning (ERP) software (SAGE, Oracle, Microsoft Dynamics), treasury management system (TMS) software (SAP S/4HANA Finance, Oracle Treasury), business intelligence (BI) software (SAP Business Intelligence, MicroStrategy, Microsoft Power BI)"
-11,information worker,4,,"Documentation tools, resource management tools"
-12,communication,4,,"Zoom, Google Meet, Skype"
-13,education,4,,"Dictionaries – Encarta, Britannica; Mathematical: MATLAB; Others: Google Earth, NASA World Wind"
-14,simulation,4,,Flight and scientific simulators
-15,content Access,4,,"Accessing content through media players, web browsers"
-16,application suites,4,,"Apache OpenOffice, Microsoft Office365, Apple’s iWork, LibreOffice, G-Suite, Oracle E-Business Suite"
-17,engineering or development,4,,IDE or Integrated Development Environments
-18,email,4,,"Microsoft Outlook, Gmail, Apple Mail"
+1,driver,0,[],
+2,programming,0,[],
+3,system,0,[],
+4,application,0,[],
+5,word process,4,[],"Google Docs, Microsoft Word, WordPad and Notepad"
+6,database,4,[],"MySQL, Microsoft SQL Server, Microsoft Access, Oracle, IBM DB2 and FoxPro"
+7,spreadsheet,4,[],"Google Sheets, Apple Numbers and Microsoft Excel"
+8,multimedia,4,[],"Media Player, Winamp, QuickTime and VLC Media Player"
+9,presentation,4,[],"Google Slides, Microsoft Powerpoint, Keynotes, Prezzy"
+10,enterprise,4,[],"customer relationship management (CRM) software (HubSpot, Microsoft Dynamic 365)), project management tools (Jira, Monday), marketing automation tools (Marketo, HubSpot), enterprise resource planning (ERP) software (SAGE, Oracle, Microsoft Dynamics), treasury management system (TMS) software (SAP S/4HANA Finance, Oracle Treasury), business intelligence (BI) software (SAP Business Intelligence, MicroStrategy, Microsoft Power BI)"
+11,information worker,4,[],"Documentation tools, resource management tools"
+12,communication,4,[],"Zoom, Google Meet, Skype"
+13,education,4,[],"Dictionaries ? Encarta, Britannica; Mathematical: MATLAB; Others: Google Earth, NASA World Wind"
+14,simulation,4,[],Flight and scientific simulators
+15,content Access,4,[],"Accessing content through media players, web browsers"
+16,application suites,4,['native'],"Apache OpenOffice, Microsoft Office365, Apple?s iWork, LibreOffice, G-Suite, Oracle E-Business Suite"
+17,engineering or development,4,[],IDE or Integrated Development Environments
+18,email,4,[],"Microsoft Outlook, Gmail, Apple Mail"

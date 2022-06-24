@@ -9,10 +9,12 @@ from eazymind.nlp.eazysum import Summarizer
 
 
 class SumItem ():
-    def __init__(self, id, summarization, tokens):
+    def __init__(self, id, summarization, tokens, topics, description):
         self.id = id
         self.summarization = summarization
         self.tokens = tokens
+        self.topics = topics
+        self.description = description
 
 class Sumreadme (Collect_Research_Data):
     def __init__(self, StartNo=0, EndNo=65535, file_name='Sumreadme'):
@@ -26,7 +28,7 @@ class Sumreadme (Collect_Research_Data):
         self.TM = TextModel ()
 
         # Default file 
-        Header = ['id', 'summarization', 'tokens']
+        Header = ['id', 'summarization', 'tokens', 'topics', 'description']
         SfFile = self.file_path + "Sumreadme" + '.csv'
         with open(SfFile, 'w', encoding='utf-8') as CsvFile:       
             writer = csv.writer(CsvFile)
@@ -48,7 +50,7 @@ class Sumreadme (Collect_Research_Data):
             return
 
         RepoDir += "/" + os.path.basename (repo_item.url)
-        self.SumText(ReppId, RepoDir)
+        self.SumText(ReppId, RepoDir, repo_item.topics, repo_item.description)
         self.Index += 1
 
     def IsHtml (self, Line):
@@ -79,7 +81,7 @@ class Sumreadme (Collect_Research_Data):
             CleanLines += " " + line
         return CleanLines
 
-    def SumText (self, ReppId, RepoDir):
+    def SumText (self, ReppId, RepoDir, Topics, Description):
         RdMe = RepoDir + "/" + "README.md"
         if not os.path.exists (RdMe):
             return
@@ -91,7 +93,7 @@ class Sumreadme (Collect_Research_Data):
             Sum = self.EasyMind.run (AllLines)
             Tokens = self.TM.preprocess_text (Sum)
             
-            self.research_stats [ReppId] = SumItem (ReppId, Sum, Tokens)
+            self.research_stats [ReppId] = SumItem (ReppId, Sum, Tokens, Topics, Description)
 
     def save_data(self, file_name=None):
         if (len(self.research_stats) == 0):
@@ -101,7 +103,7 @@ class Sumreadme (Collect_Research_Data):
         with open(SfFile, 'a', encoding='utf-8') as CsvFile:       
             writer = csv.writer(CsvFile)
             for Id, SumItem in self.research_stats.items():
-                row = [SumItem.id, SumItem.summarization, SumItem.tokens]
+                row = [SumItem.id, SumItem.summarization, SumItem.tokens, SumItem.topics, SumItem.description]
                 writer.writerow(row)
         self.research_stats = {}
              
