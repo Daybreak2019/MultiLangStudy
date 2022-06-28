@@ -325,8 +325,8 @@ class CloneRepo():
                     #print ("Get msg -> ", Message)
             return IssueNum
     
-    def CloneLog (self, RepoId, RepoDir, Langs):
-        Repo = RepoDir + "/" + os.listdir(RepoDir)[0]     
+    def CloneLog (self, RepoId, RepoDir, RepoName, Langs):
+        Repo = RepoDir + "/" + RepoName     
         os.chdir(Repo)
         print ("Repo -> ", Repo)
 
@@ -386,9 +386,12 @@ class CloneRepo():
             os.system (CloneCmd)
             Id += 1
 
+            RepoName = os.path.basename(repo['clone_url'])
+            RepoName = RepoName.split ('.')[0]
+
             LangsDict = repo['language_dictionary']
             Langs = [lang.lower() for lang in LangsDict.keys()]
-            if self.CloneLog (repo['id'], RepoDir, Langs) == True:
+            if self.CloneLog (repo['id'], RepoDir, RepoName, Langs) == True:
                 self.Clean (RepoDir)
             System.set_tag (str(repo['id']))
             
