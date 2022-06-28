@@ -326,7 +326,9 @@ class CloneRepo():
             return IssueNum
     
     def CloneLog (self, RepoId, RepoDir, RepoName, Langs):
-        Repo = RepoDir + "/" + RepoName     
+        Repo = RepoDir + "/" + RepoName
+        if not os.path.exists (Repo):
+            return False
         os.chdir(Repo)
         print ("Repo -> ", Repo)
 
