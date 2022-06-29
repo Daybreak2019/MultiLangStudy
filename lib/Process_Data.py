@@ -209,22 +209,4 @@ class Process_Data:
         for key in sorted(original_dict):
             new_dict[key] = original_dict[key]
         return new_dict
-
-    def IsInTopLanguages (lang):      
-
-        #open file
-        languageFile = open("Top_50_languages.txt","r")
-
-        list_language = []
-
-        #load data
-        for i in range(0, 50):
-            strLanguage = languageFile.readline()
-            strLanguage = strLanguage.strip()
-            list_language.append(strLanguage)
-
-        if (lang in list_language):
-            return True
-        else:
-            return False
     

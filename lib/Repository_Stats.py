@@ -11,7 +11,9 @@ class Repository_Stats():
                     "owner type", "size", 
                     "open issues", "stars", "watchers", "forks", "description"]
     '''
-    def __init__(self, repo):
+    def __init__(self, repo, top_langs):
+        self.top_langs = top_langs
+        
         # This is a id that is unique to this repository only
         self.id = repo.id
         repo.language_dictionary = Process_Data.dictsort_value(repo.language_dictionary, True)
@@ -80,7 +82,7 @@ class Repository_Stats():
         all_languages = []
         # only select language from the top languages
         for lang in self.all_languages:
-            if (Process_Data.IsInTopLanguages(lang)):   
+            if lang in self.top_langs:
                 all_languages.append (lang)
 
         #print (str(all_languages) + " ------ " + str(self.all_languages))

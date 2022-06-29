@@ -1,4 +1,4 @@
-#!/usr/bin/python
+
 from lib.System import System
 from lib.Process_Data import Process_Data
 from lib.Collect_Research_Data import Collect_Research_Data
@@ -19,8 +19,12 @@ class AvgLangStat ():
 
 class Collect_RepoStats(Collect_Research_Data):
 
-    def __init__(self, file_name='Repository_Stats'):
+    def __init__(self, file_name='Repository_Stats', top_langs_num=50):
         super(Collect_RepoStats, self).__init__(file_name=file_name)
+        self.top_langs = []
+        self.load_top_langs (top_langs_num)
+        print (self.top_langs)
+        
         self.all_language_combo_count = 0
         
         self.combination_stats = {}
@@ -29,11 +33,24 @@ class Collect_RepoStats(Collect_Research_Data):
 
         self.avg_lang_stats = {}
 
+    def load_top_langs (self, top_langs_num=50):
+        LangFile = 'Data/OriginData/top_languages.txt'
+        with open (LangFile, 'r') as LF:
+            AllLines = LF.readlines ()
+            lang_num = 0
+            for line in AllLines:
+                lang = line.replace('\n', '')
+                self.top_langs.append (lang.lower())
+                lang_num += 1
+                if lang_num >= top_langs_num:
+                    break
+        
+
     def _update_statistics(self, repo_item):
         #CmmtFile = System.cmmt_file (repo_item.id)
         #if System.is_exist(CmmtFile) == False:
         #    return
-        repo_stat = Repository_Stats(repo_item)
+        repo_stat = Repository_Stats(repo_item, self.top_langs)
         repo_id   = repo_stat.id
         self.research_stats[repo_id] = repo_stat
         

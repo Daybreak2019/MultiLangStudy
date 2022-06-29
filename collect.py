@@ -28,44 +28,6 @@ from lib.Collect_SpearMan import Collect_SpearMan
 from lib.Sumreadme import Sumreadme
 from lib.SWCate import SWCate
 
-num_rank_language = 50
-
-def filter_data(original_repo_list, num_rank_language):
-    #open language file
-    languageFile = open("Top_50_languages.txt","r")
-
-    list_language = []
-
-    #load data
-    for i in range(0, num_rank_language):
-        strLanguage = languageFile.readline()
-        strLanguage = strLanguage.strip()
-        list_language.append(strLanguage)
-
-    #filter data here
-    for org_repo in reversed(original_repo_list):
-        org_repo['language_dictionary']
-
-        language_keys = reversed(list(org_repo['language_dictionary'].keys()))
-        for key in language_keys:
-            num_language_count = 0
-
-            for listValues in list_language:
-
-                if key == listValues:
-                    break
-                else:
-                    num_language_count = num_language_count + 1
-
-            if num_language_count >= 50:
-                del((org_repo['language_dictionary'])[key])
-        
-        if len(org_repo['language_dictionary']) <2:
-            original_repo_list.remove(org_repo)
-
-    languageFile.close()
-    return original_repo_list
-
 def Daemonize(pid_file=None):
     pid = os.fork()
     if pid:
@@ -119,16 +81,13 @@ def UpdateRepo():
 
 
 # repo stats
-def RepoStats(original_repo_list=None):
+def RepoStats(original_repo_list=None, TopLangNum=50):
     TimeTag(">>>>>>>>>>>> Statistic on repositories...")
     if (original_repo_list == None):
         original_repo_list = Process_Data.load_data(file_path=System.getdir_collect(), file_name='Repository_List')
 
-    #filter data here
-    original_repo_list = filter_data(original_repo_list, num_rank_language)
-
     #proceed to analysics
-    repository_data = Collect_RepoStats()
+    repository_data = Collect_RepoStats(TopLangNum)
     repository_data.process_data(original_repo_list)
     repository_data.save_data()
 
@@ -285,10 +244,11 @@ def main(argv):
     FileName = ""
     StartNo  = 0
     EndNo    = 65535
+    TopLangNum = 50
    
     # get step
     try:
-        opts, args = getopt.getopt(argv,"dhs:y:n:f:b:e:",["step=", "year=", "no="])
+        opts, args = getopt.getopt(argv,"dhs:y:n:f:b:e:l:",["step=", "year=", "no="])
     except getopt.GetoptError:
         print ("./collect.py -s <step_name>")
         sys.exit(2)
@@ -312,6 +272,8 @@ def main(argv):
             StartNo = int(arg);
         elif opt in ("-e", "--endno"):
             EndNo = int(arg);
+        elif opt in ("-l", "--language num"):
+            TopLangNum = int(arg);
 
     if IsDaemon:
         Daemonize ()
@@ -349,7 +311,7 @@ def main(argv):
                 System.setdir (str(year), str(year))
                 RepoStats(None)
         else:
-            RepoStats(None)
+            RepoStats(None, TopLangNum)
     elif (step == "langstats"):
         if (by_year == True):
             for year in range (System.START_YEAR, System.END_YEAR+1, 1):
