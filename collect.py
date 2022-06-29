@@ -87,7 +87,7 @@ def RepoStats(original_repo_list=None, TopLangNum=50):
         original_repo_list = Process_Data.load_data(file_path=System.getdir_collect(), file_name='Repository_List')
 
     #proceed to analysics
-    repository_data = Collect_RepoStats(TopLangNum)
+    repository_data = Collect_RepoStats(top_langs_num=TopLangNum)
     repository_data.process_data(original_repo_list)
     repository_data.save_data()
 
