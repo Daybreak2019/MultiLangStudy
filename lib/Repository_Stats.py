@@ -12,7 +12,7 @@ class Repository_Stats():
                     "open issues", "stars", "watchers", "forks", "description"]
     '''
     def __init__(self, repo, top_langs):
-        self.top_langs = top_langs
+        cur_top_langs = top_langs
         
         # This is a id that is unique to this repository only
         self.id = repo.id
@@ -50,11 +50,11 @@ class Repository_Stats():
         language_combinations_new = []
         if (True):            
             for n in range (2, 6, 1):
-                n_combinations = self._get_n_combination (n)
+                n_combinations = self._get_n_combination (n, cur_top_langs)
                 if (len (n_combinations) == n):      
                     language_combinations_new.append(n_combinations)
         else:
-            n_combinations = self._get_n_combination (2)
+            n_combinations = self._get_n_combination (2, cur_top_langs)
             if (len(n_combinations) > 1):
                 language_combinations_new.append (n_combinations)
 
@@ -78,11 +78,11 @@ class Repository_Stats():
         self.description = str(repo.description)
         self.url = repo.url
 
-    def _get_n_combination (self, n):
+    def _get_n_combination (self, n, cur_top_langs):
         all_languages = []
         # only select language from the top languages
         for lang in self.all_languages:
-            if lang in self.top_langs:
+            if lang in cur_top_langs:
                 all_languages.append (lang)
 
         #print (str(all_languages) + " ------ " + str(self.all_languages))

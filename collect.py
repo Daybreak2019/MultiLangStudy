@@ -3,6 +3,7 @@
 import os
 import sys, getopt
 import time
+import pandas as pd
 from progressbar import ProgressBar
 
 from lib.System import System
@@ -13,7 +14,7 @@ from lib.Github_API import Github_API
 from lib.Language_Stats import Language_Stats
 from lib.Collect_LangStats import Collect_LangStats
 from lib.Collect_DiscripStats import Collect_DiscripStats
-from lib.Collect_ComboTopicStats import Collect_ComboTopicStats
+from lib.Collect_ComboTopicStats import Collect_ComboTopicStats, Correlation_Data
 
 from lib.Collect_Association import Collect_Association
 from lib.Collect_CmmtLogs import Collect_Issues
@@ -55,6 +56,55 @@ def Daemonize(pid_file=None):
         atexit.register(os.remove, pid_file)
 
 
+def TransCsv2Pikle (file_name):
+    item_list = []
+    df = pd.read_csv(file_name)
+    for index, row in df.iterrows():
+        if 'Repository_List' in file_name:
+            row['language_dictionary'] = eval (row['language_dictionary'])
+            row['topics'] = eval (row['topics'])
+        
+        if 'Cluster_Stats' in file_name:
+            row['cluster_topics'] = eval (row['cluster_topics'])
+            row['languages'] = eval (row['languages'])
+            row['combinations'] = eval (row['combinations'])
+            
+        item_list.append (row)
+
+    pikleName = os.path.basename(file_name).split('.')[0]
+    Process_Data.store_data(file_path='./', file_name=pikleName, data=item_list)
+
+
+def GenCorData ():
+    RepoId2LangCombo = {}
+    RsFile = 'Data/StatData/Repository_Stats.csv'
+    df = pd.read_csv(RsFile)
+    for index, row in df.iterrows():
+        RepoId2LangCombo[int (row['id'])] = row['language_combinations']
+    
+    correlation_data = {}
+    Inputs = 'Data/StatData/RepoCluster_Stats.csv'
+    df = pd.read_csv(Inputs)
+    EmptyNum = 0
+    TotalNum = 0
+    for index, row in df.iterrows():
+        TotalNum += 1
+        
+        repo_id = int (row ['repo_id'])
+        lang_combo = RepoId2LangCombo[repo_id]
+        if lang_combo == '[]':
+            EmptyNum += 1
+            continue
+        
+        #print (row['combinations'] + '  ----->  ' + lang_combo)
+
+        coorData = Correlation_Data (row['subjects'], row['cluster'], 0, 0, lang_combo, 0)
+        correlation_data[index] = coorData
+
+        serialized_objects = {key: value.__dict__ for key, value in correlation_data.items()}
+        Process_Data.store_data(file_path='./Data/StatData/', file_name='Correlation_Data', data=serialized_objects)
+    print ("EmptyRate   ----> %.2f (%d/%d)" %(EmptyNum*1.0/TotalNum, EmptyNum, TotalNum))
+    
 def TimeTag (Tag):
     localtime = time.asctime( time.localtime(time.time()) )
     print ("%s : %s" %(Tag, localtime))
@@ -130,6 +180,8 @@ def RelComboTopics(descrip_stats=None):
 # Association
 def Association(correlation_stat=None):
     TimeTag(">>>>>>>>>>>> Statistic on Association...")
+    GenCorData ()
+    
     file_path=System.getdir_stat()
     if (correlation_stat == None):
         correlation_stat = Process_Data.load_data(file_path=file_path, file_name='Correlation_Data')
@@ -245,10 +297,11 @@ def main(argv):
     StartNo  = 0
     EndNo    = 65535
     TopLangNum = 50
+    TransFlag  = False
    
     # get step
     try:
-        opts, args = getopt.getopt(argv,"dhs:y:n:f:b:e:l:",["step=", "year=", "no="])
+        opts, args = getopt.getopt(argv,"dhs:y:n:f:b:e:l:t",["step=", "year=", "no="])
     except getopt.GetoptError:
         print ("./collect.py -s <step_name>")
         sys.exit(2)
@@ -265,18 +318,25 @@ def main(argv):
             year_val = int(arg)
             print ("by_year = %d, year_val = %d" %(by_year, year_val))
         elif opt in ("-d", "--daemon"):
-            IsDaemon = True;
+            IsDaemon = True
         elif opt in ("-f", "--filename"):
-            FileName = arg;
+            FileName = arg
         elif opt in ("-b", "--beginno"):
-            StartNo = int(arg);
+            StartNo = int(arg)
         elif opt in ("-e", "--endno"):
-            EndNo = int(arg);
+            EndNo = int(arg)
         elif opt in ("-l", "--language num"):
-            TopLangNum = int(arg);
+            TopLangNum = int(arg)
+        elif opt in ("-t", "--trans csv to pikle"):
+            TransFlag = True
 
     if IsDaemon:
         Daemonize ()
+        
+    if TransFlag == True:
+        if FileName == "":
+            return
+        TransCsv2Pikle (FileName)
 
 
     if (step == "all"):
