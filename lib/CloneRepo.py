@@ -81,6 +81,11 @@ class CloneRepo():
         self.startNo = startNo
         self.endNo   = endNo
 
+        if (os.getenv("GIT_NAME", "None") != "None" and os.getenv("GIT_PWD", "None") != "None"):
+            self.UserName = os.environ["GIT_NAME"]
+            self.Token = os.environ["GIT_PWD"]
+            print("Github Info: [%s, %s]" %(self.UserName, self.Token))
+
     def CleanText(self, Text):
         Text = str (Text)
         Text = re.sub(r'[+|/]', ' ', Text)
