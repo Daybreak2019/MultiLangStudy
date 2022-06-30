@@ -68,8 +68,8 @@ class CloneRepo():
     def __init__(self, RepoPath, startNo=0, endNo=65535):
         self.RepoPath = RepoPath        
         self.RepoList = []
-        self.UserName = "wangtong0908"
-        self.Token    = "8ad9a6cddbd384072d2410d3f32dad4455c67d64"
+        self.UserName = ""
+        self.Token    = ""
 
         self.Commits  = []
         self.Exts = ['.h', '.c', '.cpp', '.cc', '.i', '.js', '.css', '.json', '.sh', '.jsx', '.xml', '.yml',
@@ -177,7 +177,7 @@ class CloneRepo():
             return self.HttpCall(url)     
         return result.json()
 
-    def GetClonePath (self, CloneRepoPath):
+    def GetClonePath (self):
         RepoPath = "Data/OriginData/" + self.RepoPath
         df = pd.read_csv(RepoPath)
         for index, row in df.iterrows():            
@@ -194,14 +194,22 @@ class CloneRepo():
             self.RepoList.append (repo)
 
     def GetRepoList(self):
+        clone_url_exist = True
+        
         RepoPath = "Data/OriginData/" + self.RepoPath
         df = pd.read_csv(RepoPath)
-        for index, row in df.iterrows():            
+        for index, row in df.iterrows():
+            if str(row).find ('clone_url') == -1:
+                clone_url_exist = False
+                break
             repo = {}
             repo['id']  = row['id']
             repo['clone_url'] = row['clone_url']
             repo['language_dictionary'] = eval(row['language_dictionary'])
             self.RepoList.append (repo)
+
+        if clone_url_exist == False:
+            self.GetClonePath ()
         print ("Total %d Repositories" %len(self.RepoList))
         
     
