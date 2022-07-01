@@ -27,7 +27,15 @@ class Collect_Association(Collect_Research_Data):
         self.unique_items = {}
         self.lang_topic_stats = {}
 
+    def _str2item (self, item):
+        if isinstance (item, str):
+            item = eval (item)
+            if isinstance (item, list):
+                item = item [0]
+        return item
+    
     def _insert_item (self, item):
+        item = self._str2item (item)
         if (self.unique_items.get (item, None) == None):
             self.unique_items [item] = True
     
@@ -41,20 +49,47 @@ class Collect_Association(Collect_Research_Data):
         self.language_list.append (combination)
         self._insert_item (combination)
 
+    def _output_encoding (self, ohe_df):
+        import csv
+        with open('debug_encoding.csv', 'w') as DEF:
+            writer = csv.writer(DEF)
+            headers = ohe_df.columns.values.tolist()
+            writer.writerow(headers)
+            for index, row in ohe_df.iterrows ():
+                writer.writerow(row)
+
     def _one_hot_encoding (self, df, unique_items):
         encoded_vals = []
         for index, row in df.iterrows():
-            row_set = set ([row.x, row.y])
+            x = self._str2item (row.x)
+            y = self._str2item (row.y)
+            row_set = set ([x, y])
 
             labels = {}
             uncommons = list(set(unique_items) - row_set)
             commons = list(set(unique_items).intersection(row_set))
+
             for uc in uncommons:
                 labels[uc] = 0
             for com in commons:
                 labels[com] = 1
+
+            #deal with the inclution
+            for com in commons:
+                if not isinstance (com, str):
+                    continue
+
+                com_list = com.split ('_')
+                for uc in uncommons:
+                    if not isinstance (uc, str):
+                        continue
+                    uc_list = uc.split ('_')
+                    ins = list(set(com_list).intersection(uc_list))
+                    if len (ins) == len (com_list):
+                        labels[uc] = 1
+                        
             encoded_vals.append(labels)
-        
+
         return encoded_vals
 
     def _get_set_value (self, set_item):
@@ -70,6 +105,7 @@ class Collect_Association(Collect_Research_Data):
 
         encoded_vals = self._one_hot_encoding (df, unique_items)
         ohe_df = pd.DataFrame(encoded_vals)
+        self._output_encoding (ohe_df)
 
         freq_items = apriori(ohe_df, min_support=0.01, use_colnames=True)
         print ("freq_items:")
