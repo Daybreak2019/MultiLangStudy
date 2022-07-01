@@ -65,7 +65,7 @@ class Commit ():
         
 
 class CloneRepo():
-    def __init__(self, RepoPath, startNo=0, endNo=65535, CloneLog=False):
+    def __init__(self, RepoPath, startNo=0, endNo=65535, IsCloneLog=False):
         self.RepoPath = RepoPath        
         self.RepoList = []
         self.UserName = ""
@@ -81,7 +81,7 @@ class CloneRepo():
         self.startNo = startNo
         self.endNo   = endNo
 
-        self.CloneLog = CloneLog
+        self.IsCloneLog = IsCloneLog
 
         if (os.getenv("GIT_NAME", "None") != "None" and os.getenv("GIT_PWD", "None") != "None"):
             self.UserName = os.environ["GIT_NAME"]
@@ -406,7 +406,7 @@ class CloneRepo():
             RepoName = os.path.basename(repo['clone_url'])
             RepoName = RepoName.split ('.')[0]
 
-            if self.CloneLog == True:
+            if self.IsCloneLog == True:
                 LangsDict = repo['language_dictionary']
                 Langs = [lang.lower() for lang in LangsDict.keys()]
                 if self.CloneLog (repo['id'], RepoDir, RepoName, Langs) == True:
