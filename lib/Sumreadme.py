@@ -86,7 +86,7 @@ class Sumreadme (Collect_Research_Data):
         if not os.path.exists (RdMe):
             return
 
-        with open (RdMe, "r") as RMF:
+        with open (RdMe, "r", encoding='latin-1') as RMF:
             AllLines = RMF.readlines ()
             AllLines = self.CleanText (AllLines)
             
