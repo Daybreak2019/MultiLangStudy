@@ -271,9 +271,6 @@ def CollectSumReadMe (StartNo=0, EndNo=65535):
     research_data.process_data(list_of_repos=repo_stats)
     research_data.save_data()
 
-    swCt = SWCate ()
-    swCt.Categorize ()
-
 
 def StatAll ():
     original_repo_list = Process_Data.load_data(file_path=System.getdir_collect(), file_name='Repository_List')
@@ -430,6 +427,9 @@ def main(argv):
         CollectSpearman ()
     elif (step == "readme"):
         CollectSumReadMe ()
+    elif (step == "swc"):
+        swCt = SWCate ()
+        swCt.Categorize ()
     else:
         print ("collect.py -s <all/collect/repostats/langstats/discripstats/topics/asso/cmmts/nbr/apisniffer/clone>") 
 

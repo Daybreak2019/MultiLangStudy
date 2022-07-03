@@ -21,6 +21,17 @@ class SWCate():
         self.FileName = FileName
         self.LoadSwCate ()
 
+        self.Output = "Data/StatData/RepoCategory.csv"
+        with open (self.Output, 'w') as Rcf:
+            writer = csv.writer(Rcf)
+            writer.writerow(['repo_id', 'cate_id', 'cate', 'fuzz_res'])
+
+    def SaveResult (self, RepoId, CateId, Cate, FuzzRes):
+        row = [RepoId, CateId, Cate, FuzzRes]
+        with open (self.Output, 'a') as Rcf:
+            writer = csv.writer(Rcf)
+            writer.writerow(row)
+        
     def LoadSwCate (self):
         FilePath = "Data/OriginData/" + self.FileName
         df = pd.read_csv(FilePath)
@@ -52,16 +63,16 @@ class SWCate():
                         result = process.extractOne(str, gram_meg, scorer=fuzz.ratio)
                         if (result[1] >= threshhold):
                             fuzz_results[result[0]] = int (result[1])
-                            return swCate.category, fuzz_results 
+                            return swCate.id, swCate.category, fuzz_results 
                 elif key_len == msg_len:
                     msg = " ".join(Message)
                     gram_meg.append (msg)
                     result = process.extractOne(str, gram_meg, scorer=fuzz.ratio)
                     if (result[1] >= threshhold):
                         fuzz_results[result[0]] = int (result[1])
-                        return swCate.category, fuzz_results          
+                        return swCate.id, swCate.category, fuzz_results          
                 
-        return None, None
+        return None, None, None
 
     def Categorize (self):
         SumFile = "Data/StatData/Sumreadme.csv"
@@ -74,9 +85,10 @@ class SWCate():
             if len (topics) != 0:
                 Message = Message + topics
             
-            result, score = self.FuzzMatch (Message)
+            cate_id, result, score = self.FuzzMatch (Message)
             if result != None:
                 print ("%s  ----> %s" %(result, str(score)))
+                self.SaveResult (row['id'], cate_id, result, str(score))
 
 
  
