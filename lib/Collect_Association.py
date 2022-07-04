@@ -95,6 +95,14 @@ class Collect_Association(Collect_Research_Data):
     def _get_set_value (self, set_item):
         list_item = list (set_item)
         return list_item[0]
+
+    def LoadSwCate (self):
+        CateId2Cate = {}
+        SWfile = "Data/OriginData/SoftwareCategory.csv"
+        df = pd.read_csv(SWfile)
+        for index, row in df.iterrows():
+            CateId2Cate[row['id']] = row['category']
+        return CateId2Cate
     
     def _update(self):
         unique_items = [key for key in self.unique_items.keys()]
@@ -116,8 +124,9 @@ class Collect_Association(Collect_Research_Data):
         print (rules.head(100))
 
         #load cluster information
-        cluster_stats = Process_Data.load_data(file_path=System.getdir_stat(), file_name="Cluster_Stats")
+        #cluster_stats = Process_Data.load_data(file_path=System.getdir_stat(), file_name="Cluster_Stats")
         #cluster_stats = Process_Data.dict_to_list(cluster_stats)
+        CateId2Cate = self.LoadSwCate()
 
         for index, item in rules.iterrows():
             antecedents = str(self._get_set_value(item['antecedents']))
@@ -125,10 +134,10 @@ class Collect_Association(Collect_Research_Data):
             confidence = item['confidence']
              
             if (antecedents.isdigit()):
-                cluster_topics = cluster_stats[int(antecedents)]['cluster_topics']
+                cluster_topics = CateId2Cate[int(antecedents)]
                 self.research_stats [index] = Association_Stats (antecedents, consequents, confidence, cluster_topics)
             else:
-                cluster_topics = cluster_stats[int(consequents)]['cluster_topics']
+                cluster_topics = CateId2Cate[int(consequents)]
                 self.lang_topic_stats [index] = Association_Stats (antecedents, consequents, confidence, cluster_topics)
         
         print ("Topic Associat to Language = %d, Language Associat to Topic = %d"\
