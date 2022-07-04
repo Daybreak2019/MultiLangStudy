@@ -14,8 +14,11 @@ do
 	mv Repository_List Data/OriginData/
 	
 	python collect.py -l $top_num -s repostats
-	cp Data/StatData/LangCombo_Stats.csv Data/StatData/LangCombo_Stats-$top_num.csv
 	python collect.py -s asso
+	
+	cd Data
+	tar -zcvf StatData-$top_num.tar.gz StatData
+	cd -
 done
 
 
