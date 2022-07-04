@@ -130,7 +130,7 @@ class Collect_Association(Collect_Research_Data):
 
         for index, item in rules.iterrows():
             antecedents = str(self._get_set_value(item['antecedents']))
-            consequents = self._get_set_value(item['consequents'])
+            consequents = str(self._get_set_value(item['consequents']))
             confidence = item['confidence']
 
             if (antecedents.isdigit()):
