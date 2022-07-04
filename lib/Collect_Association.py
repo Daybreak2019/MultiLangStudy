@@ -12,11 +12,13 @@ import pandas as pd
 from mlxtend.frequent_patterns import apriori, association_rules
 
 class Association_Stats:
-    def __init__ (self, antecedents, consequents, confidience, cluster_topics):
-        self.antecedents         = antecedents       
-        #self.confidience        = confidience
-        self.cluster_topics      = cluster_topics
+    def __init__ (self, antecedents, consequents, support, confidience, lift, cluster_topics):
+        self.antecedents         = antecedents
         self.consequents         = consequents
+        self.support             = support
+        self.confidience         = confidience
+        self.lift                = lift
+        self.cluster_topics      = cluster_topics
 
 class Collect_Association(Collect_Research_Data):
 
@@ -131,14 +133,19 @@ class Collect_Association(Collect_Research_Data):
         for index, item in rules.iterrows():
             antecedents = str(self._get_set_value(item['antecedents']))
             consequents = str(self._get_set_value(item['consequents']))
-            confidence = item['confidence']
+            support     = item['support']
+            confidence  = item['confidence']
+            lift        = item['lift']
+
+            if lift < 1.0:
+                continue
 
             if (antecedents.isdigit()):
                 cluster_topics = CateId2Cate[int(antecedents)]
-                self.research_stats [index] = Association_Stats (antecedents, consequents, confidence, cluster_topics)
+                self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, cluster_topics)
             elif (consequents.isdigit()):
                 cluster_topics = CateId2Cate[int(consequents)]
-                self.lang_topic_stats [index] = Association_Stats (antecedents, consequents, confidence, cluster_topics)
+                self.lang_topic_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, cluster_topics)
         
         print ("Topic Associat to Language = %d, Language Associat to Topic = %d"\
                %(len(self.research_stats), len(self.lang_topic_stats)))
