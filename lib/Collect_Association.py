@@ -132,7 +132,8 @@ class Collect_Association(Collect_Research_Data):
             antecedents = str(self._get_set_value(item['antecedents']))
             consequents = self._get_set_value(item['consequents'])
             confidence = item['confidence']
-             
+
+            print (item)
             if (antecedents.isdigit()):
                 cluster_topics = CateId2Cate[int(antecedents)]
                 self.research_stats [index] = Association_Stats (antecedents, consequents, confidence, cluster_topics)
