@@ -2,7 +2,7 @@
 
 import os
 import sys, getopt
-import time
+import time, csv
 import pandas as pd
 from progressbar import ProgressBar
 
