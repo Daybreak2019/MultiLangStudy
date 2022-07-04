@@ -83,10 +83,15 @@ def GenCorData ():
         RepoId2LangCombo[int (row['id'])] = row['language_combinations']
     
     correlation_data = {}
-    Inputs = 'Data/StatData/RepoCluster_Stats.csv'
+    Inputs = 'Data/StatData/RepoCategory.csv'
     df = pd.read_csv(Inputs)
     EmptyNum = 0
     TotalNum = 0
+
+    with open('Data/StatData/Correlation_Data.csv', 'w') as CDF:
+        writer = csv.writer(CDF)   
+        writer.writerow(['cluster_topic','cluster_topic_id','language'])
+                
     for index, row in df.iterrows():
         TotalNum += 1
         
@@ -98,8 +103,12 @@ def GenCorData ():
         
         #print (row['combinations'] + '  ----->  ' + lang_combo)
 
-        coorData = Correlation_Data (row['subjects'], row['cluster'], 0, 0, lang_combo, 0)
+        coorData = Correlation_Data (row['cate'], row['cate_id'], 0, 0, lang_combo, 0)
         correlation_data[index] = coorData
+
+        with open('Data/StatData/Correlation_Data.csv', 'a') as CDF:
+            writer = csv.writer(CDF)
+            writer.writerow([coorData.cluster_topic, coorData.cluster_topic_id, coorData.language])
 
         serialized_objects = {key: value.__dict__ for key, value in correlation_data.items()}
         Process_Data.store_data(file_path='./Data/StatData/', file_name='Correlation_Data', data=serialized_objects)
