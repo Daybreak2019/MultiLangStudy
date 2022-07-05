@@ -18,7 +18,7 @@ if [ "$Action" == "sniffer" ]; then
 		Name=$FileName"$Num"
 		
 		echo "python collect.py -s apisniffer -b $Start -e $End -f $Name -d"
-		./collect.py -s apisniffer -b $Start -e $End -f $Name &
+		python collect.py -s apisniffer -b $Start -e $End -f $Name &
 	done
 	echo "Sniffer all Done!"
 else
