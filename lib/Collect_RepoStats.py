@@ -88,7 +88,7 @@ class Collect_RepoStats(Collect_Research_Data):
         return set (language)
         
     def _update(self):
-        self.combination_stats = self._get_top_combinations(50)
+        self.combination_stats = self._get_top_combinations(200)
         for combo, stat in self.combination_stats.items():
             stat.update_distribution (self.all_language_combo_count)
 
