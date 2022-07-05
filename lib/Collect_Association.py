@@ -96,7 +96,7 @@ class Collect_Association(Collect_Research_Data):
 
     def _get_set_value (self, set_item):
         list_item = list (set_item)
-        return list_item[0]
+        return len(list_item), list_item[0]
 
     def LoadSwCate (self):
         CateId2Cate = {}
@@ -121,7 +121,7 @@ class Collect_Association(Collect_Research_Data):
         print ("freq_items:")
         print (freq_items.head(100))
 
-        rules = association_rules(freq_items, metric="confidence", min_threshold=0.01)
+        rules = association_rules(freq_items, metric="lift", min_threshold=1)
         print ("association_rules:")
         print (rules.head(100))
 
@@ -131,14 +131,16 @@ class Collect_Association(Collect_Research_Data):
         CateId2Cate = self.LoadSwCate()
 
         for index, item in rules.iterrows():
-            antecedents = str(self._get_set_value(item['antecedents']))
-            consequents = str(self._get_set_value(item['consequents']))
+            asize, antecedents = self._get_set_value(item['antecedents'])
+            csize, consequents = self._get_set_value(item['consequents'])
+            if asize > 1 or csize > 1:
+                continue
+
+            antecedents = str (antecedents)
+            consequents = str (consequents)
             support     = item['support']
             confidence  = item['confidence']
             lift        = item['lift']
-
-            if lift < 1.0:
-                continue
 
             if (antecedents.isdigit()):
                 cluster_topics = CateId2Cate[int(antecedents)]
