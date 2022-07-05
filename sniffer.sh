@@ -1,8 +1,8 @@
 
 
 Action=$1
-TaskNum=277
-Process=4
+TaskNum=$2
+Process=32
 FileName="ApiSniffer"
 
 # sniffer
