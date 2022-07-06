@@ -178,16 +178,8 @@ class Collect_AssociationML2LIC(Collect_Research_Data):
         self.language_list = []
         self.unique_items = {}
         self.lang_topic_stats = {}
-
-    def _str2item (self, item):
-        if isinstance (item, str):
-            item = eval (item)
-            if isinstance (item, list):
-                item = item [0]
-        return item
     
     def _insert_item (self, item):
-        item = self._str2item (item)
         if (self.unique_items.get (item, None) == None):
             self.unique_items [item] = True
     
@@ -211,8 +203,8 @@ class Collect_AssociationML2LIC(Collect_Research_Data):
     def _one_hot_encoding (self, df, unique_items):
         encoded_vals = []
         for index, row in df.iterrows():
-            x = self._str2item (row.x)
-            y = self._str2item (row.y)
+            x = row.x
+            y = row.y
             row_set = set ([x, y])
 
             labels = {}
