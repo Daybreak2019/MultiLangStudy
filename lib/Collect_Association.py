@@ -170,10 +170,10 @@ class Collect_Association(Collect_Research_Data):
 
 
 
-class Collect_AssociationML2LIC(Collect_Association):
+class Collect_AssociationML2LIC(Collect_Research_Data):
 
     def __init__(self, file_name="AssoMainLang2LIC_Stats"):
-        super(Collect_AssoMainLang2LIC, self).__init__(file_name)
+        super(Collect_AssociationML2LIC, self).__init__(file_name)
         self.topic_list = []
         self.language_list = []
         self.unique_items = {}
@@ -196,14 +196,12 @@ class Collect_AssociationML2LIC(Collect_Association):
         self.topic_list.append (correlation_item.cluster_topic_id)
         self._insert_item (correlation_item.cluster_topic_id)
 
-        combination = "".join(correlation_item.language)
-        combination = combination.replace (" ", "_")
-        self.language_list.append (combination)
-        self._insert_item (combination)
+        self.language_list.append (correlation_item.language)
+        self._insert_item (correlation_item.language)
 
     def _output_encoding (self, ohe_df):
         import csv
-        with open('debug_encoding.csv', 'w') as DEF:
+        with open('debug_encoding_ml2lic.csv', 'w') as DEF:
             writer = csv.writer(DEF)
             headers = ohe_df.columns.values.tolist()
             writer.writerow(headers)
@@ -247,20 +245,12 @@ class Collect_AssociationML2LIC(Collect_Association):
     def _get_set_value (self, set_item):
         list_item = list (set_item)
         return len(list_item), list_item[0]
-
-    def LoadSwCate (self):
-        CateId2Cate = {}
-        SWfile = "Data/OriginData/SoftwareCategory.csv"
-        df = pd.read_csv(SWfile)
-        for index, row in df.iterrows():
-            CateId2Cate[row['id']] = row['category']
-        return CateId2Cate
     
     def _update(self):
         unique_items = [key for key in self.unique_items.keys()]
         print ("unique_items num = %d/%d" %(len(unique_items), len(self.topic_list)))
         
-        Data = {'x': self.topic_list, 'y': self.language_list}  
+        Data = {'x': self.language_list, 'y': self.topic_list}  
         df = DataFrame(Data, columns=['x', 'y'])
 
         encoded_vals = self._one_hot_encoding (df, unique_items)
@@ -275,11 +265,6 @@ class Collect_AssociationML2LIC(Collect_Association):
         print ("association_rules:")
         print (rules.head(100))
 
-        #load cluster information
-        #cluster_stats = Process_Data.load_data(file_path=System.getdir_stat(), file_name="Cluster_Stats")
-        #cluster_stats = Process_Data.dict_to_list(cluster_stats)
-        CateId2Cate = self.LoadSwCate()
-
         for index, item in rules.iterrows():
             asize, antecedents = self._get_set_value(item['antecedents'])
             csize, consequents = self._get_set_value(item['consequents'])
@@ -292,28 +277,26 @@ class Collect_AssociationML2LIC(Collect_Association):
             confidence  = item['confidence']
             lift        = item['lift']
 
-            if (antecedents.isdigit()):
-                cluster_topics = CateId2Cate[int(antecedents)]
-                self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, cluster_topics)
-            elif (consequents.isdigit()):
-                cluster_topics = CateId2Cate[int(consequents)]
-                self.lang_topic_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, cluster_topics)
+            if (antecedents in self.language_list):
+                self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
+            else:
+                self.lang_topic_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
         
         print ("Topic Associat to Language = %d, Language Associat to Topic = %d"\
                %(len(self.research_stats), len(self.lang_topic_stats)))
 
     def save_data(self):
         if (len (self.research_stats)):
-            super(Collect_Association, self).save_data(self.research_stats, "Topic_Associat_to_Language")
+            super(Collect_AssociationML2LIC, self).save_data(self.research_stats, "ML_Associat_to_LIC")
 
         if (len (self.lang_topic_stats)):
-            super(Collect_Association, self).save_data(self.lang_topic_stats, "Language_Associat_to_Topic")
+            super(Collect_AssociationML2LIC, self).save_data(self.lang_topic_stats, "LIC_Associat_to_ML")
     
     def _object_to_list(self, value):
-        return super(Collect_Association, self)._object_to_list(value)
+        return super(Collect_AssociationML2LIC, self)._object_to_list(value)
     
     def _object_to_dict(self, value):
-        return super(Collect_Association, self)._object_to_dict(value)
+        return super(Collect_AssociationML2LIC, self)._object_to_dict(value)
     
     def _get_header(self, data):
-        return super(Collect_Association, self)._get_header(data)    
+        return super(Collect_AssociationML2LIC, self)._get_header(data)    
