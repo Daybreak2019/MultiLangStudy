@@ -16,7 +16,7 @@ from lib.Collect_LangStats import Collect_LangStats
 from lib.Collect_DiscripStats import Collect_DiscripStats
 from lib.Collect_ComboTopicStats import Collect_ComboTopicStats, Correlation_Data
 
-from lib.Collect_Association import Collect_Association
+from lib.Collect_Association import Collect_Association, Collect_AssociationML2LIC
 from lib.Collect_CmmtLogs import Collect_Issues
 from lib.Collect_CmmtLogs import Collect_CmmtLogs
 from lib.Collect_Nbr import Collect_Nbr
@@ -113,7 +113,43 @@ def GenCorData ():
         serialized_objects = {key: value.__dict__ for key, value in correlation_data.items()}
         Process_Data.store_data(file_path='./Data/StatData/', file_name='Correlation_Data', data=serialized_objects)
     print ("EmptyRate   ----> %.2f (%d/%d)" %(EmptyNum*1.0/TotalNum, EmptyNum, TotalNum))
+
+
+def GenCorDataML2LIC ():
+    RepoId2ML = {}
+    RsFile = 'Data/StatData/Repository_Stats.csv'
+    df = pd.read_csv(RsFile)
+    for index, row in df.iterrows():
+        RepoId2ML[int (row['id'])] = row['main_language']
     
+    correlation_data = {}
+    Inputs = 'Data/StatData/ApiSniffer.csv'
+    df = pd.read_csv(Inputs)
+    EmptyNum = 0
+    TotalNum = 0
+
+    with open('Data/StatData/Correlation_ML2LIC.csv', 'w') as CDF:
+        writer = csv.writer(CDF)   
+        writer.writerow(['classifier','clftype','language'])
+                
+    for index, row in df.iterrows():
+        TotalNum += 1
+        
+        repo_id  = int (row ['repo_id'])
+        MainLang = RepoId2ML[repo_id]
+        
+        #print (row['combinations'] + '  ----->  ' + lang_combo)
+
+        coorData = Correlation_Data (row['classifier'], row['clfType'], 0, 0, MainLang, 0)
+        correlation_data[index] = coorData
+
+        with open('Data/StatData/Correlation_ML2LIC.csv', 'a') as CDF:
+            writer = csv.writer(CDF)
+            writer.writerow([coorData.cluster_topic, coorData.cluster_topic_id, coorData.language])
+
+        serialized_objects = {key: value.__dict__ for key, value in correlation_data.items()}
+        Process_Data.store_data(file_path='./Data/StatData/', file_name='Correlation_ML2LIC', data=serialized_objects)
+
 def TimeTag (Tag):
     localtime = time.asctime( time.localtime(time.time()) )
     print ("%s : %s" %(Tag, localtime))
@@ -197,6 +233,19 @@ def Association(correlation_stat=None):
         correlation_stat = Process_Data.dict_to_list(correlation_stat)
         
     research_data = Collect_Association()
+    research_data.process_data (list_of_repos=correlation_stat)
+    research_data.save_data()
+
+def AssociationML2LIC(correlation_stat=None):
+    TimeTag(">>>>>>>>>>>> Statistic on Association ML2LIC...")
+    GenCorDataML2LIC()
+    
+    file_path=System.getdir_stat()
+    if (correlation_stat == None):
+        correlation_stat = Process_Data.load_data(file_path=file_path, file_name='Correlation_ML2LIC')
+        correlation_stat = Process_Data.dict_to_list(correlation_stat)
+        
+    research_data = Collect_AssociationML2LIC()
     research_data.process_data (list_of_repos=correlation_stat)
     research_data.save_data()
 
@@ -418,6 +467,16 @@ def main(argv):
                 Association(None)
         else:
             Association(None)
+    elif (step == "assoml"):
+        if (by_year == True):
+            for year in range (System.START_YEAR, System.END_YEAR+1, 1):
+                if (year_val != 0 and year_val != year):
+                    continue
+                print ("\nYear-%d" %year, end="")
+                System.setdir (str(year), str(year))
+                AssociationML2LIC(None)
+        else:
+            AssociationML2LIC(None)
     elif (step == "cmmts"):
         CommitLog (StartNo, EndNo)
     elif (step == "issue"):
