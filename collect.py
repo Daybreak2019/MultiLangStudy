@@ -135,7 +135,7 @@ def GenCorDataML2LIC ():
     for index, row in df.iterrows():
         TotalNum += 1
         
-        repo_id  = int (row ['repo_id'])
+        repo_id  = int (row ['id'])
         MainLang = RepoId2ML[repo_id]
         
         #print (row['combinations'] + '  ----->  ' + lang_combo)
