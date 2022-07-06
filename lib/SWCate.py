@@ -44,7 +44,11 @@ class SWCate():
 
     def FuzzMatch(self, Message, threshhold=90):  
         fuzz_results = {}
-        for id, swCate in self.swCates.items ():
+        for CateId in range (len (self.swCates), 0, -1):
+            swCate = self.swCates.get (CateId)
+            if swCate == None:
+                continue
+
             Keywords = eval(swCate.keywords)
             for str in Keywords:
                 key_len = len(str.split())
