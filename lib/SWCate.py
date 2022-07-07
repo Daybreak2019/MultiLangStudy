@@ -24,10 +24,10 @@ class SWCate():
         self.Output = "Data/StatData/RepoCategory.csv"
         with open (self.Output, 'w') as Rcf:
             writer = csv.writer(Rcf)
-            writer.writerow(['repo_id', 'cate_id', 'cate', 'fuzz_res'])
+            writer.writerow(['repo_id', 'message', 'cate_id', 'cate', 'fuzz_res'])
 
-    def SaveResult (self, RepoId, CateId, Cate, FuzzRes):
-        row = [RepoId, CateId, Cate, FuzzRes]
+    def SaveResult (self, RepoId, Message, CateId, Cate, FuzzRes):
+        row = [RepoId, Message, CateId, Cate, FuzzRes]
         with open (self.Output, 'a') as Rcf:
             writer = csv.writer(Rcf)
             writer.writerow(row)
@@ -92,7 +92,7 @@ class SWCate():
             cate_id, result, score = self.FuzzMatch (Message)
             if result != None:
                 print ("%s  ----> %s" %(result, str(score)))
-                self.SaveResult (row['id'], cate_id, result, str(score))
+                self.SaveResult (row['id'], Message, cate_id, result, str(score))
 
 
  
