@@ -91,7 +91,11 @@ class Sumreadme (Collect_Research_Data):
             AllLines = self.CleanText (AllLines)
             
             Sum = self.EasyMind.run (AllLines)
-            Tokens = self.TM.preprocess_text (Sum)
+            if Sum.find ('application-error.html') == -1:  
+                Tokens = self.TM.preprocess_text (Sum)
+            else:
+                Tokens = []
+                Sum    = ''
             
             self.research_stats [ReppId] = SumItem (ReppId, Sum, Tokens, Topics, Description)
 
