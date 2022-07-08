@@ -325,8 +325,9 @@ def CollectSumReadMe (StartNo=0, EndNo=65535):
     repo_stats = Process_Data.load_data(file_path=file_path, file_name='Repository_Stats')
     repo_stats = Process_Data.dict_to_list(repo_stats)
 
-    SumRd = Sumreadme ()
-    SumRd.CollectReadMe ()
+    if not os.path.exists ('Data/StatData/ReadMeData.csv'):
+        SumRd = Sumreadme ()
+        SumRd.CollectReadMe ()
         
     research_data = Sumreadme(StartNo, EndNo) 
     research_data.process_data(list_of_repos=repo_stats)

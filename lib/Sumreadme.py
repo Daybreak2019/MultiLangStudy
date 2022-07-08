@@ -72,18 +72,19 @@ class Sumreadme (Collect_Research_Data):
         self.save_data ()
 
     def _update_statistics(self, repo_item):
-        #print (self.Index, " -> [", self.StartNo, ", ", self.EndNo, "]")
+        print ("[%d]%d  --->  [%d, %d]" %(self.Index, repo_item.id, self.StartNo, self.EndNo))
         if self.Index < self.StartNo or self.Index > self.EndNo:
             self.Index += 1
             return
         
         ReppId  = repo_item.id
         RepoDir = "./Data/Repository/" + str(ReppId)
-        if not os.path.exists (RepoDir):
+        
+        Readme = self.ReadMeInfo.get (ReppId)
+        if Readme == None and not os.path.exists (RepoDir):
             self.Index += 1
             return
-
-        Readme = self.ReadMeInfo.get (ReppId)
+   
         RepoDir += "/" + os.path.basename (repo_item.url)
         self.SumText(ReppId, RepoDir, repo_item.topics, repo_item.description, Readme)
         self.Index += 1
@@ -117,26 +118,26 @@ class Sumreadme (Collect_Research_Data):
         return CleanLines
 
     def SumText (self, ReppId, RepoDir, Topics, Description, Readme):
-        RdMe = RepoDir + "/" + "README.md"
-        if not os.path.exists (RdMe):
-            return
+        Tokens = []
+        Sum    = ''
+ 
+        if Readme == None:          
+            RdMe = RepoDir + "/" + "README.md"
+            if not os.path.exists (RdMe):
+                return
+            
+            with open (RdMe, "r", encoding='latin-1') as RMF:
+                Readme = RMF.readlines ()
+                Readme = self.CleanText (Readme)
 
-        with open (RdMe, "r", encoding='latin-1') as RMF:
-            AllLines = ''
-            if Readme == None:
-                AllLines = RMF.readlines ()
-                AllLines = self.CleanText (AllLines)
-            else:
-                AllLines = Readme
+        Sum = self.EasyMind.run (Readme)
+        if Sum.find ('application-error.html') == -1:  
+            Tokens = self.TM.preprocess_text (Sum)
+        else:
+            Tokens = []
+            Sum    = ''
             
-            Sum = self.EasyMind.run (AllLines)
-            if Sum.find ('application-error.html') == -1:  
-                Tokens = self.TM.preprocess_text (Sum)
-            else:
-                Tokens = []
-                Sum    = ''
-            
-            self.research_stats [ReppId] = SumItem (ReppId, Sum, Tokens, Topics, Description)
+        self.research_stats [ReppId] = SumItem (ReppId, Sum, Tokens, Topics, Description)
 
     def save_data(self, file_name=None):
         if (len(self.research_stats) == 0):
