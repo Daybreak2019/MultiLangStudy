@@ -2,6 +2,7 @@
 import os
 import re
 import csv
+import pandas as pd
 from lib.Process_Data import Process_Data
 from lib.Collect_Research_Data import Collect_Research_Data
 from lib.TextModel import TextModel
@@ -34,6 +35,39 @@ class Sumreadme (Collect_Research_Data):
             writer = csv.writer(CsvFile)
             writer.writerow(Header)
 
+        self.ReadMeInfo = {}
+        ReadMeFile = "./Data/StatData/ReadMeData.csv"
+        if os.path.exists (ReadMeFile):
+            df = pd.read_csv(ReadMeFile)
+            for index, row in df.iterrows():
+                repo_id = row ['id']
+                readme  = row ['readme']
+                self.ReadMeInfo[repo_id] = readme
+
+    def CollectReadMe (self):
+        ReadMeFile = "./Data/StatData/ReadMeData.csv"
+        with open(ReadMeFile, 'w') as CDF:
+            writer = csv.writer(CDF)   
+            writer.writerow(['id','readme'])
+
+        RsFile = 'Data/StatData/Repository_Stats.csv'
+        df = pd.read_csv(RsFile)
+        for index, row in df.iterrows():
+            repo_id   = row['id']
+            repo_name = os.path.basename (row['url'])
+
+            Readme = './Data/Repository/' + str(repo_id) + '/' + repo_name + "/README.md"
+            if not os.path.exists (Readme):
+                continue
+            print (Readme)
+            with open (Readme, "r", encoding='latin-1') as RMF:
+                AllLines = RMF.readlines ()
+                AllLines = self.CleanText (AllLines)
+
+                with open(ReadMeFile, 'a') as CDF:
+                    writer = csv.writer(CDF)   
+                    writer.writerow([repo_id, AllLines])
+
     def _update(self):
         self.save_data ()
 
@@ -49,8 +83,9 @@ class Sumreadme (Collect_Research_Data):
             self.Index += 1
             return
 
+        Readme = self.ReadMeInfo.get (ReppId)
         RepoDir += "/" + os.path.basename (repo_item.url)
-        self.SumText(ReppId, RepoDir, repo_item.topics, repo_item.description)
+        self.SumText(ReppId, RepoDir, repo_item.topics, repo_item.description, Readme)
         self.Index += 1
 
     def IsHtml (self, Line):
@@ -81,14 +116,18 @@ class Sumreadme (Collect_Research_Data):
             CleanLines += " " + line
         return CleanLines
 
-    def SumText (self, ReppId, RepoDir, Topics, Description):
+    def SumText (self, ReppId, RepoDir, Topics, Description, Readme):
         RdMe = RepoDir + "/" + "README.md"
         if not os.path.exists (RdMe):
             return
 
         with open (RdMe, "r", encoding='latin-1') as RMF:
-            AllLines = RMF.readlines ()
-            AllLines = self.CleanText (AllLines)
+            AllLines = ''
+            if Readme == None:
+                AllLines = RMF.readlines ()
+                AllLines = self.CleanText (AllLines)
+            else:
+                AllLines = Readme
             
             Sum = self.EasyMind.run (AllLines)
             if Sum.find ('application-error.html') == -1:  
