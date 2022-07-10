@@ -82,7 +82,11 @@ class SWCate():
         SumFile = "Data/StatData/Sumreadme.csv"
         df = pd.read_csv(SumFile)
         for index, row in df.iterrows():
-            Message = row['summarization'] + row['description']
+            tokens = eval (row ['tokens'])
+            if len (tokens) != 0:
+                Message = row['summarization'] + row['description']
+            else:
+                Message = row['description']
             Message = Message.split (' ')
             
             topics = eval(row['topics'])

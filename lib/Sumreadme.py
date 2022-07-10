@@ -27,13 +27,18 @@ class Sumreadme (Collect_Research_Data):
         self.Filters  = ['](http', '<p', '<a', '<div', '<td', '</td>', '<br', '<img', '<tr', '</tr>', '<!--', '- [',
                          'src=', '</a>', '/>', 'http://', 'https://']
         self.TM = TextModel ()
+        self.RdSum = {}
 
-        # Default file 
-        Header = ['id', 'summarization', 'tokens', 'topics', 'description']
-        SfFile = self.file_path + "Sumreadme" + '.csv'
-        with open(SfFile, 'w', encoding='utf-8') as CsvFile:       
-            writer = csv.writer(CsvFile)
-            writer.writerow(Header)
+        # Default file
+        self.SfFile = self.file_path + 'Sumreadme.csv'
+        
+        if not os.path.exists (self.SfFile):
+            Header = ['id', 'summarization', 'tokens', 'topics', 'description']       
+            with open(self.SfFile, 'w', encoding='utf-8') as CsvFile:       
+                writer = csv.writer(CsvFile)
+                writer.writerow(Header)
+        else:
+            self.LoadRdSum ()
 
         self.ReadMeInfo = {}
         ReadMeFile = "./Data/StatData/ReadMeData.csv"
@@ -41,8 +46,19 @@ class Sumreadme (Collect_Research_Data):
             df = pd.read_csv(ReadMeFile)
             for index, row in df.iterrows():
                 repo_id = row ['id']
-                readme  = row ['readme']
+                readme  = str(row ['readme'])
+                if readme == 'nan':
+                    continue
+                
                 self.ReadMeInfo[repo_id] = readme
+
+    def LoadRdSum (self):
+        RsFile = 'Data/StatData/Sumreadme.csv'
+        if not os.path.exists (RsFile):
+            return
+        df = pd.read_csv(RsFile)
+        for index, row in df.iterrows():
+            self.RdSum [row['id']] = True
 
     def CollectReadMe (self):
         ReadMeFile = "./Data/StatData/ReadMeData.csv"
@@ -79,6 +95,10 @@ class Sumreadme (Collect_Research_Data):
         
         ReppId  = repo_item.id
         RepoDir = "./Data/Repository/" + str(ReppId)
+
+        if self.RdSum.get (ReppId) != None:
+            self.Index += 1
+            return
         
         Readme = self.ReadMeInfo.get (ReppId)
         if Readme == None and not os.path.exists (RepoDir):
@@ -136,8 +156,11 @@ class Sumreadme (Collect_Research_Data):
         else:
             Tokens = []
             Sum    = ''
-            
-        self.research_stats [ReppId] = SumItem (ReppId, Sum, Tokens, Topics, Description)
+
+        #self.research_stats [ReppId] = SumItem (ReppId, Sum, Tokens, Topics, Description)
+        with open(self.SfFile, 'a', encoding='utf-8') as CsvFile:       
+            writer = csv.writer(CsvFile)
+            writer.writerow([ReppId, Sum, Tokens, Topics, Description])
 
     def save_data(self, file_name=None):
         if (len(self.research_stats) == 0):
