@@ -41,10 +41,17 @@ class SWCate():
                                          row['example'], row['parent'])
             print ("[%d]%d -----> %s: %s" %(row['parent'], CateId, row['category'], row['keywords']))
 
-
-    def FuzzMatch(self, Message, threshhold=90):  
+  
+    def FuzzMatch(self, Message, SpecCateId, threshhold=80):  
         fuzz_results = {}
         for CateId in range (len (self.swCates), 0, -1):
+            if SpecCateId != 0:
+                if CateId != SpecCateId:
+                    continue
+            else:
+                if CateId == 20:
+                    continue
+            
             swCate = self.swCates.get (CateId)
             if swCate == None:
                 continue
@@ -97,10 +104,15 @@ class SWCate():
             if len (topics) != 0:
                 Message = Message + topics
             
-            cate_id, result, score = self.FuzzMatch (Message)
+            cate_id, result, score = self.FuzzMatch (Message, 0)
             if result != None:
                 print ("%s  ----> %s" %(result, str(score)))
                 self.SaveResult (row['id'], Message, cate_id, result, str(score))
+            else:
+                cate_id, result, score = self.FuzzMatch (Message, 20)
+                if result != None:
+                    print ("%s  ----> %s" %(result, str(score)))
+                    self.SaveResult (row['id'], Message, cate_id, result, str(score))
 
 
  
