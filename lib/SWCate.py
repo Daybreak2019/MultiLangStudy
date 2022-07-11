@@ -82,6 +82,10 @@ class SWCate():
         SumFile = "Data/StatData/Sumreadme.csv"
         df = pd.read_csv(SumFile)
         for index, row in df.iterrows():
+            repo_id = int (row ['id'])
+            #if repo_id != 29028775:
+            #    continue
+            
             tokens = eval (row ['tokens'])
             if len (tokens) != 0:
                 Message = row['summarization'] + row['description']

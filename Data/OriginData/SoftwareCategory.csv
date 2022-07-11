@@ -3,8 +3,8 @@ id,category,parent,keywords,example
 2,system,0,"['gateway','linux-kernel','recyclerview-adapter','virtual machine','kernel','container']","system software, os"
 3,programming,0,"['decompiler','memory leak detection','code fixer','dependency manager','compiler','static analysis','programming','code-analysis']","programming tool, language runtime, compiler, run-time environments"
 4,middleware,0,"['front end framework','game-development','util','managing javascript','patcher','error report','configuration file','codify api','developer experience','framework','utility library','algorithm','data structure','modules','compliant api','microservice']","dependence manager, framework, common libraries"
-5,end-user application,0,"['tool','mobile','ios app','desktop-application','library','toolkit']",
-6,word process,5,"['text-editor','fonts','editor','documentation']","Google Docs, Microsoft Word, WordPad and Notepad"
+5,end-user application,0,"['tool','mobile app','ios app','desktop-application','toolkit']",
+6,word process,5,"['text-editor','fonts','editor']","Google Docs, Microsoft Word, WordPad and Notepad"
 7,database,5,"['object storage','database','mysql','storage library','datastore']","MySQL, Microsoft SQL Server, Microsoft Access, Oracle, IBM DB2 and FoxPro"
 8,spreadsheet,5,['build form'],"Google Sheets, Apple Numbers and Microsoft Excel"
 9,multimedia,5,"['live-streaming','directshow','video player','ffmpeg','streaming','youtube']","Media Player, Winamp, QuickTime and VLC Media Player"
