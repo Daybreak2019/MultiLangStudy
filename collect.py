@@ -16,7 +16,7 @@ from lib.Collect_LangStats import Collect_LangStats
 from lib.Collect_DiscripStats import Collect_DiscripStats
 from lib.Collect_ComboTopicStats import Collect_ComboTopicStats, Correlation_Data
 
-from lib.Collect_Association import Collect_Association, Collect_AssociationML2LIC
+from lib.Collect_Association import Collect_Association, Collect_AssociationML2LIC, Collect_AssociationDomain2ML, Collect_AssociationDomain2LIC
 from lib.Collect_CmmtLogs import Collect_Issues
 from lib.Collect_CmmtLogs import Collect_CmmtLogs
 from lib.Collect_Nbr import Collect_Nbr
@@ -165,10 +165,10 @@ def GenCorDataDomain2ML ():
         writer.writerow(['cluster_topic','cluster_topic_id','main_language'])
                 
     for index, row in df.iterrows():
-        TotalNum += 1
-        
         repo_id = int (row ['repo_id'])
-        main_lang = RepoId2ML[repo_id]
+        main_lang = RepoId2ML.get (repo_id)
+        if main_lang == None:
+            continue
         
         #print (row['combinations'] + '  ----->  ' + lang_combo)
 
@@ -187,7 +187,7 @@ def GenCorDataDomain2LIC ():
     RsFile = 'Data/StatData/ApiSniffer.csv'
     df = pd.read_csv(RsFile)
     for index, row in df.iterrows():
-        RepoId2LIC[int (row['id'])] = row['clftype']
+        RepoId2LIC[int (row['id'])] = row['clfType']
     
     correlation_data = {}
     Inputs = 'Data/StatData/RepoCategory.csv'
@@ -197,10 +197,10 @@ def GenCorDataDomain2LIC ():
         writer.writerow(['cluster_topic','cluster_topic_id','lic'])
                 
     for index, row in df.iterrows():
-        TotalNum += 1
-        
         repo_id = int (row ['repo_id'])
-        lic = RepoId2LIC[repo_id]
+        lic = RepoId2LIC.get (repo_id)
+        if lic == None:
+            continue
         
         #print (row['combinations'] + '  ----->  ' + lang_combo)
 
@@ -313,6 +313,34 @@ def AssociationML2LIC(correlation_stat=None):
     research_data = Collect_AssociationML2LIC()
     research_data.process_data (list_of_repos=correlation_stat)
     research_data.save_data()
+
+def AssociationDomain2Main(correlation_stat=None):
+    TimeTag(">>>>>>>>>>>> Statistic on Association Domain2Main...")
+    GenCorDataDomain2ML()
+    
+    file_path=System.getdir_stat()
+    if (correlation_stat == None):
+        correlation_stat = Process_Data.load_data(file_path=file_path, file_name='Correlation_Domain2ML')
+        correlation_stat = Process_Data.dict_to_list(correlation_stat)
+        
+    research_data = Collect_AssociationDomain2ML ()
+    research_data.process_data (list_of_repos=correlation_stat)
+    research_data.save_data()
+
+def AssociationDomain2Lic(correlation_stat=None):
+    TimeTag(">>>>>>>>>>>> Statistic on Association Domain2Lic...")
+    GenCorDataDomain2LIC()
+    
+    file_path=System.getdir_stat()
+    if (correlation_stat == None):
+        correlation_stat = Process_Data.load_data(file_path=file_path, file_name='Correlation_Domain2LIC')
+        correlation_stat = Process_Data.dict_to_list(correlation_stat)
+        
+    research_data = Collect_AssociationDomain2LIC ()
+    research_data.process_data (list_of_repos=correlation_stat)
+    research_data.save_data()
+
+
 
 # Commits log analysis
 def CommitLog(StartNo=0, EndNo=65535, repo_stats=None):
@@ -544,8 +572,13 @@ def main(argv):
                 print ("\nYear-%d" %year, end="")
                 System.setdir (str(year), str(year))
                 AssociationML2LIC(None)
+                AssociationDomain2Main(None)
+                AssociationDomain2Lic(None)
         else:
             AssociationML2LIC(None)
+            AssociationDomain2Main(None)
+            AssociationDomain2Lic(None)
+            
     elif (step == "cmmts"):
         CommitLog (StartNo, EndNo)
     elif (step == "issue"):
