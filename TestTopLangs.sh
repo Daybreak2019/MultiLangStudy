@@ -1,5 +1,5 @@
 
-TopNumAry=(20)
+TopNumAry=(50 40 30 20 10)
 for top_num in ${TopNumAry[@]}
 do
 	echo
