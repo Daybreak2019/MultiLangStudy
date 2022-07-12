@@ -154,10 +154,10 @@ class Collect_Association(Collect_Research_Data):
 
     def save_data(self):
         if (len (self.research_stats)):
-            super(Collect_Association, self).save_data(self.research_stats, "Topic_Associat_to_Language")
+            super(Collect_Association, self).save_data(self.research_stats, "Domain_Associat_to_Languages")
 
         if (len (self.lang_topic_stats)):
-            super(Collect_Association, self).save_data(self.lang_topic_stats, "Language_Associat_to_Topic")
+            super(Collect_Association, self).save_data(self.lang_topic_stats, "Languages_Associat_to_Domain")
     
     def _object_to_list(self, value):
         return super(Collect_Association, self)._object_to_list(value)
@@ -394,9 +394,9 @@ class Collect_AssociationDomain2ML(Collect_Research_Data):
             lift        = item['lift']
 
             if (antecedents in self.language_list):
-                self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
-            else:
                 self.ml2domain_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
+            else:  
+                self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
         
         print ("Domain Associat to MainLang = %d, MainLang Associat to Domain = %d"\
                %(len(self.research_stats), len(self.ml2domain_stats)))
@@ -518,7 +518,7 @@ class Collect_AssociationDomain2LIC(Collect_Research_Data):
             confidence  = item['confidence']
             lift        = item['lift']
 
-            if (antecedents in self.language_list):
+            if antecedents.isdigit () == True:
                 self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
             else:
                 self.lic2domain_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
