@@ -74,6 +74,16 @@ def TransCsv2Pikle (file_name):
     pikleName = os.path.basename(file_name).split('.')[0]
     Process_Data.store_data(file_path='./', file_name=pikleName, data=item_list)
 
+def GetCateInfo (cate, cate_id, SwCates):
+    sc = SwCates.get (cate_id)
+    if System.DommainLevel == 'level1':    
+        if sc.parent != 0:
+            sc = SwCates.get (sc.parent)
+        return sc.category, sc.id
+    else:
+        if sc.parent == 0:
+            return None, None
+        return cate, cate_id
 
 def GenCorData ():
     RepoId2LangCombo = {}
@@ -81,6 +91,8 @@ def GenCorData ():
     df = pd.read_csv(RsFile)
     for index, row in df.iterrows():
         RepoId2LangCombo[int (row['id'])] = row['language_combinations']
+
+    SwCates = SWCate().LoadSwCate()
     
     correlation_data = {}
     Inputs = 'Data/StatData/RepoCategory.csv'
@@ -101,9 +113,11 @@ def GenCorData ():
             EmptyNum += 1
             continue
         
-        #print (row['combinations'] + '  ----->  ' + lang_combo)
-
-        coorData = Correlation_Data (row['cate'], row['cate_id'], 0, 0, lang_combo, 0)
+        cate, cate_id = GetCateInfo (row['cate'], row['cate_id'], SwCates)
+        if cate == None:
+            continue
+        
+        coorData = Correlation_Data (cate, cate_id, 0, 0, lang_combo, 0)
         correlation_data[index] = coorData
 
         with open('Data/StatData/Correlation_Data.csv', 'a') as CDF:
@@ -137,8 +151,6 @@ def GenCorDataML2LIC ():
         
         repo_id  = int (row ['id'])
         MainLang = RepoId2ML[repo_id]
-        
-        #print (row['combinations'] + '  ----->  ' + lang_combo)
 
         coorData = Correlation_Data (row['classifier'], row['clfType'], 0, 0, MainLang, 0)
         correlation_data[index] = coorData
@@ -156,6 +168,8 @@ def GenCorDataDomain2ML ():
     df = pd.read_csv(RsFile)
     for index, row in df.iterrows():
         RepoId2ML[int (row['id'])] = row['main_language']
+
+    SwCates = SWCate().LoadSwCate()
     
     correlation_data = {}
     Inputs = 'Data/StatData/RepoCategory.csv'
@@ -169,10 +183,12 @@ def GenCorDataDomain2ML ():
         main_lang = RepoId2ML.get (repo_id)
         if main_lang == None:
             continue
-        
-        #print (row['combinations'] + '  ----->  ' + lang_combo)
 
-        coorData = Correlation_Data (row['cate'], row['cate_id'], 0, 0, main_lang, 0)
+        cate, cate_id = GetCateInfo (row['cate'], row['cate_id'], SwCates)
+        if cate == None:
+            continue
+        
+        coorData = Correlation_Data (cate, cate_id, 0, 0, main_lang, 0)
         correlation_data[index] = coorData
 
         with open('Data/StatData/Correlation_Domain2ML.csv', 'a') as CDF:
@@ -188,6 +204,8 @@ def GenCorDataDomain2LIC ():
     df = pd.read_csv(RsFile)
     for index, row in df.iterrows():
         RepoId2LIC[int (row['id'])] = row['clfType']
+
+    SwCates = SWCate().LoadSwCate()
     
     correlation_data = {}
     Inputs = 'Data/StatData/RepoCategory.csv'
@@ -201,10 +219,12 @@ def GenCorDataDomain2LIC ():
         lic = RepoId2LIC.get (repo_id)
         if lic == None:
             continue
-        
-        #print (row['combinations'] + '  ----->  ' + lang_combo)
 
-        coorData = Correlation_Data (row['cate'], row['cate_id'], 0, 0, lic, 0)
+        cate, cate_id = GetCateInfo (row['cate'], row['cate_id'], SwCates)
+        if cate == None:
+            continue
+        
+        coorData = Correlation_Data (cate, cate_id, 0, 0, lic, 0)
         correlation_data[index] = coorData
 
         with open('Data/StatData/Correlation_Domain2LIC.csv', 'a') as CDF:

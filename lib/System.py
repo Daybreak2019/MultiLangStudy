@@ -42,6 +42,8 @@ class System():
     if not os.path.exists (IssueDir):
         os.mkdir (IssueDir)
 
+    DommainLevel = 'level1'
+
     @staticmethod
     def issue_file(id):
         return (System.IssueDir + "/" + str(id) + ".csv")

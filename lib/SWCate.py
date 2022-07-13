@@ -40,6 +40,7 @@ class SWCate():
             self.swCates[CateId] = Cate (CateId, row['category'], row['keywords'], 
                                          row['example'], row['parent'])
             print ("[%d]%d -----> %s: %s" %(row['parent'], CateId, row['category'], row['keywords']))
+        return self.swCates
 
   
     def FuzzMatch(self, Message, SpecCateId, threshhold=85):  

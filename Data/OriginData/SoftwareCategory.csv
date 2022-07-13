@@ -3,7 +3,7 @@ id,category,parent,keywords,example
 2,system,0,"['gateway','linux-kernel','recyclerview-adapter','virtual machine','kernel','container', 'monitor','operating-system', 'operating system']","system software, os"
 3,programming,0,"['decompiler','memory leak detection','code fixer','dependency manager','compiler','static analysis','programming','code-analysis','typechecker','malware analysis','code-generation','random testing']","programming tool, language runtime, compiler, run-time environments"
 4,middleware,0,"['front end framework','util','managing javascript','patcher','error report','configuration file','codify api','developer experience','framework','utility library','algorithm','data structure','modules','compliant api','microservice','protocol','component','audio-library','web-framework','middleware']","dependence manager, framework, common libraries"
-5,end-user application,0,"['tool','mobile app','ios app','desktop-application','toolkit', 'desktop app','web app','plugin','android app','application','toolbelt','browser','compression','app','game', 'decompressor']",
+5,application,5,"['tool','mobile app','ios app','desktop-application','toolkit', 'desktop app','web app','plugin','android app','application','toolbelt','browser','compression','app','game', 'decompressor']",
 6,word process,5,"['text-editor','fonts','editor','pdf reader','language processing']","Google Docs, Microsoft Word, WordPad and Notepad"
 7,database,5,"['object storage','database','mysql','storage library','datastore','indexeddb', 'data frame']","MySQL, Microsoft SQL Server, Microsoft Access, Oracle, IBM DB2 and FoxPro"
 8,spreadsheet,5,"['build form','spreadsheets']","Google Sheets, Apple Numbers and Microsoft Excel"
@@ -18,4 +18,4 @@ id,category,parent,keywords,example
 17,application suites,5,"['package manager','widgets','plugin manager','version management']","Apache OpenOffice, Microsoft Office365, Apple?s iWork, LibreOffice, G-Suite, Oracle E-Business Suite"
 18,email,5,"['mail app','email']","Microsoft Outlook, Gmail, Apple Mail"
 19,engineering and development,5,"['benchmarking','developer friendly','code editor','development','git hook', 'gitlab','code searching','buildpack','code formatter','normalize-css','pull request','git service','developer-tools','game-development','test-framework']","IDE, package manager, "
-20,application libraries,0,"['library','interface','sdk']"
+20,application libraries,5,"['library','interface','sdk']"
