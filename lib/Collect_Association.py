@@ -98,14 +98,6 @@ class Collect_Association(Collect_Research_Data):
         list_item = list (set_item)
         return len(list_item), list_item[0]
 
-    def LoadSwCate (self):
-        CateId2Cate = {}
-        SWfile = "Data/OriginData/SoftwareCategory.csv"
-        df = pd.read_csv(SWfile)
-        for index, row in df.iterrows():
-            CateId2Cate[row['id']] = row['category']
-        return CateId2Cate
-    
     def _update(self):
         unique_items = [key for key in self.unique_items.keys()]
         print ("unique_items num = %d/%d" %(len(unique_items), len(self.topic_list)))
@@ -381,6 +373,8 @@ class Collect_AssociationDomain2ML(Collect_Research_Data):
         print ("association_rules:")
         print (rules.head(100))
 
+        CateId2Cate = self.LoadSwCate()
+
         for index, item in rules.iterrows():
             asize, antecedents = self._get_set_value(item['antecedents'])
             csize, consequents = self._get_set_value(item['consequents'])
@@ -394,8 +388,10 @@ class Collect_AssociationDomain2ML(Collect_Research_Data):
             lift        = item['lift']
 
             if (antecedents in self.language_list):
-                self.ml2domain_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
-            else:  
+                domain = CateId2Cate[consequents]
+                self.ml2domain_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, domain)
+            else:
+                domain = CateId2Cate[antecedents]
                 self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
         
         print ("Domain Associat to MainLang = %d, MainLang Associat to Domain = %d"\
@@ -506,6 +502,7 @@ class Collect_AssociationDomain2LIC(Collect_Research_Data):
         print ("association_rules:")
         print (rules.head(100))
 
+        CateId2Cate = self.LoadSwCate()
         for index, item in rules.iterrows():
             asize, antecedents = self._get_set_value(item['antecedents'])
             csize, consequents = self._get_set_value(item['consequents'])
@@ -519,8 +516,10 @@ class Collect_AssociationDomain2LIC(Collect_Research_Data):
             lift        = item['lift']
 
             if antecedents.isdigit () == True:
+                domain = CateId2Cate[antecedents]
                 self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
             else:
+                domain = CateId2Cate[antecedents]
                 self.lic2domain_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
         
         print ("Domain Associat to LIC = %d, LIC Associat to Domain = %d"\

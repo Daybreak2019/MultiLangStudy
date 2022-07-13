@@ -23,6 +23,14 @@ class Collect_Research_Data(metaclass=abc.ABCMeta):
         self.file_path = System.getdir_stat()
         self.research_stats = {}
         self.lang_proj_stats = {}
+
+    def LoadSwCate (self):
+        CateId2Cate = {}
+        SWfile = "Data/OriginData/SoftwareCategory.csv"
+        df = pd.read_csv(SWfile)
+        for index, row in df.iterrows():
+            CateId2Cate[row['id']] = row['category']
+        return CateId2Cate
         
     @abc.abstractmethod
     def save_data(self, data, file_name=None):
