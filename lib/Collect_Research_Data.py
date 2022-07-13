@@ -12,7 +12,7 @@ import sys  # sys.maxsize
 # Allows code to read in large CSV files
 csv.field_size_limit(sys.maxsize)
 # Displays a progress bar while looping through an iterable object
-
+import pandas as pd
 
 class Collect_Research_Data(metaclass=abc.ABCMeta):
 

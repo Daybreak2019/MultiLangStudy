@@ -58,6 +58,11 @@ class Cluster_Stats():
         self.cluster_topics = []
         self.cluster_topics.append (cluster_topics)
 
+class Correlation_Lic2Langs():
+    def __init__(self, lic, langs):
+        self.lic = lic
+        self.langs = langs
+
 class Correlation_Data():
     def __init__(self, cluster_topic, cluster_topic_id, topic, topic_id, lang, lang_id):
         self.cluster_topic = cluster_topic

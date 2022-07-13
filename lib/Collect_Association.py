@@ -381,14 +381,14 @@ class Collect_AssociationDomain2ML(Collect_Research_Data):
             if asize > 1 or csize > 1:
                 continue
 
-            antecedents = str (antecedents)
-            consequents = str (consequents)
+            antecedents = antecedents
+            consequents = consequents
             support     = item['support']
             confidence  = item['confidence']
             lift        = item['lift']
 
             if (antecedents in self.language_list):
-                domain = CateId2Cate[consequents]
+                domain = CateId2Cate[consequents]  
                 self.ml2domain_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, domain)
             else:
                 domain = CateId2Cate[antecedents]
@@ -414,6 +414,136 @@ class Collect_AssociationDomain2ML(Collect_Research_Data):
         return super(Collect_AssociationDomain2ML, self)._get_header(data)   
         
         
+
+class Collect_AssociationLIC2Langs(Collect_Research_Data):
+
+    def __init__(self, file_name="AssoLIC2Langs_Stats"):
+        super(Collect_AssociationLIC2Langs, self).__init__(file_name)
+        self.topic_list = []
+        self.language_list = []
+        self.unique_items = {}
+        self.langs2lic_stats = {}
+    
+    def _insert_item (self, item):
+        if (self.unique_items.get (item, None) == None):
+            self.unique_items [item] = True
+    
+    def _update_statistics(self, correlation_item):
+
+        self.topic_list.append (correlation_item.lic)
+        self._insert_item (correlation_item.lic)
+
+        self.language_list.append (correlation_item.langs)
+        self._insert_item (correlation_item.langs)
+
+    def _output_encoding (self, ohe_df):
+        import csv
+        with open('debug_encoding_lic2langs.csv', 'w') as DEF:
+            writer = csv.writer(DEF)
+            headers = ohe_df.columns.values.tolist()
+            writer.writerow(headers)
+            for index, row in ohe_df.iterrows ():
+                writer.writerow(row)
+
+    def _one_hot_encoding (self, df, unique_items):
+        encoded_vals = []
+        for index, row in df.iterrows():
+            x = row.x
+            y = row.y
+            row_set = set ([x, y])
+
+            labels = {}
+            uncommons = list(set(unique_items) - row_set)
+            commons = list(set(unique_items).intersection(row_set))
+
+            for uc in uncommons:
+                labels[uc] = 0
+            for com in commons:
+                labels[com] = 1
+
+            #deal with the inclution
+            for com in commons:
+                if not isinstance (com, str):
+                    continue
+
+                com_list = com.split ('_')
+                for uc in uncommons:
+                    if not isinstance (uc, str):
+                        continue
+                    uc_list = uc.split ('_')
+                    ins = list(set(com_list).intersection(uc_list))
+                    if len (ins) == len (com_list):
+                        labels[uc] = 1
+                        
+            encoded_vals.append(labels)
+
+        return encoded_vals
+
+    def _get_set_value (self, set_item):
+        list_item = list (set_item)
+        return len(list_item), list_item[0]
+
+    def _is_lic (self, item):
+        if item.find ('FFI') != -1 or item.find ('IMI') != -1 or item.find ('EBD') != -1 or item.find ('HIT') != -1:
+            return True
+        else:
+            return False
+        
+    def _update(self):
+        unique_items = [key for key in self.unique_items.keys()]
+        print ("unique_items num = %d/%d" %(len(unique_items), len(self.topic_list)))
+        
+        Data = {'x': self.language_list, 'y': self.topic_list}  
+        df = DataFrame(Data, columns=['x', 'y'])
+
+        encoded_vals = self._one_hot_encoding (df, unique_items)
+        ohe_df = pd.DataFrame(encoded_vals)
+        self._output_encoding (ohe_df)
+
+        freq_items = apriori(ohe_df, min_support=0.01, use_colnames=True)
+        print ("freq_items:")
+        print (freq_items.head(100))
+
+        rules = association_rules(freq_items, metric="lift", min_threshold=1)
+        print ("association_rules:")
+        print (rules.head(100))
+
+        for index, item in rules.iterrows():
+            asize, antecedents = self._get_set_value(item['antecedents'])
+            csize, consequents = self._get_set_value(item['consequents'])
+            if asize > 1 or csize > 1:
+                continue
+
+            antecedents = antecedents
+            consequents = consequents
+            support     = item['support']
+            confidence  = item['confidence']
+            lift        = item['lift']
+
+            if self._is_lic (antecedents) == True:
+                self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
+            else:
+                self.langs2lic_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
+        
+        print ("LIC Associat to Langs = %d, Lang Associat to LIC = %d"\
+               %(len(self.research_stats), len(self.langs2lic_stats)))
+
+    def save_data(self):
+        if (len (self.research_stats)):
+            super(Collect_AssociationLIC2Langs, self).save_data(self.research_stats, "LIC_Associat_to_Langs")
+
+        if (len (self.langs2lic_stats)):
+            super(Collect_AssociationLIC2Langs, self).save_data(self.langs2lic_stats, "Langs_Associat_to_LIC")
+    
+    def _object_to_list(self, value):
+        return super(Collect_AssociationLIC2Langs, self)._object_to_list(value)
+    
+    def _object_to_dict(self, value):
+        return super(Collect_AssociationLIC2Langs, self)._object_to_dict(value)
+    
+    def _get_header(self, data):
+        return super(Collect_AssociationLIC2Langs, self)._get_header(data)  
+
 
 class Collect_AssociationDomain2LIC(Collect_Research_Data):
 
@@ -516,11 +646,11 @@ class Collect_AssociationDomain2LIC(Collect_Research_Data):
             lift        = item['lift']
 
             if antecedents.isdigit () == True:
-                domain = CateId2Cate[antecedents]
-                self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
-            else:
-                domain = CateId2Cate[antecedents]
-                self.lic2domain_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
+                domain = CateId2Cate[int(antecedents)]
+                self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, domain)
+            elif consequents.isdigit () == True:
+                domain = CateId2Cate[int(consequents)]
+                self.lic2domain_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, domain)
         
         print ("Domain Associat to LIC = %d, LIC Associat to Domain = %d"\
                %(len(self.research_stats), len(self.lic2domain_stats)))

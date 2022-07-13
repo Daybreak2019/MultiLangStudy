@@ -14,9 +14,9 @@ from lib.Github_API import Github_API
 from lib.Language_Stats import Language_Stats
 from lib.Collect_LangStats import Collect_LangStats
 from lib.Collect_DiscripStats import Collect_DiscripStats
-from lib.Collect_ComboTopicStats import Collect_ComboTopicStats, Correlation_Data
+from lib.Collect_ComboTopicStats import Collect_ComboTopicStats, Correlation_Data,Correlation_Lic2Langs
 
-from lib.Collect_Association import Collect_Association, Collect_AssociationML2LIC, Collect_AssociationDomain2ML, Collect_AssociationDomain2LIC
+from lib.Collect_Association import Collect_Association, Collect_AssociationML2LIC, Collect_AssociationDomain2ML, Collect_AssociationDomain2LIC,Collect_AssociationLIC2Langs
 from lib.Collect_CmmtLogs import Collect_Issues
 from lib.Collect_CmmtLogs import Collect_CmmtLogs
 from lib.Collect_Nbr import Collect_Nbr
@@ -215,6 +215,41 @@ def GenCorDataDomain2LIC ():
         Process_Data.store_data(file_path='./Data/StatData/', file_name='Correlation_Domain2LIC', data=serialized_objects)
 
 
+def GenCorDataLIC2Langs ():
+    RepoId2LIC = {}
+    RsFile = 'Data/StatData/ApiSniffer.csv'
+    df = pd.read_csv(RsFile)
+    for index, row in df.iterrows():
+        RepoId2LIC[int (row['id'])] = row['clfType']
+    
+    correlation_data = {}
+    Inputs = 'Data/StatData/Repository_Stats.csv'
+    df = pd.read_csv(Inputs)
+    with open('Data/StatData/Correlation_LIC2Langs.csv', 'w') as CDF:
+        writer = csv.writer(CDF)   
+        writer.writerow(['lic','language_combinations'])
+                
+    for index, row in df.iterrows():
+        repo_id = int (row ['id'])
+        lic = RepoId2LIC.get (repo_id)
+        if lic == None:
+            continue
+
+        langs = eval (row['language_combinations'])
+        if len (langs) == 0:
+            continue
+        
+        coorData = Correlation_Lic2Langs (lic, str(langs))
+        correlation_data[index] = coorData
+
+        with open('Data/StatData/Correlation_LIC2Langs.csv', 'a') as CDF:
+            writer = csv.writer(CDF)
+            writer.writerow([coorData.lic, coorData.langs])
+
+        serialized_objects = {key: value.__dict__ for key, value in correlation_data.items()}
+        Process_Data.store_data(file_path='./Data/StatData/', file_name='Correlation_LIC2Langs', data=serialized_objects)
+
+
 def TimeTag (Tag):
     localtime = time.asctime( time.localtime(time.time()) )
     print ("%s : %s" %(Tag, localtime))
@@ -339,7 +374,20 @@ def AssociationDomain2Lic(correlation_stat=None):
     research_data = Collect_AssociationDomain2LIC ()
     research_data.process_data (list_of_repos=correlation_stat)
     research_data.save_data()
+    
 
+def AssociationLic2Langs(correlation_stat=None):
+    TimeTag(">>>>>>>>>>>> Statistic on Association Lic2Langs...")
+    GenCorDataLIC2Langs()
+    
+    file_path=System.getdir_stat()
+    if (correlation_stat == None):
+        correlation_stat = Process_Data.load_data(file_path=file_path, file_name='Correlation_LIC2Langs')
+        correlation_stat = Process_Data.dict_to_list(correlation_stat)
+        
+    research_data = Collect_AssociationLIC2Langs ()
+    research_data.process_data (list_of_repos=correlation_stat)
+    research_data.save_data()
 
 
 # Commits log analysis
@@ -574,10 +622,12 @@ def main(argv):
                 AssociationML2LIC(None)
                 AssociationDomain2Main(None)
                 AssociationDomain2Lic(None)
+                AssociationLic2Langs(None)
         else:
             AssociationML2LIC(None)
             AssociationDomain2Main(None)
             AssociationDomain2Lic(None)
+            AssociationLic2Langs(None)
             
     elif (step == "cmmts"):
         CommitLog (StartNo, EndNo)
