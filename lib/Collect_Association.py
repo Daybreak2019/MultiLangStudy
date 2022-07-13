@@ -521,9 +521,11 @@ class Collect_AssociationLIC2Langs(Collect_Research_Data):
             lift        = item['lift']
 
             if self._is_lic (antecedents) == True:
-                self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
+                if self._is_lic (consequents) == False:
+                    self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
             else:
-                self.langs2lic_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
+                if self._is_lic (consequents) == True:
+                    self.langs2lic_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
         
         print ("LIC Associat to Langs = %d, Lang Associat to LIC = %d"\
                %(len(self.research_stats), len(self.langs2lic_stats)))
