@@ -392,7 +392,7 @@ class Collect_AssociationDomain2ML(Collect_Research_Data):
                 self.ml2domain_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, domain)
             else:
                 domain = CateId2Cate[antecedents]
-                self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, '')
+                self.research_stats [index] = Association_Stats (antecedents, consequents, support, confidence, lift, domain)
         
         print ("Domain Associat to MainLang = %d, MainLang Associat to Domain = %d"\
                %(len(self.research_stats), len(self.ml2domain_stats)))

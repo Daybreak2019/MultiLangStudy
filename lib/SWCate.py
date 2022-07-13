@@ -16,15 +16,16 @@ class Cate():
         self.example  = example
 
 class SWCate():
-    def __init__ (self, FileName='SoftwareCategory.csv'):
+    def __init__ (self, FileName='SoftwareCategory.csv', CateAct=True):
         self.swCates = {}
         self.FileName = FileName
         self.LoadSwCate ()
 
         self.Output = "Data/StatData/RepoCategory.csv"
-        with open (self.Output, 'w') as Rcf:
-            writer = csv.writer(Rcf)
-            writer.writerow(['repo_id', 'message', 'cate_id', 'cate', 'fuzz_res'])
+        if CateAct == True:
+            with open (self.Output, 'w') as Rcf:
+                writer = csv.writer(Rcf)
+                writer.writerow(['repo_id', 'message', 'cate_id', 'cate', 'fuzz_res'])
 
     def SaveResult (self, RepoId, Message, CateId, Cate, FuzzRes):
         row = [RepoId, Message, CateId, Cate, FuzzRes]
@@ -39,7 +40,7 @@ class SWCate():
             CateId = row['id']
             self.swCates[CateId] = Cate (CateId, row['category'], row['keywords'], 
                                          row['example'], row['parent'])
-            print ("[%d]%d -----> %s: %s" %(row['parent'], CateId, row['category'], row['keywords']))
+            #print ("[%d]%d -----> %s: %s" %(row['parent'], CateId, row['category'], row['keywords']))
         return self.swCates
 
   

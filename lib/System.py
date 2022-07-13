@@ -45,6 +45,10 @@ class System():
     DommainLevel = 'level1'
 
     @staticmethod
+    def set_dm_level (level):
+        System.DommainLevel = level
+
+    @staticmethod
     def issue_file(id):
         return (System.IssueDir + "/" + str(id) + ".csv")
     

@@ -92,7 +92,7 @@ def GenCorData ():
     for index, row in df.iterrows():
         RepoId2LangCombo[int (row['id'])] = row['language_combinations']
 
-    SwCates = SWCate().LoadSwCate()
+    SwCates = SWCate(CateAct=False).LoadSwCate()
     
     correlation_data = {}
     Inputs = 'Data/StatData/RepoCategory.csv'
@@ -115,6 +115,7 @@ def GenCorData ():
         
         cate, cate_id = GetCateInfo (row['cate'], row['cate_id'], SwCates)
         if cate == None:
+            EmptyNum += 1
             continue
         
         coorData = Correlation_Data (cate, cate_id, 0, 0, lang_combo, 0)
@@ -169,7 +170,7 @@ def GenCorDataDomain2ML ():
     for index, row in df.iterrows():
         RepoId2ML[int (row['id'])] = row['main_language']
 
-    SwCates = SWCate().LoadSwCate()
+    SwCates = SWCate(CateAct=False).LoadSwCate()
     
     correlation_data = {}
     Inputs = 'Data/StatData/RepoCategory.csv'
@@ -205,7 +206,7 @@ def GenCorDataDomain2LIC ():
     for index, row in df.iterrows():
         RepoId2LIC[int (row['id'])] = row['clfType']
 
-    SwCates = SWCate().LoadSwCate()
+    SwCates = SWCate(CateAct=False).LoadSwCate()
     
     correlation_data = {}
     Inputs = 'Data/StatData/RepoCategory.csv'
@@ -518,10 +519,11 @@ def main(argv):
     EndNo    = 65535
     TopLangNum = 50
     TransFlag  = False
+    DomainLevel = 'level1'
    
     # get step
     try:
-        opts, args = getopt.getopt(argv,"dhs:y:n:f:b:e:l:t",["step=", "year=", "no="])
+        opts, args = getopt.getopt(argv,"dhs:y:n:f:b:e:l:ta",["step=", "year=", "no="])
     except getopt.GetoptError:
         print ("./collect.py -s <step_name>")
         sys.exit(2)
@@ -549,7 +551,12 @@ def main(argv):
             TopLangNum = int(arg)
         elif opt in ("-t", "--trans csv to pikle"):
             TransFlag = True
+        elif opt in ("-a", "--app level"):
+            DomainLevel = 'level2'
 
+    System.set_dm_level (DomainLevel)
+    print ('@@@@@@@@@@@  System.DommainLevel = %s' %System.DommainLevel)
+    
     if IsDaemon:
         Daemonize ()
         
