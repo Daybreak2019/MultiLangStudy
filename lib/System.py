@@ -42,7 +42,7 @@ class System():
     if not os.path.exists (IssueDir):
         os.mkdir (IssueDir)
 
-    DommainLevel = 'level1'
+    DommainLevel = 'level0'
 
     @staticmethod
     def set_dm_level (level):

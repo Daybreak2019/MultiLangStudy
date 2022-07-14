@@ -75,6 +75,9 @@ def TransCsv2Pikle (file_name):
     Process_Data.store_data(file_path='./', file_name=pikleName, data=item_list)
 
 def GetCateInfo (cate, cate_id, SwCates):
+    if System.DommainLevel == 'level0': 
+        return cate, cate_id
+    
     sc = SwCates.get (cate_id)
     if System.DommainLevel == 'level1':    
         if sc.parent != 0:
@@ -519,11 +522,11 @@ def main(argv):
     EndNo    = 65535
     TopLangNum = 50
     TransFlag  = False
-    DomainLevel = 'level1'
+    DomainLevel = 'level0'
    
     # get step
     try:
-        opts, args = getopt.getopt(argv,"dhs:y:n:f:b:e:l:ta",["step=", "year=", "no="])
+        opts, args = getopt.getopt(argv,"dhs:y:n:f:b:e:l:tL:",["step=", "year=", "no="])
     except getopt.GetoptError:
         print ("./collect.py -s <step_name>")
         sys.exit(2)
@@ -551,8 +554,8 @@ def main(argv):
             TopLangNum = int(arg)
         elif opt in ("-t", "--trans csv to pikle"):
             TransFlag = True
-        elif opt in ("-a", "--app level"):
-            DomainLevel = 'level2'
+        elif opt in ("-L", "--domain level"):
+            DomainLevel = arg
 
     System.set_dm_level (DomainLevel)
     print ('@@@@@@@@@@@  System.DommainLevel = %s' %System.DommainLevel)

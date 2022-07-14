@@ -1,5 +1,5 @@
 
-TopNumAry=(50 40 30 20 10)
+TopNumAry=(20)
 for top_num in ${TopNumAry[@]}
 do
 	echo
@@ -15,15 +15,19 @@ do
 	python collect.py -l $top_num -s repostats
 	
 	python collect.py -s asso
-	python collect.py -s assoml
+	python collect.py -s assoml	
+	cd Data
+	tar -zcvf StatData-$top_num.tar.gz StatData
+	cd -
 	
+	python collect.py -s asso -L level1
+	python collect.py -s assoml -L level1	
 	cd Data
 	tar -zcvf LV-1-StatData-$top_num.tar.gz StatData
 	cd -
 	
-	python collect.py -s asso -a
-	python collect.py -s assoml -a
-	
+	python collect.py -s asso -L level2
+	python collect.py -s assoml -L level2	
 	cd Data
 	tar -zcvf LV-2-StatData-$top_num.tar.gz StatData
 	cd -
