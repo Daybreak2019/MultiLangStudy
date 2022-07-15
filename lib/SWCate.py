@@ -7,6 +7,8 @@ from lib.System import System
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
+app_lib_cate_id = 5
+
 class Cate():      
     def __init__ (self, id, category, keywords, example, parent=0):
         self.id       = id
@@ -51,7 +53,7 @@ class SWCate():
                 if CateId != SpecCateId:
                     continue
             else:
-                if CateId == 20:
+                if CateId == app_lib_cate_id:
                     continue
             
             swCate = self.swCates.get (CateId)
@@ -111,7 +113,7 @@ class SWCate():
                 print ("%s  ----> %s" %(result, str(score)))
                 self.SaveResult (row['id'], Message, cate_id, result, str(score))
             else:
-                cate_id, result, score = self.FuzzMatch (Message, 20)
+                cate_id, result, score = self.FuzzMatch (Message, app_lib_cate_id)
                 if result != None:
                     print ("%s  ----> %s" %(result, str(score)))
                     self.SaveResult (row['id'], Message, cate_id, result, str(score))
