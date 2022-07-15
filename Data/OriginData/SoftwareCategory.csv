@@ -4,7 +4,7 @@ id,category,parent,keywords,example
 3,programming,0,"['decompiler','memory leak detection','code fixer','dependency manager','compiler','static analysis','programming','code-analysis','typechecker','malware analysis','code-generation','random testing']","programming tool, language runtime, compiler, run-time environments"
 4,middleware,0,"['front end framework','util','managing javascript','patcher','error report','configuration file','codify api','developer experience','framework','utility library','algorithm','data structure','modules','compliant api','microservice','protocol','component','audio-library','web-framework','middleware']","dependence manager, framework, common libraries"
 5,application libraries,0,"['library','interface','sdk']",
-6,end user application,6,"['tool','mobile app','ios app','desktop-application','toolkit', 'desktop app','web app','plugin','android app','application','toolbelt','browser','compression','app','game', 'decompressor']"
+6,end user application,6,"['tool','mobile app','ios app','desktop-application','toolkit', 'desktop app','web app','plugin','android app','application','toolbelt','browser','compression','app','game', 'decompressor']",
 7,word process,6,"['text-editor','fonts','editor','pdf reader','language processing']","Google Docs, Microsoft Word, WordPad and Notepad"
 8,database,6,"['object storage','database','mysql','storage library','datastore','indexeddb', 'data frame']","MySQL, Microsoft SQL Server, Microsoft Access, Oracle, IBM DB2 and FoxPro"
 9,spreadsheet,6,"['build form','spreadsheets']","Google Sheets, Apple Numbers and Microsoft Excel"

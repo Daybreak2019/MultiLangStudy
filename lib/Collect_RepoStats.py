@@ -34,7 +34,13 @@ class Collect_RepoStats(Collect_Research_Data):
         self.avg_lang_stats = {}
 
     def load_top_langs (self, top_langs_num=50):
-        LangFile = 'Data/OriginData/top_languages.txt'
+        LangFile = 'Data/OriginData/programming_languages.txt'
+        
+        if top_langs_num == 0:
+            top_langs_num = 100
+            LangFile = 'Data/OriginData/all_languages.txt'
+        
+        
         with open (LangFile, 'r') as LF:
             AllLines = LF.readlines ()
             lang_num = 0

@@ -1,0 +1,50 @@
+shell
+javascript
+html
+css
+python
+makefile
+c
+ruby
+c++
+java
+dockerfile
+batchfile
+php
+objective-c
+cmake
+go
+perl
+c#
+roff
+typescript
+m4
+powershell
+tsql
+assembly
+swift
+lua
+vim script
+coffeescript
+scala
+xslt
+emacs lisp
+objective-c++
+groovy
+tex
+smarty
+gherkin
+yacc
+kotlin
+glsl
+rust
+clojure
+lex
+rich text format
+r
+plpgsql
+jupyter notebook
+nsis
+awk
+haskell
+hack
