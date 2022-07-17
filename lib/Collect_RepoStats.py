@@ -13,22 +13,52 @@ from progressbar import ProgressBar
 class Collect_LICStats ():
     def __init__(self, TopLangs):
         self.TopLangs = TopLangs
-        self.FilePath = 'Data/StatData/ApiSniffer.csv'
+        self.FilePath = System.getdir_stat() +  'ApiSniffer.csv'
         self.Lic = {}
+        self.LicStats = {}
+        self.LicIndivalStats = {}
 
         self.LoadLic ()
         self.RunStat ()
 
     def LoadLic (self):
         if not os.path.exists (self.FilePath):
+            print ('@@@@@@ %s not exist..........' %self.FilePath)
             return
         df = pd.read_csv(self.FilePath)
         for index, row in df.iterrows():
             self.Lic [row['id']] = row['clfType']
 
     def RunStat (self):
+        import csv
         for id, lic in self.Lic.items ():
-            print ('%d  ----->  %s' %(id, lic))
+            count = self.LicStats.get (lic)
+            if count  != None:
+                self.LicStats [lic] = count + 1
+            else:
+                self.LicStats [lic] = 0
+
+            subLics = list (lic.split('_'))
+            for slic in subLics:
+                count = self.LicIndivalStats.get (slic)
+                if count  != None:
+                    self.LicIndivalStats [slic] = count + 1
+                else:
+                    self.LicIndivalStats [slic] = 0
+
+        licStatFile = System.getdir_stat() +  'LicStats.csv'
+        with open (licStatFile, "w") as LSF:
+            writer = csv.writer(LSF)   
+            writer.writerow(['lic','count'])
+            for lic, count in self.LicStats.items ():
+                writer.writerow([lic,count])
+
+        licStatFile = System.getdir_stat() +  'LicStats_Indidual.csv'
+        with open (licStatFile, "w") as LSF:
+            writer = csv.writer(LSF)   
+            writer.writerow(['lic','count'])
+            for lic, count in self.LicIndivalStats.items ():
+                writer.writerow([lic,count])
 
 class AvgLangStat ():
     def __init__ (self, avg, std, min, max, median):
