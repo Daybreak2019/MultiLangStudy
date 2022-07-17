@@ -6,6 +6,6 @@ do
 	mv Repository_List Data/OriginData$year/
 	python collect.py -l 20 -y $year -s repostats
 	python collect.py -y $year -s clone
-	break
+
 done
 
