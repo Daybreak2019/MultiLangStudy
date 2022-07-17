@@ -668,7 +668,16 @@ def main(argv):
     elif (step == "apisniffer"):
         LangSniffer (StartNo, EndNo, FileName)
     elif (step == "clone"):
-        CloneRepos (StartNo, EndNo)
+        if (by_year == True):
+            for year in range (System.START_YEAR, System.END_YEAR+1, 1):
+                if (year_val != 0 and year_val != year):
+                    continue
+                print ("\nYear-%d" %year, end="")
+                System.setdir (str(year), str(year))
+                CloneRepos (StartNo, EndNo)
+        else:
+            CloneRepos (StartNo, EndNo)
+        
     elif (step == "sample"):
         CollectSamples ()
     elif (step == "statsample"):

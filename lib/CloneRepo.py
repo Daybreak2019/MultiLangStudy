@@ -185,7 +185,7 @@ class CloneRepo():
         return result.json()
 
     def GetClonePath (self):
-        RepoPath = "Data/OriginData/" + self.RepoPath
+        RepoPath = System.getdir_collect () + self.RepoPath
         df = pd.read_csv(RepoPath)
         for index, row in df.iterrows():            
             repo = {}
@@ -203,7 +203,7 @@ class CloneRepo():
     def GetRepoList(self):
         clone_url_exist = True
         
-        RepoPath = "Data/OriginData/" + self.RepoPath
+        RepoPath = System.getdir_collect () + self.RepoPath
         df = pd.read_csv(RepoPath)
         for index, row in df.iterrows():
             if str(row).find ('clone_url') == -1:
