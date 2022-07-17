@@ -1,4 +1,5 @@
-
+import os
+import pandas as pd
 from lib.System import System
 from lib.Process_Data import Process_Data
 from lib.Collect_Research_Data import Collect_Research_Data
@@ -7,6 +8,27 @@ from lib.LangProj_Stats   import LangProj_Stats
 from lib.LangCombo_Stats  import LangCombo_Stats
 
 from progressbar import ProgressBar
+
+
+class Collect_LICStats ():
+    def __init__(self, TopLangs):
+        self.TopLangs = TopLangs
+        self.FilePath = 'Data/StatData/ApiSniffer.csv'
+        self.Lic = {}
+
+        self.LoadLic ()
+        self.RunStat ()
+
+    def LoadLic (self):
+        if not os.path.exists (self.FilePath):
+            return
+        df = pd.read_csv(self.FilePath)
+        for index, row in df.iterrows():
+            self.Lic [row['id']] = row['clfType']
+
+    def RunStat (self):
+        for id, lic in self.Lic.items ():
+            print ('%d  ----->  %s' %(id, lic))
 
 class AvgLangStat ():
     def __init__ (self, avg, std, min, max, median):
@@ -111,6 +133,9 @@ class Collect_RepoStats(Collect_Research_Data):
                                      min(self.language_used_list),\
                                      max(self.language_used_list), lang_stats["median"])
         self.avg_lang_stats[0] = avg_lang_stat
+
+        # stat for lic
+        Collect_LICStats (self.top_langs)
 
     def _update_repo_combination(self):
         repo_items = {}
