@@ -23,7 +23,7 @@ class SWCate():
         self.FileName = FileName
         self.LoadSwCate ()
 
-        self.Output = "Data/StatData/RepoCategory.csv"
+        self.Output = System.getdir_stat() + "RepoCategory.csv"
         if CateAct == True:
             with open (self.Output, 'w') as Rcf:
                 writer = csv.writer(Rcf)
@@ -90,7 +90,7 @@ class SWCate():
         return None, None, None
 
     def Categorize (self):
-        SumFile = "Data/StatData/Sumreadme.csv"
+        SumFile = System.getdir_stat() + "Sumreadme.csv"
         df = pd.read_csv(SumFile)
         for index, row in df.iterrows():
             repo_id = int (row ['id'])

@@ -41,7 +41,7 @@ class Sumreadme (Collect_Research_Data):
             self.LoadRdSum ()
 
         self.ReadMeInfo = {}
-        ReadMeFile = "./Data/StatData/ReadMeData.csv"
+        ReadMeFile = self.file_path + "ReadMeData.csv"
         if os.path.exists (ReadMeFile):
             df = pd.read_csv(ReadMeFile)
             for index, row in df.iterrows():
@@ -53,7 +53,7 @@ class Sumreadme (Collect_Research_Data):
                 self.ReadMeInfo[repo_id] = readme
 
     def LoadRdSum (self):
-        RsFile = 'Data/StatData/Sumreadme.csv'
+        RsFile = self.file_path + 'Sumreadme.csv'
         if not os.path.exists (RsFile):
             return
         df = pd.read_csv(RsFile)
@@ -61,12 +61,12 @@ class Sumreadme (Collect_Research_Data):
             self.RdSum [row['id']] = True
 
     def CollectReadMe (self):
-        ReadMeFile = "./Data/StatData/ReadMeData.csv"
+        ReadMeFile = self.file_path + "ReadMeData.csv"
         with open(ReadMeFile, 'w') as CDF:
             writer = csv.writer(CDF)   
             writer.writerow(['id','readme'])
 
-        RsFile = 'Data/StatData/Repository_Stats.csv'
+        RsFile = self.file_path + 'Repository_Stats.csv'
         df = pd.read_csv(RsFile)
         for index, row in df.iterrows():
             repo_id   = row['id']

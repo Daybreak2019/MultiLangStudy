@@ -490,7 +490,7 @@ def CollectSumReadMe (StartNo=0, EndNo=65535):
     repo_stats = Process_Data.load_data(file_path=file_path, file_name='Repository_Stats')
     repo_stats = Process_Data.dict_to_list(repo_stats)
 
-    if not os.path.exists ('Data/StatData/ReadMeData.csv'):
+    if not os.path.exists (file_path + 'ReadMeData.csv'):
         SumRd = Sumreadme ()
         SumRd.CollectReadMe ()
         
@@ -685,10 +685,25 @@ def main(argv):
     elif (step == "spearman"):
         CollectSpearman ()
     elif (step == "readme"):
-        CollectSumReadMe ()
+        if (by_year == True):
+            for year in range (System.START_YEAR, System.END_YEAR+1, 1):
+                if (year_val != 0 and year_val != year):
+                    continue
+                print ("\nYear-%d" %year, end="")
+                System.setdir (str(year), str(year))
+                CollectSumReadMe ()
+        else:
+            CollectSumReadMe ()
     elif (step == "swc"):
-        swCt = SWCate ()
-        swCt.Categorize ()
+        if (by_year == True):
+            for year in range (System.START_YEAR, System.END_YEAR+1, 1):
+                if (year_val != 0 and year_val != year):
+                    continue
+                print ("\nYear-%d" %year, end="")
+                System.setdir (str(year), str(year))
+                SWCate ().Categorize ()
+        else:
+            SWCate ().Categorize ()
     else:
         print ("collect.py -s <all/collect/repostats/langstats/discripstats/topics/asso/cmmts/nbr/apisniffer/clone>") 
 
