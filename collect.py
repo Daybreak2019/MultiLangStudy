@@ -665,8 +665,16 @@ def main(argv):
         CollectIssues (StartNo, EndNo)
     elif (step == "nbr"):
         CommitLogNbr (repo_no)
-    elif (step == "apisniffer"):
-        LangSniffer (StartNo, EndNo, FileName)
+    elif (step == "apisniffer"):    
+        if (by_year == True):
+            for year in range (System.START_YEAR, System.END_YEAR+1, 1):
+                if (year_val != 0 and year_val != year):
+                    continue
+                print ("\nYear-%d" %year, end="")
+                System.setdir (str(year), str(year))
+                LangSniffer (StartNo, EndNo, FileName)
+        else:
+            LangSniffer (StartNo, EndNo, FileName)
     elif (step == "clone"):
         if (by_year == True):
             for year in range (System.START_YEAR, System.END_YEAR+1, 1):
