@@ -110,12 +110,12 @@ class SWCate():
             
             cate_id, result, score = self.FuzzMatch (Message, 0)
             if result != None:
-                print ("%s  ----> %s" %(result, str(score)))
+                print ("[%d]%s  ----> %s" %(index, result, str(score)))
                 self.SaveResult (row['id'], Message, cate_id, result, str(score))
             else:
                 cate_id, result, score = self.FuzzMatch (Message, app_lib_cate_id)
                 if result != None:
-                    print ("%s  ----> %s" %(result, str(score)))
+                    print ("[%d]%s  ----> %s" %(index, result, str(score)))
                     self.SaveResult (row['id'], Message, cate_id, result, str(score))
 
 
