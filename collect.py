@@ -90,7 +90,7 @@ def GetCateInfo (cate, cate_id, SwCates):
 
 def GenCorData ():
     RepoId2LangCombo = {}
-    RsFile = 'Data/StatData/Repository_Stats.csv'
+    RsFile = System.getdir_stat() + 'Repository_Stats.csv'
     df = pd.read_csv(RsFile)
     for index, row in df.iterrows():
         RepoId2LangCombo[int (row['id'])] = row['language_combinations']
@@ -98,12 +98,13 @@ def GenCorData ():
     SwCates = SWCate(CateAct=False).LoadSwCate()
     
     correlation_data = {}
-    Inputs = 'Data/StatData/RepoCategory.csv'
+    Inputs = System.getdir_stat() + 'RepoCategory.csv'
     df = pd.read_csv(Inputs)
     EmptyNum = 0
     TotalNum = 0
 
-    with open('Data/StatData/Correlation_Data.csv', 'w') as CDF:
+    Outputs = System.getdir_stat() + 'Correlation_Data.csv'
+    with open(Outputs, 'w') as CDF:
         writer = csv.writer(CDF)   
         writer.writerow(['cluster_topic','cluster_topic_id','language'])
                 
@@ -124,29 +125,30 @@ def GenCorData ():
         coorData = Correlation_Data (cate, cate_id, 0, 0, lang_combo, 0)
         correlation_data[index] = coorData
 
-        with open('Data/StatData/Correlation_Data.csv', 'a') as CDF:
+        with open(Outputs, 'a') as CDF:
             writer = csv.writer(CDF)
             writer.writerow([coorData.cluster_topic, coorData.cluster_topic_id, coorData.language])
 
         serialized_objects = {key: value.__dict__ for key, value in correlation_data.items()}
-        Process_Data.store_data(file_path='./Data/StatData/', file_name='Correlation_Data', data=serialized_objects)
+        Process_Data.store_data(file_path=System.getdir_stat(), file_name='Correlation_Data', data=serialized_objects)
     print ("EmptyRate   ----> %.2f (%d/%d)" %(EmptyNum*1.0/TotalNum, EmptyNum, TotalNum))
 
 
 def GenCorDataML2LIC ():
     RepoId2ML = {}
-    RsFile = 'Data/StatData/Repository_Stats.csv'
+    RsFile = System.getdir_stat() + 'Repository_Stats.csv'
     df = pd.read_csv(RsFile)
     for index, row in df.iterrows():
         RepoId2ML[int (row['id'])] = row['main_language']
     
     correlation_data = {}
-    Inputs = 'Data/StatData/ApiSniffer.csv'
+    Inputs = System.getdir_stat() + 'ApiSniffer.csv'
     df = pd.read_csv(Inputs)
     EmptyNum = 0
     TotalNum = 0
 
-    with open('Data/StatData/Correlation_ML2LIC.csv', 'w') as CDF:
+    Outputs = System.getdir_stat() + 'Correlation_ML2LIC.csv'
+    with open(Outputs, 'w') as CDF:
         writer = csv.writer(CDF)   
         writer.writerow(['classifier','clftype','language'])
                 
@@ -159,16 +161,16 @@ def GenCorDataML2LIC ():
         coorData = Correlation_Data (row['classifier'], row['clfType'], 0, 0, MainLang, 0)
         correlation_data[index] = coorData
 
-        with open('Data/StatData/Correlation_ML2LIC.csv', 'a') as CDF:
+        with open(Outputs, 'a') as CDF:
             writer = csv.writer(CDF)
             writer.writerow([coorData.cluster_topic, coorData.cluster_topic_id, coorData.language])
 
         serialized_objects = {key: value.__dict__ for key, value in correlation_data.items()}
-        Process_Data.store_data(file_path='./Data/StatData/', file_name='Correlation_ML2LIC', data=serialized_objects)
+        Process_Data.store_data(file_path=System.getdir_stat(), file_name='Correlation_ML2LIC', data=serialized_objects)
 
 def GenCorDataDomain2ML ():
     RepoId2ML = {}
-    RsFile = 'Data/StatData/Repository_Stats.csv'
+    RsFile = System.getdir_stat() + 'Repository_Stats.csv'
     df = pd.read_csv(RsFile)
     for index, row in df.iterrows():
         RepoId2ML[int (row['id'])] = row['main_language']
@@ -176,9 +178,11 @@ def GenCorDataDomain2ML ():
     SwCates = SWCate(CateAct=False).LoadSwCate()
     
     correlation_data = {}
-    Inputs = 'Data/StatData/RepoCategory.csv'
+    Inputs = System.getdir_stat() + 'RepoCategory.csv'
     df = pd.read_csv(Inputs)
-    with open('Data/StatData/Correlation_Domain2ML.csv', 'w') as CDF:
+
+    Outputs = System.getdir_stat() + 'Correlation_Domain2ML.csv'
+    with open(Outputs, 'w') as CDF:
         writer = csv.writer(CDF)   
         writer.writerow(['cluster_topic','cluster_topic_id','main_language'])
                 
@@ -195,16 +199,16 @@ def GenCorDataDomain2ML ():
         coorData = Correlation_Data (cate, cate_id, 0, 0, main_lang, 0)
         correlation_data[index] = coorData
 
-        with open('Data/StatData/Correlation_Domain2ML.csv', 'a') as CDF:
+        with open(Outputs, 'a') as CDF:
             writer = csv.writer(CDF)
             writer.writerow([coorData.cluster_topic, coorData.cluster_topic_id, coorData.language])
 
         serialized_objects = {key: value.__dict__ for key, value in correlation_data.items()}
-        Process_Data.store_data(file_path='./Data/StatData/', file_name='Correlation_Domain2ML', data=serialized_objects)
+        Process_Data.store_data(file_path=System.getdir_stat(), file_name='Correlation_Domain2ML', data=serialized_objects)
 
 def GenCorDataDomain2LIC ():
     RepoId2LIC = {}
-    RsFile = 'Data/StatData/ApiSniffer.csv'
+    RsFile = System.getdir_stat() + 'ApiSniffer.csv'
     df = pd.read_csv(RsFile)
     for index, row in df.iterrows():
         RepoId2LIC[int (row['id'])] = row['clfType']
@@ -212,9 +216,11 @@ def GenCorDataDomain2LIC ():
     SwCates = SWCate(CateAct=False).LoadSwCate()
     
     correlation_data = {}
-    Inputs = 'Data/StatData/RepoCategory.csv'
+    Inputs = System.getdir_stat() + 'RepoCategory.csv'
     df = pd.read_csv(Inputs)
-    with open('Data/StatData/Correlation_Domain2LIC.csv', 'w') as CDF:
+
+    Outputs = System.getdir_stat() + 'Correlation_Domain2LIC.csv'
+    with open(Outputs, 'w') as CDF:
         writer = csv.writer(CDF)   
         writer.writerow(['cluster_topic','cluster_topic_id','lic'])
                 
@@ -231,25 +237,27 @@ def GenCorDataDomain2LIC ():
         coorData = Correlation_Data (cate, cate_id, 0, 0, lic, 0)
         correlation_data[index] = coorData
 
-        with open('Data/StatData/Correlation_Domain2LIC.csv', 'a') as CDF:
+        with open(Outputs, 'a') as CDF:
             writer = csv.writer(CDF)
             writer.writerow([coorData.cluster_topic, coorData.cluster_topic_id, coorData.language])
 
         serialized_objects = {key: value.__dict__ for key, value in correlation_data.items()}
-        Process_Data.store_data(file_path='./Data/StatData/', file_name='Correlation_Domain2LIC', data=serialized_objects)
+        Process_Data.store_data(file_path=System.getdir_stat(), file_name='Correlation_Domain2LIC', data=serialized_objects)
 
 
 def GenCorDataLIC2Langs ():
     RepoId2LIC = {}
-    RsFile = 'Data/StatData/ApiSniffer.csv'
+    RsFile = System.getdir_stat() + 'ApiSniffer.csv'
     df = pd.read_csv(RsFile)
     for index, row in df.iterrows():
         RepoId2LIC[int (row['id'])] = row['clfType']
     
     correlation_data = {}
-    Inputs = 'Data/StatData/Repository_Stats.csv'
+    Inputs = System.getdir_stat() + 'Repository_Stats.csv'
     df = pd.read_csv(Inputs)
-    with open('Data/StatData/Correlation_LIC2Langs.csv', 'w') as CDF:
+
+    Outputs = System.getdir_stat() + 'Correlation_LIC2Langs.csv'
+    with open(Outputs, 'w') as CDF:
         writer = csv.writer(CDF)   
         writer.writerow(['lic','language_combinations'])
                 
@@ -266,12 +274,12 @@ def GenCorDataLIC2Langs ():
         coorData = Correlation_Lic2Langs (lic, str(langs))
         correlation_data[index] = coorData
 
-        with open('Data/StatData/Correlation_LIC2Langs.csv', 'a') as CDF:
+        with open(Outputs, 'a') as CDF:
             writer = csv.writer(CDF)
             writer.writerow([coorData.lic, coorData.langs])
 
         serialized_objects = {key: value.__dict__ for key, value in correlation_data.items()}
-        Process_Data.store_data(file_path='./Data/StatData/', file_name='Correlation_LIC2Langs', data=serialized_objects)
+        Process_Data.store_data(file_path=System.getdir_stat(), file_name='Correlation_LIC2Langs', data=serialized_objects)
 
 
 def TimeTag (Tag):
