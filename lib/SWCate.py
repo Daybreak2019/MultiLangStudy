@@ -102,7 +102,7 @@ class SWCate():
                 Message = row['summarization'] + row['description']
             else:
                 Message = row['description']
-            Message = Message.split (' ')
+            Message = Message.split (' ')[0:1000]
             
             topics = eval(row['topics'])
             if len (topics) != 0:
