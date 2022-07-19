@@ -14,7 +14,6 @@ do
 	do
 		python collect.py -t -f Data/OriginData$year/Repository_List.csv
 		mv Repository_List Data/OriginData$year/
-		python collect.py -l $top_num -s repostats
 		python collect.py -l $top_num -y $year -s repostats
 		
 		python collect.py -y $year -s asso

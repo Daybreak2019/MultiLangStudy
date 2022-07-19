@@ -289,11 +289,12 @@ class LangApiSniffer(Collect_Research_Data):
     def save_data(self, file_name=None):
         if (len(self.research_stats) == 0):
             return
-        #Header = ['id', ''langs', 'classifier', 'clfType', 'fileType']
+        Header = ['id', 'langs', 'classifier', 'clfType', 'fileType']
         SfFile = self.file_path + self.file_name + '.csv'
         with open(SfFile, 'w', encoding='utf-8') as CsvFile:       
             writer = csv.writer(CsvFile)
-            #writer.writerow(Header)  
+            if self.file_name == 'ApiSniffer':
+                writer.writerow(Header)  
             for Id, ClfList in self.research_stats.items():
                 Names = []
                 Types = []
