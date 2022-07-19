@@ -1,0 +1,160 @@
+id,summarization,tokens,topics,description
+794632,,[],[],inception movie explained programmatically
+358091,,[],[],emile js is a no frills stand alone css animation javascript named after mile early animator
+67179,,[],[],natsuliphone the twitter client for iphone and ipod touch
+18944,,[],[],sproutcore has moved http and and github com and sproutcore and sproutcore
+511859,,[],[],javascript and dom in your the simple way
+438706,,[],[],norbert is a cluster manager and networking layer built on top of zookeeper
+709474,,[],[],a series of codes i ported to jquery from dojo
+3010,,[],[],erlectricity exposes ruby to erlang and vice versa
+298018,,[],[],cocoa meets webkit for more rapid ui development
+859318,,[],[],mirror the display of an ios device on an external screen
+804556,,[],[],the amazingly simple to real collaborative todo list
+240413,,[],[],this plugin enables enterprise class google sitemaps to be easily generated for a rails site as a rake using a simple rails routes like dsl it allows you to take care of familiar sitemap issues like gzip of sitemap variable priority paging and sorting links e g page  ssl host links e g https rails apps which are installed on a sub path e g example com and and and hidden ajax routes it includes a sitemap index file so it supports more than the standard individual urls up to a maximum of   billion and pings all major search engines on completion sitemapwriter
+774415,,[],[],simple ruby style inheritance for javascript
+1080006,,[],[],simple web scraping for google chrome
+346619,,[],[],rack middleware replacement for
+1017999,,[],[],the modernizr server library is a way to bring modernizr browser data to your server scripting environment php currently but other server side environments to come and subject to demand
+573477,,[],[],build scripts for building ffmpeg on iphone
+938350,,[],[],realtime apps made easy with templating
+15536,,[],[],this repository moved to http and and github com and ramaze and ramaze
+281736,,[],[],a fuse wrapper around mongodb s gridfs
+327499,,[],[],the reference implementation of orderly a schema language for json
+830608,,[],[],it s like sinatra in c
+595812,,[],[],generate temporary mail aliases for throwaway purposes this is the full code behind the tempalias com web service
+382059,,[],[],a redis implementation in node js
+960977,,[],[],library for reading and writing midi files in javascript
+358868,,[],[],your source for event drivenness
+511871,,[],[],harmony plugin for ruby on rails tests
+861851,,[],[],javascript benchmark testing
+559965,,[],[],an implementation of the webworker api for node js
+336217,,[],[],rails plugin for the jquery datatables library
+74399,,[],[],a simple gitweb replacement built with django
+570181,,[],[],an attempt to come up with a sane web api to core data synching using the pivotal tracker api
+233782,,[],[],git based blog and cms for meant as a replacement for wordpress
+393556,,[],[],see the link below for the most up to date code
+388972,,[],[],a simple wiki developed using node redis node client and showdown
+403262,,[],[],dbslayer mysql support for node js
+204095,,[],[],a simple ab testing app for django
+236834,,[],[],a couchdb interface for node js
+141175,,[],[],asynchronous http request dispatcher for webhooks
+1062759,,[],[],a collection of nifty tools for titanium mobile
+260449,,[],[],static is a super simple rails cms for heroku
+45492,,[],[],the official selenium on rails synced with openqa
+241819,,[],[],quickly post photos from your mobile device to twitter
+583739,,[],[],procedural drawing tool my fork reduces it down to be integrated elsewhere
+190617,,[],[],a rails plugin for connecting to and working with couchdb via couchrest
+182256,,[],[],an easy direct erlang couchdb library
+464711,,[],[],track what users are on which pages with redis
+596888,,[],[],a high level cassandra object abstraction for python
+210090,,[],[],a couchapp that lets you give a presentation by rotating and zooming in an svg and png and pdf file
+683430,,[],[],mootools menu reveals more of the image as you rollover it
+539936,,[],[],check your website if it is seo
+906913,,[],[],easy twitter integration for devise
+512932,,[],[],obsolete pure javascript mysql network driver for node js
+177285,,[],"['obsolete', 'rubygems', 'unmaintained']",retired openpgp rb is a pure ruby implementation of the openpgp message format rfc 
+1094909,,[],[],an insane integration of rdf in to ecmascript  v javascript
+927229,,[],[],set of rails helpers for unobtrusive frontend validations using html rails  validators and javascript
+98355,,[],[],a collection of rails templates i use for projects
+508918,,[],[],lightweight realtime task tracking as a couchapp
+495517,,[],[],rest ful web framework in agda
+19029,,[],[],a flexible database focused on performance and scalability
+133522,,[],[],command line json pretty printer
+13458,,[],[],the official ruby library for interacting with the lighthouse api
+649987,,[],[],a basic template for building a brand new gem
+566380,,[],[],mootools lightbox plugin that supports a wide variety of media
+860467,,[],[],javascript animation library
+588560,,[],[],document clustering based on latent semantic analysis
+810169,,[],[],a node js framework that glues together and things designed to help tim allen navigate his day
+432360,,[],[],asynchronous and multiplexing fastcgi for nginx incl ref server implementation
+575625,,[],[],procedural drawing tool
+1175874,,[],[],a bookmarking site using appengine and tornado with delicious import feature
+103370,,[],[],error logging and notifications
+965306,,[],[],better js language syntax file for textmate
+439162,,[],[],a little known and unreleased iphone web app javascript framework developed by apple
+452040,,[],[],a multilingual human readable markdown reference you can include in your projects
+739961,,[],[],i feel this is outdated look for something else it is a way to watch all js files if they have been changed and to restart nodejs it allows easy development and stable production
+480897,,[],"['obsolete', 'rubygems', 'unmaintained']",retired php rb translates ruby code into php code
+781771,,[],[],conditionally roll out features with redis python version of james golick s http and and github com and jamesgolick and rollout
+668965,,[],[],an asterisk module for node js
+444244,,[],[],erlang bert encoder and decoder
+348037,,[],[],sailing the waves of google with ruby
+671314,,[],[],a python fuse file system that features transparent deduplication and compression which make it ideal for archiving backups
+867639,,[],[],a collaborative bdd project planning tool for node uses kyuri and vowsjs
+922371,,[],[],my explorations in natural language processing
+611327,,[],[],an extensible network service container for node js
+30288,,[],[],an objective c and foundation implementation of the git version control software
+1079662,,[],[],linux port of original windows code from olga barinova
+531480,,[],[],publish google forms with your own custom theme via a simple rails application that does everything for you
+549905,,[],[],a lightweight ruby object persistence library for mongo db
+746164,,[],[],implementation of the friendfeed schema less mysql pattern
+688960,,[],[],work on class based now part of django   for a backport to django  see https and and github com and sorl and django cbv
+381898,,[],[],version control in ruby mercurial compatible big ideas
+264147,,[],[],the tiny command line interface library with lots of style
+167391,,[],[],sproutcore   build tools
+3273,,[],[],capistrano plugins and templates
+676937,,[],[],an achievement system generator for rails
+379100,,[],[],deprecated please see new home on d o
+263972,,[],[],do not use use mongodb and it s speed to do basic analytics tracking in rails
+841121,,[],[],goneedle is a system for punching reliable transport over udp through nats and firewalls
+658073,,[],[],round robin database pattern via redis sorted sets
+476523,,[],[],a search engine built on top of couchdb lucene
+514331,,[],[],admin module for the kohana framework ko
+1021047,,[],[],a very simplistic command line to do and notes list manager in ruby
+222572,,[],[],how did these breadcrumbs in your rails application oh with this plugin
+717866,,[],[],a simple python and asyncore websocket client library primarily maintaining compatibility with the tornado implementation
+35888,,[],[],microblogging using rabbitmq and ejabberd
+375017,,[],[],generate css sprites automagically a work in progress
+361256,,[],[],help dan north has kidnapped me and is making me create a bdd framework in clojure
+384538,,[],[],an extensible cms written in kohana 
+300121,,[],[],http based console and object explorer for node js
+1070874,,[],[],high performance pattern matching on large sets of patterns in node js
+1073086,,[],[],cpu usage streaming and event notification service for node js
+590273,,[],[],an interactive tutorial for a git branching model
+452582,,[],[],an asynchronous erb like template engine for node js
+1049901,,[],[],rack middleware for bring modernizr server side
+353719,,[],[],when all you need is assert
+908618,,[],[],textmate plugin that enables you to edit files in fullscreen mode for native os x lion fullscreen support see https and and github com and enormego and egotextmatefullscreen
+374148,,[],[],abandoned mapreduce api for mongodb
+182766,,[],[],ruby metaprogramming study note
+529597,,[],[],a simple fitbit api client
+1009227,,[],[],automatically scrobble your vinyl collection in real time
+936908,,[],[],the iphone native version of js console with websocket support
+323654,,[],[],a class for working with couchdb documents from cappuccino and objective j
+1146748,,[],[],simple javascript framework for building rias with jquery
+728118,,[],[],a port of the boxdjs library into a nodejs module
+707066,,[],[],a native javascript implementation of scummvm
+62230,,[],[],you should probably use heroku instead
+667429,,[],[],a binding between node js the v engine and python super beta super buggy super great
+811201,,[],[],command line interface for browsing reddit com
+179221,,[],[],web scripting in the cloud
+519087,,[],[],an actionscript mapping framework for data visualization
+1140869,,[],[],diaspora branch with xmpp federation support
+368157,,[],[],textmate bundle for cappuccino and objective j
+51785,,[],[],implementation of a bosh client using jquery
+751444,,[],[],a bit torrent client written in on top of node js
+722420,,[],[],coroutine utilities for non blocking i and o with greenlet
+306241,,[],[],a light extension for using redis with sinatra
+975438,,[],[],a command line tool that automates the task of creating a git mirror for a svn and keeping it up to date
+1101604,,[],[],css transitions and transforms with javascript
+817045,,[],[],custom error pages for rails
+797350,,[],[],facebook php sdk helper for kohana 
+797501,,[],[],admob module for titanium mobile iphone
+647010,,[],[],voicemail for hackers
+334110,,[],[],simple multinode couchdb proxy
+257463,,[],[],universal soundcloud api wrapper for flex and air written in actionscript   please report any bugs in the issues section
+834556,,[],[],simple ip to lat and long api application using the maxmind geolite database
+22466,,[],[],ruby binding to the xiaonei api
+363827,,[],[],implementation of paypal apis in python canonical repository is at duointeractive and paypal python
+221598,,[],[],automated jquery tests with qunit
+649306,,[],[],reflexive is a web based live class and source code browser
+276093,,[],[],deprecated please see new home on d o
+746247,,[],[],objective c wrapper around twitpic s oauth and oauth echo api with oauthconsumer lib deprecated
+114680,,[],[],an experiment in creating an oauth provider with sinatra
+395570,,[],[],minimalist music player for os x
+333443,,[],[],code for the sammy tutorial series
+621177,,[],[],a port of the rails and activesupport inflector to javascript
+276066,,[],[],a tiny restful modem server
+89363,,[],[],where i grow clojure codes
+819266,,[],[],irc interface for stack overflow chat
+1076029,,[],[],mirah android app generator also see https and and github com and mirah and pindah

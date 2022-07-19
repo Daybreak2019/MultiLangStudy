@@ -1,0 +1,463 @@
+id,languages,classifier,clfType,fileType
+291056,"['ruby', 'javascript', 'shell']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+761438,"['objective-c', 'c', 'javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+3432848,"['php', 'javascript', 'shell']",HIT*,HIT,['*']
+6270574,"['css', 'javascript']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+3806475,"['ruby', 'javascript']",HIT*,HIT,['*']
+1802145,"['objective-c', 'ruby']",HIT*,HIT,['*']
+1602291,"['ruby', 'shell']",Ruby*,IMI,['.rb']
+10632915,"['objective-c', 'ruby']",HIT*,HIT,['*']
+6778210,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+1040700,"['javascript', 'python', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+3685302,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+365777,"['java', 'javascript']",HIT*,HIT,['*']
+14817503,"['php', 'javascript', 'css', 'shell', 'python']",Shell*_JS-CSS-HTML*,IMI_EBD,"['.sh', '.bsh', '.zsh', '.html', '.js', '.css']"
+14813775,"['php', 'javascript', 'css', 'shell', 'python']",Shell*_JS-CSS-HTML*,IMI_EBD,"['.sh', '.bsh', '.zsh', '.html', '.js', '.css']"
+5089138,"['javascript', 'ruby']",HIT*,HIT,['*']
+3639793,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+328430,"['python', 'javascript']",HIT*,HIT,['*']
+4184416,"['css', 'javascript']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+470946,"['java', 'javascript', 'shell', 'python', 'php']",Shell*_JavaScript*_Java-C,FFI_IMI,"['.java', '.c', '.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+1096127,"['c++', 'c', 'javascript', 'objective-c', 'shell']",C++-Objective-C_C-C++_Shell*_JavaScript*,FFI_IMI,"['.c', '.cpp', '.mm', '.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+191714,"['css', 'ruby']",HIT*,HIT,['*']
+2674127,"['javascript', 'shell']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+10178606,"['css', 'javascript', 'ruby']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+2483064,"['javascript', 'python']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+2482606,"['javascript', 'shell']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+1774473,"['python', 'c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+11126140,"['javascript', 'python', 'css', 'c++', 'shell']",Python*_Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.py', '.ts', '.js', '.html']"
+9792504,"['objective-c', 'ruby']",HIT*,HIT,['*']
+4467848,"['c', 'c++', 'shell', 'javascript', 'objective-c', 'python']",JavaScript*_C-C++_Shell*_Java-C_C++-JavaScript,FFI_IMI,"['.c', '.cpp', '.cpp', '.cc', '.java', '.c', '.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+24480,"['javascript', 'ruby']",HIT*,HIT,['*']
+644207,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1775877,"['objective-c', 'ruby']",HIT*,HIT,['*']
+10703295,"['objective-c', 'ruby']",HIT*,HIT,['*']
+140252,"['shell', 'ruby', 'c', 'javascript']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+1306177,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+5371382,"['c', 'objective-c', 'c++']",C++-Objective-C_C-C++_Java-C,FFI,"['.c', '.cpp', '.mm', '.java', '.c']"
+10571816,"['ruby', 'javascript']",HIT*,HIT,['*']
+5776550,"['objective-c', 'ruby']",HIT*,HIT,['*']
+8643683,"['objective-c', 'ruby']",HIT*,HIT,['*']
+1813466,"['javascript', 'css', 'ruby']",JavaScript*_Ruby*,IMI,"['.ts', '.js', '.html', '.rb']"
+8473804,"['objective-c', 'ruby']",HIT*,HIT,['*']
+9913540,"['javascript', 'css', 'php']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+457353,"['java', 'javascript', 'c', 'css', 'python', 'c++', 'ruby']",Python*_C-C++_Java*,FFI_IMI,"['.c', '.cpp', '.java', '.py']"
+1661426,"['javascript', 'css', 'shell']",Shell*_JavaScript*,IMI,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+11833467,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+7842750,"['c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+7092862,"['css', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+8352792,"['java', 'shell', 'c', 'python', 'c++', 'javascript', 'objective-c']",Python*_C-C++_Shell*_Java-C,FFI_IMI,"['.c', '.cpp', '.java', '.c', '.py', '.sh', '.bsh', '.zsh']"
+2450957,"['c++', 'javascript', 'python']",C++-JavaScript,FFI,"['.cpp', '.cc']"
+4255862,"['php', 'css']",HIT*,HIT,['*']
+10543437,"['objective-c', 'ruby']",HIT*,HIT,['*']
+12322554,"['objective-c', 'c', 'ruby']",HIT*,HIT,['*']
+3216266,"['css', 'javascript', 'ruby']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+1822027,"['objective-c', 'c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+548537,"['php', 'javascript', 'css']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+11741832,"['objective-c', 'c']",HIT*,HIT,['*']
+845412,"['php', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+12072214,"['objective-c', 'python', 'ruby', 'c++']",HIT*,HIT,['*']
+11622326,"['python', 'javascript', 'css']",Python*_JS-CSS-HTML*,IMI_EBD,"['.py', '.html', '.js', '.css']"
+15139581,"['css', 'javascript']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+3921398,"['python', 'javascript', 'c']",Python*_C-Python_JavaScript*,FFI_IMI,"['.c', '.py', '.py', '.ts', '.js', '.html']"
+3783995,"['javascript', 'php']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+10862193,"['objective-c', 'c']",HIT*,HIT,['*']
+3197627,"['javascript', 'css', 'shell']",Shell*_JavaScript*,IMI,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+1161524,"['objective-c', 'c']",HIT*,HIT,['*']
+288641,"['python', 'javascript', 'css']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+1668651,"['php', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+476166,"['javascript', 'css', 'php']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+763605,"['objective-c', 'ruby']",HIT*,HIT,['*']
+1275916,"['objective-c', 'ruby', 'c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+2506397,"['java', 'php']",HIT*,HIT,['*']
+620862,"['javascript', 'shell']",Shell*_JavaScript*,IMI,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+1074826,"['c', 'c++', 'shell']",C-C++_Shell*,FFI_IMI,"['.c', '.cpp', '.sh', '.bsh', '.zsh']"
+12072572,"['objective-c', 'python', 'ruby', 'c++', 'css']",HIT*,HIT,['*']
+13510786,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1627210,"['objective-c', 'c']",HIT*,HIT,['*']
+13484,"['javascript', 'css', 'ruby']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+14143900,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+12364261,"['objective-c', 'javascript', 'css', 'ruby']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+1032993,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+3046519,"['javascript', 'ruby', 'php', 'shell']",Shell*_JavaScript*,IMI,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+6633388,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1175501,"['c', 'python', 'shell']",Python*_Shell*,IMI,"['.sh', '.bsh', '.zsh', '.py']"
+294069,"['c', 'ruby', 'java']",Ruby*,IMI,['.rb']
+10227416,"['objective-c', 'ruby']",HIT*,HIT,['*']
+851574,"['ruby', 'c']",HIT*,HIT,['*']
+1194413,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+90670,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+5847,"['ruby', 'c', 'javascript', 'c++']",C-C++_Java-C,FFI,"['.c', '.cpp', '.java', '.c']"
+1501267,"['python', 'shell']",Python*_Shell*,IMI,"['.sh', '.bsh', '.zsh', '.py']"
+9212046,"['c++', 'c']",C-C++,FFI,"['.c', '.cpp']"
+15677,"['ruby', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+7360091,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+745626,"['c', 'objective-c', 'shell', 'ruby']",HIT*,HIT,['*']
+9464744,"['objective-c', 'ruby']",HIT*,HIT,['*']
+662194,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+179087,"['ruby', 'shell']",HIT*,HIT,['*']
+1373407,"['c', 'shell', 'java']",Shell*_Java-C,FFI_IMI,"['.java', '.c', '.sh', '.bsh', '.zsh']"
+4311172,"['css', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+2155708,"['ruby', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1880002,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+591795,"['shell', 'java']",HIT*,HIT,['*']
+4445125,"['shell', 'python', 'php', 'javascript', 'java', 'go']",Python*_Java*_Shell*,IMI,"['.sh', '.bsh', '.zsh', '.java', '.py']"
+2186169,"['javascript', 'php']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1667769,"['javascript', 'css', 'c++', 'python']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+11714507,"['objective-c', 'ruby']",HIT*,HIT,['*']
+19309,"['c', 'c++', 'objective-c', 'shell']",C-C++_Shell*_Java-C,FFI_IMI,"['.c', '.cpp', '.java', '.c', '.sh', '.bsh', '.zsh']"
+13304991,"['c', 'c++']",C-C++,FFI,"['.c', '.cpp']"
+2925873,"['shell', 'java', 'ruby', 'python']",Java*_Shell*,IMI,"['.sh', '.bsh', '.zsh', '.java']"
+787835,"['c++', 'c', 'objective-c', 'java', 'php', 'python', 'go', 'javascript', 'shell']",C-C++_Shell*_C-Python_Java-C_Java*,FFI_IMI,"['.c', '.cpp', '.java', '.c', '.c', '.py', '.sh', '.bsh', '.zsh', '.java']"
+492019,"['javascript', 'css', 'ruby']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+3570375,"['objective-c', 'ruby']",HIT*,HIT,['*']
+11559584,"['c++', 'c']",C-C++,FFI,"['.c', '.cpp']"
+4868926,"['objective-c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+14885711,"['css', 'javascript']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+10256757,"['objective-c', 'ruby']",HIT*,HIT,['*']
+7550537,"['objective-c', 'python', 'javascript', 'c', 'c++']",C++-Objective-C_C-C++,FFI,"['.c', '.cpp', '.mm']"
+1050321,"['ruby', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+8836945,"['c++', 'c', 'objective-c']",C-C++,FFI,"['.c', '.cpp']"
+15536555,"['c++', 'c', 'objective-c', 'shell']",C-C++_Shell*,FFI_IMI,"['.c', '.cpp', '.sh', '.bsh', '.zsh']"
+1602284,"['ruby', 'shell']",Shell*_Ruby*,IMI,"['.sh', '.bsh', '.zsh', '.rb']"
+620760,"['objective-c', 'python', 'javascript', 'c', 'c++']",Python*_C++-Objective-C_C-C++_JavaScript*,FFI_IMI,"['.c', '.cpp', '.mm', '.py', '.ts', '.js', '.html']"
+3027172,"['python', 'javascript', 'c', 'shell', 'ruby']",Shell*_Python*_C-Python_JavaScript*,FFI_IMI,"['.c', '.py', '.sh', '.bsh', '.zsh', '.py', '.ts', '.js', '.html']"
+7087398,"['php', 'javascript', 'python', 'css']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+189325,"['ruby', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1766275,"['objective-c', 'c']",HIT*,HIT,['*']
+81841,"['php', 'javascript', 'python', 'shell']",Python*_Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.py', '.ts', '.js', '.html']"
+4605178,"['shell', 'ruby']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+1290426,"['javascript', 'python']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1150070,"['c', 'c++', 'python', 'objective-c', 'shell']",Python*_C-C++_Shell*,FFI_IMI,"['.c', '.cpp', '.sh', '.bsh', '.zsh', '.py']"
+233888,"['javascript', 'php', 'shell']",Shell*_JavaScript*,IMI,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+7038350,"['c++', 'c']",C-C++,FFI,"['.c', '.cpp']"
+14851192,"['ruby', 'css']",HIT*,HIT,['*']
+1399039,"['c++', 'c', 'shell']",C-C++_Java-C,FFI,"['.c', '.cpp', '.java', '.c']"
+8296812,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+2413268,"['ruby', 'shell']",HIT*,HIT,['*']
+4416752,"['python', 'c++', 'typescript', 'javascript']",Python*_C-Python_JS-CSS-HTML*,FFI_IMI_EBD,"['.c', '.py', '.py', '.html', '.js', '.css']"
+580076,"['c++', 'python', 'shell']",HIT*,HIT,['*']
+11045866,"['objective-c', 'ruby']",HIT*,HIT,['*']
+52876,"['javascript', 'ruby', 'css', 'php', 'python', 'shell']",JS-CSS-HTML*_JavaScript*_Ruby*,IMI_EBD,"['.ts', '.js', '.html', '.rb', '.html', '.js', '.css']"
+13517563,"['objective-c', 'ruby']",HIT*,HIT,['*']
+4548803,"['css', 'ruby', 'javascript']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+275367,"['objective-c', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+317632,"['ruby', 'javascript']",HIT*,HIT,['*']
+904766,"['javascript', 'shell']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+1278354,"['objective-c', 'ruby']",HIT*,HIT,['*']
+14432340,"['python', 'javascript']",HIT*,HIT,['*']
+9452875,"['python', 'css', 'javascript']",Python*_JS-CSS-HTML*,IMI_EBD,"['.py', '.html', '.js', '.css']"
+13041437,"['c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+13464748,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+3537449,"['c', 'java', 'shell']",Java-C,FFI,"['.java', '.c']"
+4437769,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+12657746,"['javascript', 'shell', 'css']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+1258829,"['ruby', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+12308823,"['objective-c', 'c']",HIT*,HIT,['*']
+392264,"['go', 'c']",HIT*,HIT,['*']
+9092063,"['java', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+6196097,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1155062,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+497630,"['c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+949339,"['ruby', 'shell']",Shell*_Ruby*,IMI,"['.sh', '.bsh', '.zsh', '.rb']"
+103650,"['c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+1320406,"['java', 'javascript']",Java*_JavaScript*,IMI,"['.java', '.ts', '.js', '.html']"
+5619324,"['css', 'shell', 'python', 'ruby', 'javascript']",HIT*,HIT,['*']
+2676470,"['javascript', 'css', 'shell']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+2155701,"['java', 'c', 'c++']",C-C++_Java-C,FFI,"['.c', '.cpp', '.java', '.c']"
+3881090,"['python', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+1526365,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+468218,"['java', 'javascript']",HIT*,HIT,['*']
+5346756,"['objective-c', 'ruby']",HIT*,HIT,['*']
+7411723,"['javascript', 'python']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+2525221,"['c++', 'c', 'objective-c']",C-C++,FFI,"['.c', '.cpp']"
+8473466,"['objective-c', 'c++', 'ruby']",HIT*,HIT,['*']
+3882734,"['objective-c', 'c']",HIT*,HIT,['*']
+3647321,"['objective-c', 'ruby']",HIT*,HIT,['*']
+1393654,"['javascript', 'ruby', 'css']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+14149604,"['css', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+6509937,"['objective-c', 'c']",HIT*,HIT,['*']
+3079723,"['javascript', 'python']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+7855032,"['objective-c', 'c', 'ruby', 'shell', 'c++']",C-C++_Shell*_Java-C,FFI_IMI,"['.c', '.cpp', '.java', '.c', '.sh', '.bsh', '.zsh']"
+7911999,"['javascript', 'shell']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+12334751,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+2014445,"['objective-c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+5594091,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+6343553,"['objective-c', 'ruby']",HIT*,HIT,['*']
+12944981,"['c', 'python', 'c++', 'objective-c', 'shell']",C-C++_Shell*,FFI_IMI,"['.c', '.cpp', '.sh', '.bsh', '.zsh']"
+7895284,"['javascript', 'python']",HIT*,HIT,['*']
+7681910,"['objective-c', 'ruby']",HIT*,HIT,['*']
+7593051,"['javascript', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+3236297,"['python', 'java', 'shell']",Python*_Java*_Shell*,IMI,"['.java', '.sh', '.bsh', '.zsh', '.py']"
+8325464,"['c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+4202722,"['css', 'javascript', 'ruby']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+12697914,"['python', 'shell']",Python*,IMI,['.py']
+8013982,"['javascript', 'css', 'c', 'shell']",Shell*_JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh', '.html', '.js', '.css']"
+6321536,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+1996188,"['javascript', 'css', 'python']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+3896471,"['css', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+308649,"['shell', 'ruby']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+1542117,"['ruby', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+8918474,"['objective-c', 'ruby']",HIT*,HIT,['*']
+3940296,"['ruby', 'shell']",HIT*,HIT,['*']
+12152452,"['python', 'css']",HIT*,HIT,['*']
+875389,"['javascript', 'python', 'java', 'objective-c', 'shell']",Python*_Java*_Shell*_JavaScript*,IMI,"['.py', '.sh', '.bsh', '.zsh', '.ts', '.js', '.html', '.java']"
+8181429,"['c', 'c++', 'objective-c']",C-C++,FFI,"['.c', '.cpp']"
+3069882,"['php', 'javascript']",HIT*,HIT,['*']
+1093420,"['objective-c', 'c', 'shell', 'c++']",C-C++_Shell*,FFI_IMI,"['.c', '.cpp', '.sh', '.bsh', '.zsh']"
+828109,"['javascript', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+13214187,"['css', 'javascript']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+697681,"['c', 'c++', 'python', 'objective-c', 'shell']",Python*_C-C++_Shell*_Java-C,FFI_IMI,"['.c', '.cpp', '.java', '.c', '.sh', '.bsh', '.zsh', '.py']"
+11370097,"['objective-c', 'c']",HIT*,HIT,['*']
+6086631,"['c++', 'c', 'objective-c', 'shell']",C-C++,FFI,"['.c', '.cpp']"
+14266237,"['c', 'c++', 'objective-c']",C-C++,FFI,"['.c', '.cpp']"
+14203,"['javascript', 'python', 'ruby']",Python*_JavaScript*,IMI,"['.py', '.ts', '.js', '.html']"
+59032,"['objective-c', 'ruby', 'c']",HIT*,HIT,['*']
+5807719,"['c', 'c++', 'objective-c', 'shell']",C-C++_Shell*_Java-C,FFI_IMI,"['.c', '.cpp', '.java', '.c', '.sh', '.bsh', '.zsh']"
+2344385,"['php', 'ruby']",HIT*,HIT,['*']
+107630,"['python', 'c', 'c++', 'java', 'shell', 'objective-c']",Python*_C-C++_Shell*_C++-Objective-C_Java*,FFI_IMI,"['.c', '.cpp', '.mm', '.java', '.sh', '.bsh', '.zsh', '.py']"
+1765459,"['javascript', 'php', 'css']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+12191760,"['c', 'java']",Java-C,FFI,"['.java', '.c']"
+8848607,"['objective-c', 'c', 'ruby']",HIT*,HIT,['*']
+5845542,"['java', 'python']",Java-Python,FFI,"['.py', '.java']"
+1567174,"['java', 'javascript', 'css', 'shell']",Shell*_JavaScript*_C++-JavaScript,FFI_IMI,"['.cpp', '.cc', '.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+1309860,"['objective-c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+13987991,"['css', 'javascript', 'ruby']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+1471582,"['python', 'shell']",C-Python,FFI,"['.c', '.py']"
+4998730,"['css', 'ruby']",HIT*,HIT,['*']
+8743309,"['ruby', 'shell']",HIT*,HIT,['*']
+99523,"['ruby', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+11993635,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+1420617,"['c', 'c++', 'objective-c']",C++-Objective-C_C-C++,FFI,"['.c', '.cpp', '.mm']"
+7341810,"['objective-c', 'ruby']",HIT*,HIT,['*']
+4229981,"['shell', 'ruby']",Shell*_Ruby*,IMI,"['.sh', '.bsh', '.zsh', '.rb']"
+6403491,"['css', 'ruby']",HIT*,HIT,['*']
+6847112,"['objective-c', 'ruby']",HIT*,HIT,['*']
+1781184,"['javascript', 'css', 'ruby', 'shell']",Shell*_JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html', '.html', '.js', '.css']"
+7264187,"['c', 'c++', 'python']",Python*_C-C++,FFI_IMI,"['.c', '.cpp', '.py']"
+3050548,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+3249758,"['python', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+10019217,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+1136112,"['objective-c', 'c', 'c++']",C-C++,FFI,"['.c', '.cpp']"
+12339565,"['javascript', 'css', 'shell']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+8323759,"['php', 'javascript']",HIT*,HIT,['*']
+1246024,"['javascript', 'ruby', 'python', 'shell']",HIT*,HIT,['*']
+2434586,"['go', 'c', 'shell']",HIT*,HIT,['*']
+3773,"['ruby', 'javascript', 'shell']",Shell*_JavaScript*_Ruby*,IMI,"['.rb', '.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+8827770,"['objective-c', 'ruby']",HIT*,HIT,['*']
+3240598,"['javascript', 'c', 'python']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+10978068,"['objective-c', 'c++', 'shell']",C++-Objective-C,FFI,['.mm']
+2769302,"['objective-c', 'c', 'python', 'ruby', 'shell', 'c++']",Python*_C-C++,FFI_IMI,"['.c', '.cpp', '.py']"
+4735066,"['c', 'python', 'c++', 'shell']",C-C++,FFI,"['.c', '.cpp']"
+12287957,"['java', 'css']",HIT*,HIT,['*']
+12071584,"['objective-c', 'python', 'ruby', 'c++']",HIT*,HIT,['*']
+9228265,"['c++', 'c', 'objective-c', 'shell']",C-C++_Shell*_Java-C,FFI_IMI,"['.c', '.cpp', '.java', '.c', '.sh', '.bsh', '.zsh']"
+1210831,"['javascript', 'shell', 'php']",Shell*_JavaScript*,IMI,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+1450564,"['c++', 'c', 'java', 'python', 'objective-c', 'shell']",C++-Objective-C_C-C++_Shell*_Java-C,FFI_IMI,"['.c', '.cpp', '.mm', '.java', '.c', '.sh', '.bsh', '.zsh']"
+8251418,"['objective-c', 'ruby']",HIT*,HIT,['*']
+2422681,"['javascript', 'css', 'ruby']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+7143131,"['javascript', 'php']",HIT*,HIT,['*']
+3760843,"['objective-c', 'c']",HIT*,HIT,['*']
+14510206,"['javascript', 'php']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+6006459,"['objective-c', 'ruby']",HIT*,HIT,['*']
+978894,"['objective-c', 'javascript']",HIT*,HIT,['*']
+3151061,"['java', 'c', 'c++']",C-C++_Java-C,FFI,"['.c', '.cpp', '.java', '.c']"
+3965305,"['php', 'python', 'shell']",Python*,IMI,['.py']
+15218510,"['python', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+2296633,"['c', 'shell', 'c++', 'objective-c']",C-C++,FFI,"['.c', '.cpp']"
+2601967,"['ruby', 'javascript', 'css']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+1688824,"['java', 'ruby']",Java-C,FFI,"['.java', '.c']"
+1308593,"['objective-c', 'c']",C++-Objective-C,FFI,['.mm']
+12129587,"['css', 'javascript']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+4555319,"['shell', 'ruby']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+3287703,"['objective-c', 'shell', 'python']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+11424141,"['objective-c', 'ruby']",HIT*,HIT,['*']
+868969,"['c', 'c++', 'objective-c', 'javascript', 'python']",Python*_C++-Objective-C_C-C++_JavaScript*,FFI_IMI,"['.c', '.cpp', '.mm', '.py', '.ts', '.js', '.html']"
+15209160,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+3793621,"['javascript', 'python']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+7502565,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+12559993,"['objective-c', 'css', 'shell']",HIT*,HIT,['*']
+7566515,"['c', 'c++', 'java', 'python', 'shell', 'objective-c', 'javascript']",C-C++_Shell*,FFI_IMI,"['.c', '.cpp', '.sh', '.bsh', '.zsh']"
+451481,"['objective-c', 'javascript', 'css', 'c++', 'python', 'shell']",Shell*_JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh', '.html', '.js', '.css']"
+8453404,"['javascript', 'php', 'shell']",Shell*_JavaScript*,IMI,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+1565025,"['shell', 'python']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+7717751,"['objective-c', 'c++']",HIT*,HIT,['*']
+1434717,"['c', 'java', 'c++', 'objective-c', 'shell']",C-C++_Shell*_Java-C,FFI_IMI,"['.c', '.cpp', '.java', '.c', '.sh', '.bsh', '.zsh']"
+1611009,"['java', 'javascript', 'shell']",Java*_Shell*_JavaScript*,IMI,"['.ts', '.js', '.html', '.java', '.sh', '.bsh', '.zsh']"
+179067,"['ruby', 'css', 'shell', 'javascript']",JS-CSS-HTML*_Ruby*,IMI_EBD,"['.rb', '.html', '.js', '.css']"
+3225624,"['javascript', 'shell']",Shell*_JavaScript*,IMI,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+5651915,"['python', 'c']",C-Python,FFI,"['.c', '.py']"
+3416668,"['java', 'javascript', 'ruby']",Java*_Java-C,FFI_IMI,"['.java', '.c', '.java']"
+3249576,"['java', 'shell']",Java-C,FFI,"['.java', '.c']"
+4040531,"['ruby', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+2929332,"['css', 'ruby', 'javascript']",HIT*,HIT,['*']
+1299755,"['c', 'objective-c', 'c++']",C-C++_Java-C,FFI,"['.c', '.cpp', '.java', '.c']"
+7723108,"['objective-c', 'c']",HIT*,HIT,['*']
+1538215,"['c', 'c++', 'objective-c', 'shell', 'javascript']",C-C++,FFI,"['.c', '.cpp']"
+6475872,"['objective-c', 'ruby', 'c']",HIT*,HIT,['*']
+4961712,"['javascript', 'shell']",Shell*_JavaScript*,IMI,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+13723768,"['objective-c', 'ruby']",HIT*,HIT,['*']
+5552562,"['javascript', 'python', 'ruby', 'shell']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+2330957,"['objective-c', 'c']",HIT*,HIT,['*']
+1803599,"['objective-c', 'c++']",HIT*,HIT,['*']
+795995,"['python', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+9860420,"['objective-c', 'c++', 'c', 'ruby']",C++-Objective-C_C-C++,FFI,"['.c', '.cpp', '.mm']"
+1319436,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+2878298,"['python', 'javascript', 'shell']",Shell*_Python*_C-Python_JavaScript*,FFI_IMI,"['.c', '.py', '.sh', '.bsh', '.zsh', '.py', '.ts', '.js', '.html']"
+1502311,"['javascript', 'ruby']",HIT*,HIT,['*']
+8213279,"['javascript', 'shell']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+8134470,"['objective-c', 'c', 'ruby', 'shell', 'javascript']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+1758324,"['php', 'c++', 'javascript', 'objective-c']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+10851746,"['css', 'javascript']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+1295583,"['php', 'javascript', 'shell']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+3258474,"['c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+743502,"['javascript', 'shell']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+6254495,"['c++', 'c']",C-C++,FFI,"['.c', '.cpp']"
+5657,"['ruby', 'javascript', 'css', 'shell']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+3598059,"['python', 'c++', 'c', 'javascript', 'ruby', 'shell', 'objective-c', 'php']",Python*_JavaScript*_C-C++_Shell*_C-Python,FFI_IMI,"['.c', '.cpp', '.c', '.py', '.py', '.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+7321417,"['css', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1210329,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+1581223,"['c', 'python', 'shell', 'c++']",C-C++_Shell*,FFI_IMI,"['.c', '.cpp', '.sh', '.bsh', '.zsh']"
+12220065,"['css', 'python', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+8231348,"['javascript', 'python', 'ruby', 'shell']",Python*_Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.py', '.ts', '.js', '.html']"
+5076908,"['javascript', 'shell']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+11854477,"['shell', 'java']",HIT*,HIT,['*']
+3510292,"['javascript', 'ruby', 'shell']",HIT*,HIT,['*']
+1276565,"['c++', 'shell', 'c']",C-C++_Shell*,FFI_IMI,"['.c', '.cpp', '.sh', '.bsh', '.zsh']"
+6030365,"['ruby', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+7809570,"['java', 'ruby', 'shell', 'javascript', 'css']",Shell*_JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html', '.html', '.js', '.css']"
+3492752,"['objective-c', 'ruby']",HIT*,HIT,['*']
+975840,"['c', 'objective-c']",Java-C,FFI,"['.java', '.c']"
+1424730,"['c++', 'shell', 'c', 'objective-c']",C++-Objective-C_C-C++_Shell*,FFI_IMI,"['.c', '.cpp', '.mm', '.sh', '.bsh', '.zsh']"
+5488015,"['shell', 'javascript']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+14305536,"['objective-c', 'ruby']",HIT*,HIT,['*']
+3556042,"['javascript', 'objective-c', 'ruby']",C++-Objective-C_JavaScript*,FFI_IMI,"['.mm', '.ts', '.js', '.html']"
+4316389,"['javascript', 'shell']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+10166640,"['objective-c', 'ruby']",HIT*,HIT,['*']
+5413380,"['javascript', 'shell']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+2431023,"['ruby', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+8629497,"['c++', 'c', 'objective-c', 'shell']",C-C++,FFI,"['.c', '.cpp']"
+14835020,"['python', 'javascript', 'css']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+5374173,"['python', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+8640200,"['java', 'shell']",HIT*,HIT,['*']
+5964092,"['python', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+11990080,"['objective-c', 'c', 'shell']",HIT*,HIT,['*']
+12389834,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+7865360,"['c++', 'c', 'objective-c', 'shell']",C-C++,FFI,"['.c', '.cpp']"
+1470507,"['python', 'javascript', 'c']",Python*_C-Python_JavaScript*,FFI_IMI,"['.c', '.py', '.py', '.ts', '.js', '.html']"
+2400556,"['javascript', 'python']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+3119164,"['java', 'css', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+518809,"['c++', 'c']",C-C++,FFI,"['.c', '.cpp']"
+479288,"['c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+2828482,"['css', 'javascript']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+13275394,"['java', 'shell']",HIT*,HIT,['*']
+13228666,"['c++', 'c', 'objective-c', 'css']",C-C++,FFI,"['.c', '.cpp']"
+2101247,"['c++', 'c', 'shell']",C-C++,FFI,"['.c', '.cpp']"
+4146761,"['javascript', 'php', 'shell', 'ruby']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+13168669,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+12704847,"['c', 'c++']",C-C++_Java-C,FFI,"['.c', '.cpp', '.java', '.c']"
+10444483,"['ruby', 'css', 'javascript']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+1645260,"['ruby', 'c']",HIT*,HIT,['*']
+4131496,"['javascript', 'css', 'ruby']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+2292854,"['objective-c', 'c', 'c++']",C-C++,FFI,"['.c', '.cpp']"
+2534923,"['java', 'c++']",Java-C,FFI,"['.java', '.c']"
+2432283,"['ruby', 'shell']",Java-C,FFI,"['.java', '.c']"
+1596377,"['c', 'shell', 'objective-c', 'c++']",C-C++_Shell*,FFI_IMI,"['.c', '.cpp', '.sh', '.bsh', '.zsh']"
+14089607,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+4198297,"['c++', 'c', 'javascript', 'python', 'objective-c', 'shell', 'php', 'java', 'go']",Python*_JavaScript*_C-C++_Shell*_C++-Objective-C_C-Python_Java-C_Java-Python_Java*_C++-JavaScript,FFI_IMI,"['.c', '.cpp', '.mm', '.java', '.c', '.cpp', '.cc', '.c', '.py', '.py', '.java', '.py', '.sh', '.bsh', '.zsh', '.ts', '.js', '.html', '.java']"
+7227839,"['css', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+867467,"['javascript', 'php']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+9931090,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+6193567,"['c', 'shell', 'c++', 'objective-c', 'ruby', 'java']",C-C++_Shell*_Java-C,FFI_IMI,"['.c', '.cpp', '.java', '.c', '.sh', '.bsh', '.zsh']"
+1309789,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+1318251,"['ruby', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+5087313,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+3885673,"['objective-c', 'c', 'php', 'c++']",C-C++,FFI,"['.c', '.cpp']"
+3129038,"['python', 'javascript']",HIT*,HIT,['*']
+6018772,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+8422648,"['objective-c', 'c']",HIT*,HIT,['*']
+10801226,"['javascript', 'php']",C++-JavaScript,FFI,"['.cpp', '.cc']"
+1584861,"['objective-c', 'c++']",HIT*,HIT,['*']
+1884096,"['php', 'ruby', 'javascript']",HIT*,HIT,['*']
+4788242,"['objective-c', 'c']",HIT*,HIT,['*']
+3930334,"['ruby', 'css', 'javascript']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+9795443,"['ruby', 'javascript', 'shell']",HIT*,HIT,['*']
+14458190,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+5995366,"['objective-c', 'shell', 'ruby']",Shell*_Ruby*,IMI,"['.sh', '.bsh', '.zsh', '.rb']"
+37011,"['ruby', 'javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+2697304,"['javascript', 'python']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1550805,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1493284,"['c++', 'javascript', 'css', 'python', 'c', 'shell', 'objective-c']",Python*_JavaScript*_C-C++_Shell*_C-Python,FFI_IMI,"['.c', '.cpp', '.c', '.py', '.sh', '.bsh', '.zsh', '.ts', '.js', '.html', '.py']"
+123650,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+7329949,"['ruby', 'javascript']",HIT*,HIT,['*']
+574205,"['shell', 'c']",HIT*,HIT,['*']
+4026081,"['objective-c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+2565808,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+212431,"['ruby', 'shell']",HIT*,HIT,['*']
+1620849,"['objective-c', 'ruby']",HIT*,HIT,['*']
+1538255,"['java', 'shell', 'javascript', 'python']",Java*_Shell*_JavaScript*,IMI,"['.java', '.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+13306196,"['objective-c', 'shell']",HIT*,HIT,['*']
+14989296,"['shell', 'python']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+7007153,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1765547,"['objective-c', 'c++']",HIT*,HIT,['*']
+281478,"['javascript', 'css', 'php']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+8293120,"['c++', 'c', 'objective-c', 'python']",C-C++,FFI,"['.c', '.cpp']"
+14161710,"['objective-c', 'ruby']",HIT*,HIT,['*']
+14878542,"['c++', 'c', 'python', 'shell', 'javascript', 'objective-c', 'java', 'css']",Python*_C-C++_Shell*_JavaScript*,FFI_IMI,"['.c', '.cpp', '.sh', '.bsh', '.zsh', '.py', '.ts', '.js', '.html']"
+969036,"['c', 'c++', 'objective-c', 'shell', 'javascript', 'python']",C-C++_Shell*_Java-C,FFI_IMI,"['.c', '.cpp', '.java', '.c', '.sh', '.bsh', '.zsh']"
+1505103,"['ruby', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+21417,"['c', 'ruby', 'java', 'css', 'javascript', 'shell', 'c++', 'python']",JavaScript*_C-C++_Shell*_C++-Ruby_Java-C_Ruby*,FFI_IMI,"['.c', '.cpp', '.cpp', '.cc', '.rb', '.java', '.c', '.rb', '.ts', '.js', '.html', '.sh', '.bsh', '.zsh']"
+2975780,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+2244476,"['javascript', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1680851,"['javascript', 'php']",HIT*,HIT,['*']
+9994058,"['objective-c', 'c++']",C++-Objective-C,FFI,['.mm']
+14743998,"['go', 'c++', 'javascript', 'c', 'shell']",C-C++_Shell*_C-Go_Go*,FFI_IMI,"['.go', '.c', '.cpp', '.sh', '.bsh', '.zsh', '.go']"
+7511359,"['css', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+488456,"['javascript', 'shell', 'java', 'python']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+1672343,"['c', 'c++']",C-C++,FFI,"['.c', '.cpp']"
+9374613,"['javascript', 'python']",HIT*,HIT,['*']
+2580088,"['c', 'python', 'shell']",Java-C,FFI,"['.java', '.c']"
+63545,"['javascript', 'css']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+3833357,"['c++', 'javascript']",HIT*,HIT,['*']
+5878403,"['objective-c', 'ruby']",HIT*,HIT,['*']
+5241965,"['ruby', 'javascript']",HIT*,HIT,['*']
+2934564,"['javascript', 'css', 'ruby']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+13197928,"['objective-c', 'ruby']",HIT*,HIT,['*']
+7113762,"['javascript', 'python', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+8041417,"['shell', 'ruby']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+9228529,"['c++', 'c', 'objective-c', 'shell']",C-C++_Shell*_Java-C,FFI_IMI,"['.c', '.cpp', '.java', '.c', '.sh', '.bsh', '.zsh']"
+5269375,"['objective-c', 'c', 'ruby']",HIT*,HIT,['*']
+6025137,"['objective-c', 'ruby']",HIT*,HIT,['*']
+6036663,"['css', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+1753142,"['javascript', 'java', 'shell', 'ruby', 'go', 'python']",Java*_Shell*_JavaScript*,IMI,"['.ts', '.js', '.html', '.java', '.sh', '.bsh', '.zsh']"
+12516124,"['java', 'shell']",HIT*,HIT,['*']
+3076009,"['python', 'javascript']",HIT*,HIT,['*']
+547593,"['java', 'shell', 'php']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+9770340,"['c++', 'c']",C-C++,FFI,"['.c', '.cpp']"
+7483273,"['css', 'javascript']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+1507091,"['c++', 'python', 'javascript']",C++-JavaScript,FFI,"['.cpp', '.cc']"
+5717979,"['python', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+4700852,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+2679367,"['javascript', 'java', 'objective-c']",C++-Objective-C,FFI,['.mm']
+6429603,"['shell', 'java']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+1099877,"['javascript', 'css']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+8297160,"['javascript', 'css', 'ruby']",JS-CSS-HTML*,EBD,"['.html', '.js', '.css']"
+12447326,"['go', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+1189644,"['javascript', 'python']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+411774,"['javascript', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+1941656,"['javascript', 'css', 'ruby']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+7972514,"['css', 'javascript', 'shell']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+10002690,"['c', 'c++', 'objective-c', 'python']",C++-Objective-C_C-C++,FFI,"['.c', '.cpp', '.mm']"
+2731990,"['css', 'ruby', 'javascript']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+2054055,"['ruby', 'shell']",Shell*_Ruby*,IMI,"['.sh', '.bsh', '.zsh', '.rb']"
+7401172,"['javascript', 'python', 'ruby']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+4864594,"['java', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+5114310,"['ruby', 'javascript']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+14248505,"['python', 'css', 'javascript']",JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.html', '.js', '.css']"
+11321834,"['javascript', 'go', 'shell']",Shell*_JavaScript*,IMI,"['.sh', '.bsh', '.zsh', '.ts', '.js', '.html']"
+2883211,"['objective-c', 'shell']",Shell*,IMI,"['.sh', '.bsh', '.zsh']"
+2596695,"['ruby', 'javascript', 'shell']",JavaScript*,IMI,"['.ts', '.js', '.html']"
+898063,"['javascript', 'css', 'python', 'shell']",Shell*_JavaScript*_JS-CSS-HTML*,IMI_EBD,"['.ts', '.js', '.html', '.sh', '.bsh', '.zsh', '.html', '.js', '.css']"
+12463754,"['python', 'javascript']",HIT*,HIT,['*']
+3112733,"['objective-c', 'ruby']",HIT*,HIT,['*']
+2269637,"['javascript', 'python']",JavaScript*,IMI,"['.ts', '.js', '.html']"

@@ -1,0 +1,157 @@
+repo_id,message,cate_id,cate,fuzz_res
+1021622,"['asynchronous', 'templates', 'for', 'the', 'browser', 'and', 'node', 'js']",6,end user application,{'browser': 100}
+982541,"['holla', 'rich', 'javascript', 'application']",6,end user application,{'application': 100}
+2264200,"['deprecated', 'implementation', 'of', 'the', 'compatibility', 'library', 'viewpager', 'class', 'that', 'supports', 'paging', 'both', 'vertically', 'and', 'horizontally']",5,application libraries,{'library': 100}
+1809895,"['motioncaptcha', 'jquery', 'plugin', 'stop', 'draw', 'shapes']",6,end user application,{'plugin': 100}
+1108478,"['coffeedrop', 'is', 'an', 'open', 'roll', 'your', 'dropbox', 'like', 'clone', 'written', 'in', 'coffeescript', 'currently', 'not', 'working', 'and', 'under', 'heavy', 'development']",20,engineering and development,{'development': 100}
+974855,"['refactoring', 'tool', 'for', 'ruby', 'in', 'vim']",6,end user application,{'tool': 100}
+1549505,"['classic', 'dhtml', 'javascript', 'game', 'engine', 'and', 'web', 'based', 'ide']",6,end user application,{'game': 100}
+228215,"['redis', 'client', 'for', 'node', 'js', 'abandoned']",17,content Access,{'client': 100}
+56855,"['a', 'tiny', 'javascript', 'framework', 'for', 'mobile', 'web', 'apps']",6,end user application,{'web apps': 93}
+143845,"['test', 'application', 'for', 'iphone', 'with', 'opencv', 'library']",6,end user application,{'application': 100}
+982634,"['a', 'rack', 'application', 'for', 'serving', 'static', 'sites']",6,end user application,{'application': 100}
+644997,"['headless', 'htmlunit', 'powered', 'browser', 'for', 'capybara']",6,end user application,{'browser': 100}
+677999,"['a', 'lightweight', 'mvc', 'framework', 'for', 'building', 'tidy', 'javascript', 'web', 'apps']",6,end user application,{'web apps': 93}
+1495487,"['a', 'really', 'tiny', 'functional', 'javascript', 'and', 'async', 'flow', 'control', 'library']",5,application libraries,{'library': 100}
+2480979,"['deprecated', 'use', 'font', 'awesome', 'or', 'font', 'awesome', 'more']",7,word process,{'font': 89}
+825791,"['a', 'console', 'based', 'javascripty', 'web', 'client', 'utility', 'using', 'node', 'js']",17,content Access,{'client': 100}
+810601,"['an', 'offline', 'html', 'currency', 'converter', 'app', 'for', 'the', 'iphone']",6,end user application,{'app': 100}
+1177635,"['osceleton', 'is', 'a', 'proxy', 'that', 'sends', 'skeleton', 'information', 'collected', 'from', 'the', 'kinect', 'sensor', 'via', 'making', 'it', 'easier', 'to', 'use', 'input', 'from', 'the', 'device', 'in', 'any', 'language', 'and', 'framework', 'that', 'supports', 'the', 'osc', 'protocol']",4,middleware,{'framework': 100}
+1906047,"['a', 'nice', 'little', 'library', 'for', 'writing', 'and', 'implementing', 'web', 'application', 'behavior', 'in', 'javascript', 'that', 'looks', 'like', 'english']",6,end user application,{'application': 100}
+114522,"['culerity', 'integrates', 'cucumber', 'and', 'celerity', 'in', 'order', 'to', 'test', 'your', 'application', 's', 'full', 'stack', 'including', 'javascript', 'your', 'rails', 'app', 'doesn', 't', 'have', 'to', 'run', 'in', 'jruby']",6,end user application,{'application': 100}
+46297,"['a', 'ruby', 'library', 'for', 'the', 'disqus', 'commenting', 'api', 'and', 'javascript', 'widgets']",18,application suites,{'widgets': 100}
+1333096,"['runloop', 'a', 'jquery', 'plugin', 'for', 'comprehensive', 'animations']",6,end user application,{'plugin': 100}
+760908,"['a', 'data', 'driven', 'visualization', 'toolkit']",6,end user application,{'toolkit': 100}
+179455,"['a', 'javascript', 'animation', 'library', 'for', 'html', 'canvas']",5,application libraries,{'library': 100}
+1023845,"['s', 'is', 'a', 'general', 'partially', 'fault', 'pluggable', 'platform', 'that', 'allows', 'programmers', 'to', 'easily', 'develop', 'applications', 'for', 'processing', 'continuous', 'unbounded', 'streams', 'of', 'data']",6,end user application,{'applications': 96}
+751,"['el', 'dorado', 'is', 'a', 'full', 'stack', 'community', 'web', 'application', 'written', 'in', 'ruby', 'and', 'rails']",6,end user application,{'application': 100}
+2223890,"['a', 'jquery', 'plugin', 'that', 'provides', 'an', 'abstraction', 'over', 'd', 'and', 'd', 'transforms', 'project', 'owner', 'jtaby']",6,end user application,{'plugin': 100}
+958161,"['deprecated', 'javascript', 'game', 'microframework']",6,end user application,{'game': 100}
+1733680,"['a', 'knife', 'plugin', 'facilitating', 'and', 'tracking', 'chef', 'cookbooks', 'found', 'on', 'github']",6,end user application,{'plugin': 100}
+1835564,"['convenient', 'image', 'processing', 'framework', 'for', 'ios', 'and', 'android', 'face', 'more', 'effects']",4,middleware,{'framework': 100}
+2400486,"['google', 'app', 'engine', 'app', 'that', 'retrieves', 'the', 'relevant', 'favicon', 'for', 'a', 'or', 'returns', 'a', 'default', 'icon', 'should', 'it', 'not', 'be', 'able', 'to', 'find', 'it']",6,end user application,{'app': 100}
+916697,"['high', 'performance', 'non', 'blocking', 'web', 'framework']",4,middleware,{'framework': 100}
+498050,"['a', 'javascript', 'animation', 'library', 'using', 'css', 'transforms', 'and', 'transitions']",5,application libraries,{'library': 100}
+620714,"['asynchronous', 'url', 'based', 'commonjs', 'module', 'loader', 'for', 'node', 'with', 'automated', 'dependency', 'resolution', 'and', 'module', 'reloading']",4,middleware,{'module': 92}
+2345093,"['linux', 'kernel', 'module', 'for', 'advanced', 'rickrolling']",4,middleware,{'module': 92}
+1357872,"['boilerplate', 'setup', 'for', 'app', 'engine', 'with', 'html', 'boilerplate', '', 'user', 'and', 'more']",6,end user application,{'app': 100}
+872827,"['a', 'full', 'stack', 'html', 'and', 'css', 'framework', 'that', 'uses', 'less', 'js', 'as', 'it', 's', 'core', 'to', 'provide', 'a', 'truly', 'modular', 'system', 'with', 'addons', 'and', 'other', 'cute', 'stuff', 'd']",4,middleware,{'framework': 100}
+1071112,"['cocoa', 'interface', 'to', 'socket', 'io', 'by', 'way', 'of', 'websockets']",5,application libraries,{'interface': 100}
+305256,"['swinger', 'is', 'a', 'couchapp', 'for', 'creating', 'and', 'showing', 'presentations', 'think', 'stored', 'in', 'run', 'via', 'javascript', 'and', 'sammy', 'js']",11,presentation,{'presentations': 96}
+1647701,"['a', 'gherkin', 'editor', 'based', 'on', 'ace', 'and', 'node', 'js']",7,word process,{'editor': 100}
+815252,"['a', 'benchmarking', 'tool', 'for', 'web', 'socket', 'servers']",20,engineering and development,{'benchmarking': 100}
+1413148,"['a', 'lightweight', 'framework', 'that', 'helps', 'you', 'write', 'restful', 'web', 'services', 'in', 'nodejs']",4,middleware,{'framework': 100}
+190349,"['rack', 'middleware', 'to', 'impose', 'a', 'rate', 'limit', 'on', 'a', 'web', 'service', 'aka', 'api', 'throttling']",4,middleware,{'middleware': 100}
+663860,"['material', 'for', 'my', 'railsconf', '', 'tutorial']",15,education,{'tutorial': 100}
+834710,"['gwt', 'mobile', 'is', 'a', 'cross', 'platform', 'mobile', 'development', 'tool', 'using', 'google', 'web', 'toolkit', 'technology', 'it', 'provides', 'a', 'set', 'of', 'ui', 'widgets', 'optimized', 'for', 'mobile', 'a', 'orm', 'module', 'to', 'persist', 'objects', 'to', 'the', 'browser', 'and', 'a', 'wrapper', 'to', 'access', 'phonegap', 'functions', 'from', 'gwt']",20,engineering and development,{'development': 100}
+1067793,"['a', 'self', 'hosted', 'javascript', 'compiler', 'for', 'the', 'jvm', 'written', 'in', 'coffeescript']",3,programming,{'compiler': 89}
+1100540,"['js', 'tool', 'to', 'scan', 'websites', 'for', 'unused', 'css', 'selectors']",6,end user application,{'tool': 100}
+1805835,"['a', 'generic', 'port', 'of', 'textmate', 's', 'find', 'in', 'with', 'associated', 'macvim', 'plugin']",6,end user application,{'plugin': 100}
+1115308,"['facebook', 'friend', 'exporter', 'chrome', 'extension']",14,communication,{'facebook': 100}
+803581,"['not', 'currently', 'working', 'or', 'actively', 'developed', 'a', 'jquery', 'plugin', 'for', 'creating', 'elements', 'that', 'stick', 'to', 'the', 'top', 'of', 'the', 'window', 'when', 'scrolling', 'down', 'the', 'page']",6,end user application,{'plugin': 100}
+1313405,"['like', 'websocket', 'but', 'no', 'server', 'setup', 'and', 'available', 'in', 'any', 'browser']",6,end user application,{'browser': 100}
+1470055,"['natural', 'language', 'tools']",6,end user application,{'tools': 89}
+692663,"['free', 'ebook', 'about', 'ruby', '', '']",15,education,{'ebook': 100}
+690156,"['a', 'plugin', 'to', 'add', 'a', 'blog', 'to', 'a', 'rails', 'app', 'that', 'should', 'exist', 'but', 'didn', 't', 'until', 'now']",6,end user application,{'plugin': 100}
+537093,"['an', 'eventmachine', 'based', 's', 'client']",17,content Access,{'client': 100}
+2437749,"['a', 'client', 'side', 'web', 'framework', 'in', 'bytes']",17,content Access,{'client': 100}
+2906356,"['plugins', 'created', 'for', 'use', 'on', 'the', 'flatterline', 'com', 'website']",6,end user application,{'plugins': 92}
+1281093,"['a', 'ruby', 'like', 'language', 'that', 'compiles', 'to', 'php']",3,programming,{'compiles': 88}
+320521,"['mac', 'os', 'x', 'objective', 'c', 'framework', 'for', 'git', 'repositories']",4,middleware,{'framework': 100}
+648869,"['dormant', 'an', 'oauth', 'implementation', 'in', 'ruby', 'that', 'makes', 'implementing', 'providers', 'too', 'easy']",6,end user application,{'too': 86}
+1557177,"['customisable', 'and', 'lightweight', 'framework', 'for', 'developing', 'mobile', 'apps']",6,end user application,{'mobile apps': 95}
+167717,"['example', 'rails', '', 'application', 'that', 'uses', 'oauth']",15,education,{'example': 93}
+1463402,"['js', 'to', 'coffeescript', 'compiler', 'deprecated']",3,programming,{'compiler': 89}
+958605,"['extensions', 'so', 'you', 'can', 'use', 'jammit', 'with', 's', 'and', 'cloudfront', 'for', 'your', 'rails', 'app']",6,end user application,{'app': 100}
+959252,"['a', 'jquery', 'plugin', 'rendering', 'a', 'css', 'styleable', 'vertical', 'scrollbar', 'for', 'overflowed', 'elements']",6,end user application,{'plugin': 100}
+1617286,"['code', 'as', 'data', 'in', 'without', 'the', 'metaprogramming', 'madness']",3,programming,{'metaprogramming': 85}
+2600372,"['easy', 'custom', 'defined', 'templates', 'for', 'generation', 'of', 'json', 'object', 'representations', 'in', 'ruby']",11,presentation,{'representations': 89}
+1782988,"['python', 'solutions', 'for', 'the', 'book', 'cracking', 'the', 'coding', 'interview']",15,education,{'book': 89}
+2007575,"['browser', 'package', 'manager']",18,application suites,{'package manager': 100}
+1848535,"['a', 'tiny', 'jquery', 'slideshow', 'plugin']",6,end user application,{'plugin': 100}
+1919600,"['minimum', 'viable', 'erlang', 'web', 'framework']",4,middleware,{'framework': 100}
+816131,"['surface', 'slow', 'code', 'paths', 'in', 'your', 'rails', '', 'app', 'via', 'growl']",6,end user application,{'app': 100}
+657217,"['application', 'generator', 'for', 'rails']",6,end user application,{'application': 100}
+1936923,"['ember', 'only', 'a', 'library', 'for', 'building', 'complex', 'user', 'interfaces', 'on', 'top', 'of', 'ember']",5,application libraries,{'library': 100}
+619061,"['phonegap', 'wrapper', 'for', 'running', 'html', 'apps', 'as', 'native', 'windows', 'desktop', 'apps']",6,end user application,{'desktop apps': 96}
+551713,"['makes', 'middleware', 'that', 'ships', 'with', 'rack', 'bullet', 'proof', 'for', 'async', 'responses']",4,middleware,{'middleware': 100}
+390179,"['presenter', 'plugin', 'for', 'ruby', 'on', 'rails']",6,end user application,{'plugin': 100}
+487458,"['a', 'collection', 'of', 'python', 'packages', 'for', 'use', 'in', 'other', 'projects']",15,education,{'a collection': 100}
+885580,"['actors', 'library', 'for', 'clojure']",5,application libraries,{'library': 100}
+841885,"['this', 'smtp', 'client', 'library', 'for', 'node', 'js', 'helps', 'you', 'send', 'email', 'safely', 'and', 'easily']",19,email,{'email': 100}
+1046667,"['general', 'documentation', 'and', 'sample', 'files', 'for', 'vendo', 'e', 'commerce', 'framework']",4,middleware,{'framework': 100}
+1956210,"['exports', 'an', 'array', 'of', 'ruby', 'objects', 'to', 'a', 'google', 'docs', 'spreadsheet']",9,spreadsheet,{'spreadsheet': 96}
+547282,"['this', 'jquery', 'plugin', 'converts', 'a', 'properly', 'formatted', 'having', 'thead', 'and', 'tbody', 'elements', 'tfoot', 'optional', 'into', 'a', 'scrollable', 'table']",6,end user application,{'plugin': 100}
+1648966,"['real', 'time', 'image', 'processing', 'framework', 'for', 'ios']",4,middleware,{'framework': 100}
+1109265,"['a', 'set', 'of', 'tools', 'to', 'make', 'working', 'with', 'opengl', 'easier']",6,end user application,{'tools': 89}
+1177380,"['node', 'library', 'providing', 'the', 'bases', 'to', 'implement', 'an', 'oauth', 'server', 'as', 'connect', 'middleware']",4,middleware,{'middleware': 100}
+673137,"['the', '', 'swedish', 'word', 'game', 'in', 'all', 'its', 'naked', 'glory']",6,end user application,{'game': 100}
+860202,"['a', 'collection', 'of', 'useful', 'middleware', 'for', 'exposing', 'information', 'about', 'deployed', 'rack', 'applications']",15,education,{'a collection': 100}
+2663375,"['jquery', 'plugin', 'for', 'facebook', 'and', 'twitter', 'style', 'textarea', 'user', 'autocomplete', 'and', 'hashtag', 'parser']",14,communication,{'facebook': 100}
+2288805,"['a', 'jquery', 'like', 'library', 'for', 'python', 'fork', 'of', 'https', 'and', 'and', 'bitbucket', 'org', 'and', 'olauzanne', 'and', 'pyquery', 'and']",5,application libraries,{'library': 100}
+1897641,"['fork', 'of', 'the', 'advancecomp', 're', 'compression', 'utilities']",6,end user application,{'compression': 100}
+1556970,"['javascript', 'library', 'boilerplate', 'roll', 'your', 'own']",5,application libraries,{'library': 100}
+1626587,"['an', 'easy', 'to', 'use', 'project', 'management', 'tool']",6,end user application,{'tool': 100}
+251644,"['mobile', 'application', 'that', 'tells', 'you', 'where', 'the', 'closest', 'beer', 'based', 'on', 'your', 'location', 'one', 'native', 'android', 'and', 'one', 'phonegap', 'cross', 'platform', 'mobile', 'development', 'framework', 'based', 'on', 'css', 'and', 'javascript', 'branch']",20,engineering and development,{'development': 100}
+1461411,"['javascript', 'implementation', 'of', 'the', 'popular', 'snowball', 'word', 'stemming', 'nlp', 'algorithm']",4,middleware,{'algorithm': 100}
+983587,"['fastcgi', 'protocol', 'parser', 'for', 'node', 'js']",4,middleware,{'protocol': 100}
+507903,"['python', 'extension', 'module', 'for', 'accelerating', 'regular', 'expressions', 'using', 'libesm']",4,middleware,{'module': 92}
+312674,"['a', 'simple', 'to', 'yet', 'powerful', 'ruby', 'framework', 'for', 'building', 'console', 'based', 'applications']",6,end user application,{'applications': 96}
+1508721,"['simple', 'pong', 'game', 'running', 'on', 'ios', 'using', 'objc', 'and', 'cocosd', 'boxd']",6,end user application,{'game': 100}
+2412581,"['benchmarking', 'various', 'node', 'js', 'template', 'engines']",20,engineering and development,{'benchmarking': 100}
+2783842,"['jquery', 'plugin', 'for', 'creating', 'image', 'galleries', 'that', 'scale', 'to', 'fit', 'their', 'container']",6,end user application,{'plugin': 100}
+564455,"['node', 'js', 'aws', 's', 'application']",6,end user application,{'application': 100}
+2327271,"['micro', 'library', 'to', 'handle', 'in', 'memory', 'cache', 'works', 'in', 'node', 'and', 'browser']",6,end user application,{'browser': 100}
+1485658,"['how', 'to', 'embed', 'html', 'into', 'a', 'native', 'mac', 'osx', 'app']",6,end user application,{'osx app': 86}
+1595449,"['ios', 'api', 'for', 'yahoo', 'finance', 'stock', 'symbol', 'stock', 'details', 'and', 'currency', 'conversion']",6,end user application,{'ios api': 86}
+1074770,"['integrate', 'facebook', 'into', 'your', 'django', 'application']",14,communication,{'facebook': 100}
+104092,"['a', 'microblogging', 'client', 'identi', 'statusnet', 'for', 'palm', 'webos']",17,content Access,{'client': 100}
+1563173,"['this', 'is', 'the', 'web', 'app', 'part', 'of', 'the', 'application', 'described', 'in', 'the', 'phonegap', 'contacts', 'tutorial']",15,education,{'tutorial': 100}
+1105683,"['gretty', 'is', 'simple', 'framework', 'for', 'networking']",4,middleware,{'framework': 100}
+373078,"['use', 'facebook', 'connect', 'in', 'your', 'django', 'project']",14,communication,{'facebook': 100}
+387968,"['super', 'simple', 'session', 'middleware', 'for', 'node', 'even', 'has', 'optional', 'magic', 'sessions', 'which', 'monkey', 'patch', 'the', 'httpserver', 'with', 'one', 'line']",4,middleware,{'middleware': 100}
+369091,"['utility', 'modules', 'for', 'commonjs']",4,middleware,{'modules': 100}
+1256400,"['jqueryui', 'widgets', 'wrapped', 'as', 'angular', 'widgets']",18,application suites,{'widgets': 100}
+1796257,"['ruby', 'implementation', 'of', 'redis', 'server', 'and', 'client', 'protocol', 'in', 'eventmachine', 'with', 'synchrony', 'support']",17,content Access,{'client': 100}
+1993564,"['no', 'php', 'implementation', 'of', 'the', 'git', 'http', 'protocol']",4,middleware,{'protocol': 100}
+1229099,"['gwt', 'implementation', 'of', 'standard', 'the', 'node', 'js', 'library']",5,application libraries,{'library': 100}
+6541,"['server', 'automation', 'framework', 'and', 'application']",6,end user application,{'application': 100}
+1848284,"['an', 'application', 'based', 'packet', 'sniffer', 'for', 'mac', 'os', 'x']",6,end user application,{'application': 100}
+501798,"['a', 'playground', 'for', 'android', 'mirah', 'development']",20,engineering and development,{'development': 100}
+1086973,"['objective', 'c', 'client', 'library', 'for', 'simplegeo']",17,content Access,{'client': 100}
+1619336,"['an', 'almost', 'drop', 'in', 'replacement', 'for', 'google', 'chart', 'images', 'using', 'html', 'canvas']",11,presentation,{'chart': 91}
+918130,"['cross', 'site', 'request', 'forgery', 'protection', 'for', 'express', 'node', 'js', 'framework']",4,middleware,{'framework': 100}
+531453,"['deprecated', 'python', 'module', 'and', 'script', 'for', 'downloading', 'video', 'source', 'files', 'from', 'the', 'major', 'online', 'streaming', 'sites', 'etc']",10,multimedia,{'streaming': 100}
+1622773,"['abandoned', 'a', 'build', 'time', 'coffeescript', 'compiler', 'plugin', 'for', 'titanium', 'build', 'scripts']",6,end user application,{'plugin': 100}
+188261,"['a', 'filemanager', 'for', 'the', 'web', 'based', 'on', 'mootools', 'that', 'allows', 'you', 'to', 'pre', 'upload', 'and', 'modify', 'files', 'and', 'folders', 'via', 'the', 'browser']",6,end user application,{'browser': 100}
+1169129,"['highcharts', 'library', 'for', 'codeigniter']",5,application libraries,{'library': 100}
+2068529,"['a', 'console', 'browser', 'for', 'online', 'videos', 'for', 'websites', 'like', 'youtube']",10,multimedia,{'youtube': 100}
+516229,"['scala', 'client', 'for', 'the', 'twitter', 'streaming', 'api']",17,content Access,{'client': 100}
+1235421,"['rack', 'response', 'time', 'statistics', 'aggregator', 'middleware']",4,middleware,{'middleware': 100}
+837012,"['hdfs', 'client', 'for', 'python']",17,content Access,{'client': 100}
+2219840,"['working', 'demo', 'that', 'utilizes', 'backbone', 'on', 'the', 'server', 'and', 'client', 'in', 'a', 'seamless', 'fashion']",17,content Access,{'client': 100}
+1655173,"['experimental', 'book', 'formatting', 'toolchain']",15,education,{'book': 89}
+1532058,"['mustache', 'templating', 'for', 'your', 'express', 'apps']",6,end user application,{'apps': 86}
+1563040,"['the', 'target', 'app', 'for', 'the', 'sencha', 'touch', 'theming', 'april', '']",6,end user application,{'app': 100}
+2094341,"['fuse', 'based', 'bittorrent', 'file', 'system', 'also', 'called', 'torrentfs', 'or', 'torrent', 'filesystem', 'for', 'streaming', 'content', 'directly', 'from', 'the', 'internets']",10,multimedia,{'streaming': 100}
+1557748,"['teagrams', 'is', 'an', 'experimental', 'app', 'for', 'the', 'ipad', '', 'using', 'sencha', 'touch', 'and', 'the', 'instagram', 'api']",6,end user application,{'app': 100}
+1684076,"['maga', 'is', 'a', 'lightweight', 'framework', 'for', 'developing', 'multiplayer', 'physics', 'based', 'games']",6,end user application,{'games': 89}
+889640,"['delicious', 'example', 'using', 'socket', 'io', 'to', 'publish', 'and', 'receive', 'messages', 'over', 'amqp']",15,education,{'example': 93}
+87683,"['a', 'python', 'command', 'line', 'tool', 'for', 'parsing', 'information', 'from', 'apache', 'log', 'files']",6,end user application,{'tool': 100}
+97709,"['blame', 'stella', 'for', 'breaking', 'your', 'web', 'applications']",6,end user application,{'applications': 96}
+1966552,"['example', 'xcode', 'project', 'that', 'shows', 'how', 'to', 'replicate', 'the', 'cool', 'ios', 'page', 'peel', 'effect', 'detailed', 'in', 'a', 'blog', 'post', 'here', 'http', 'and', 'and', 'skookum', 'com', 'and', 'blog', 'and', 'ios', 'peeling', 'effect', 'and']",15,education,{'example': 93}
+1797167,"['plugins', 'that', 'interact', 'with', 'sublime', 'text', '']",6,end user application,{'plugins': 92}
+1258793,"['a', 'real', 'time', 'monitoring', 'tool', 'for', 'mongodb']",6,end user application,{'tool': 100}
+1908740,"['plugin', 'for', 'vagrant', 'for', 'working', 'with', 'amazon', 'aws']",6,end user application,{'plugin': 100}
+1954655,"['headless', 'webkit', 'browser', 'with', 'node', 'js', 'interface']",6,end user application,{'browser': 100}
+420979,"['the', 'simplest', 'jquery', 'slideshow', 'plugin', 'evar']",6,end user application,{'plugin': 100}
+2008473,"['hermes', 'is', 'a', 'pub', 'and', 'sub', 'middleware', 'application']",6,end user application,{'application': 100}
+1302491,"['stream', 'webcam', 'to', 'rtmp', 'server', 'using', 'flash', 'widget']",18,application suites,{'widget': 92}
+1829783,"['an', 'admin', 'interface', 'for', 'couchdb', 'that', 'is', 'suitable', 'for', 'mobile', 'devices']",5,application libraries,{'interface': 100}
+362532,"['additional', 'tools', 'and', 'behaviors', 'for', 'openlayers']",6,end user application,{'tools': 89}
+2676257,"['a', 'drag', 'and', 'drop', 'css', 'compressor']",6,end user application,{'compressor': 86}
+1973586,"['quickstart', 'application', 'from', 'zend', 'with', 'variations', 'based', 'on', 'zf', 'mvc', 'prototypes']",6,end user application,{'application': 100}
+2300753,"['example', 'code', 'for', 'processing', 'the', 'million', 'song', 'dataset', 'and', 'other', 'big', 'music', 'datasets']",15,education,{'example': 93}
+1821906,"['vim', 'plugin', 'to', 'sweeten', 'running', 'rspec', 'tests', 'from', 'within', 'vim']",6,end user application,{'plugin': 100}
+2583066,"['input', 'js', 'is', 'a', 'javascript', 'library', 'to', 'map', 'controller', 'and', 'os', 'specific', 'usb', 'enumerations', 'provided', 'by', 'the', 'gamepad', 'api', 'in', 'mozilla', 'firefox', 'to', 'an', 'ideal', 'virtual', 'gamepad']",5,application libraries,{'library': 100}
+228060,"['a', 'simple', 'asynchronous', 'http', 'library', 'in', 'python', 'for', 'speaking', 'with', 'twitter', 's', 'streaming', 'with', 'numerous', 'example', 'applications']",15,education,{'example': 93}

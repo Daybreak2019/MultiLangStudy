@@ -1,0 +1,677 @@
+id,summarization,tokens,topics,description
+425,,[],[],facebook style built in jquery
+291056,,[],[],this is the legacy version of teambox the award winning collaboration inspired by yammer and twitter
+2557230,,[],[],unmaintained small components for building manipulating and automating a distributed infrastructure
+1714530,,[],[],a horizontal view scroller library for android
+761438,,[],[],the html ebook framework to publish interactive books magazines on ipad iphone using simply open web standards
+6270574,,[],[],css d dropdown concept
+5153205,,[],[],an abstraction layer for webrtc aim is to simplify the html web standard webrtc in a similar manner to socket io w and websockets highly experimental technology
+3806475,,[],[],deprecated see natew and obtvse
+1802145,,[],[],a uiswitch like segmented control for your ios app
+1602291,,[],[],cloud foundry the open platform as a service project
+10632915,,[],[],a grid menu with elastic depth of and realistic animation
+6778210,,[],[],adds support for background size cover and contain to ie
+6422710,,[],[],a simple python tool to pinpoint the ip addresses of machines working for the great firewall of china
+1040700,,[],[],the official online compendium for mining the social web o 
+14817503,,[],[],fossasia  drupal site
+14813775,,[],[],fossasia  drupal site
+3349413,,[],[],a simple light weight javascript library for dealing with touch events
+9473425,,[],[],super minimal selector and event library
+5089138,,[],[],bootstrap toggle buttons has moved to https and and github com and nostalgiaz and bootstrap switch
+3639793,,[],[],a cloudfuji chat application
+4184416,,[],[],a css and js bootstrap to style and manipulate data tables
+470946,,[],[],etherpad open source repository
+1096127,,[],[],depthjs allows any web page to interact with the microsoft kinect using javascript
+191714,,[],[],less ruby now at http and and github com and cowboyd and less rb
+11119992,,[],[],a set of experimental modal window appearance effects with css transitions and animations
+2674127,,[],[],a node js based data retrieval and aggregation gateway for quickly consuming http apis
+10178606,,[],[],clank open source prototyping framework for mobile apps
+1774473,,[],[],a completely open source implementation of a bitcoin miner for altera and xilinx fpgas this project hopes to promote the free and open development of fpga based mining solutions and secure the future of the bitcoin project as a whole a binary release is currently available for the terasic de  development and there are compile able projects for numerous boards
+11126140,,[],[],the chrome web lab for hackers and everyone
+9792504,,[],[],this is a new navigation controller inspired by flipboard
+4467848,,[],[],a new kind of headless webkit integration for nodejs a great alternative to phantomjs
+3317938,,[],[],ios view library for displaying stylish errors
+10703295,,[],[],easy to use user interface elements which are really similar to design in ios 
+1306177,,[],[],instagram like image filters in pure javascript
+5371382,,[],"['ios', 'patch', 'wax']",dynamically load a lua script to change the behavior of your ios application
+10571816,,[],[],easily add an nsa backdoor into your rails app
+8643683,,[],[],a drop in solution for building stylish app introductions and tutorials
+10108151,,[],[],just a simply easy way to label each element you want
+5691343,,[],[],powerful pattern matching for javascript
+1813466,,[],[],saxophone javascript mpeg  audio layer iii mp and idv decoder
+8473804,,[],[],a minimal status bar for ios
+2629675,,[],[],foundation for a responsive starter theme
+9913540,,[],[],make a pattern library using atomic design
+457353,,[],[],old v please see http and and github org and telehash now
+391267,,[],[],a modular async web framework for node js
+9624289,,[],[],this responsive layout is based on an initial grid of four boxes once a box is it gets resized to fullscreen and the other boxes scale down and fade out in the work section we experiment with another transition which is to show a panel by making it appear from the bottom while scaling the current one down to see it in open the work section and click on one of the portfolio items and navigate through them
+1661426,,[],[],deprecated a node js application server spawn your own node js on your own hardware
+6299699,,[],[],a implementation of roman nurik s and nick butcher s quick return ui patern for a listview
+3503557,,[],[],deprecated a replica of the clear iphone app in html
+11833467,,[],[],the backend agnostic administration framework
+7092862,,[],[],bootstrap ie compatible library
+2726128,,[],[],a silly effective md cracker in ruby
+3230366,,[],[],command conquer in html and javascript
+2450957,,[],[],guide for writing c and and node js extensions
+4255862,,[],[],initial directory style guide and pattern primer intended as a starting point for my own available for others to clone and adapt for theirs
+10543437,,[],[],a new d effect viewcontroller transition inspired by natgeo city guides by national geographic
+12322554,,[],[],the standard ios  colors as a handy category on uicolor
+5559313,,[],[],javascript fulltext search engine library
+3216266,,[],[],a set of ui elements styled using the boostrap toolkit to use with ember js
+1822027,,[],[],rd party extensions for cocosd iphone
+9470043,,[],[],a snake ai written in python
+5306428,,[],[],a node js http server in your browser
+8756877,,[],[],a native particle systems effect view for ios and osx powered by quartzcore
+11741832,,[],[],a reproduction of the ios  mail app s swipe to reveal options
+12072214,,[],[],thatphoto is an app that lets you view and edit your photos
+5941021,,[],[],androidkickstartr helps you to quickly create a well configured android application using the most popular libraries it creates and configures your project for you just focus on code
+11622326,,[],[],container orchestration for docker environments
+15139581,,[],[],a set of flat and d progress button styles where the button itself serves as a progress indicator d styles are used for showing the progress indication on one side of the button while rotating the button in perspective
+5396462,,[],[],sina weibo android sdk
+3921398,,[],[],webputty is a simple css editing and hosting service that you can run on google app engine
+2142550,,[],[],meta viewport done right
+3783995,,[],[],visual tool to create impress js presentations
+5283221,,[],[],building ffmpeg for android vfp and used in vplayer for android
+10862193,,[],[],hacker news client for ipad and iphone deprecated
+3197627,,[],[],the project aims at being a modular backbone environment with as little authority on development as possible such that developers can innovate and contribute in an attempt to mimic the success of backbone js ambiguous nature
+12541985,,[],[],a spring like collection view layout the same effect like ios s message app
+3606843,,[],[],redis like wrapper for javascript storage
+53611,,[],[],textmate bundle for jquery
+5056199,,[],[],this plugin no longer supported please use x editable instead
+2853502,,[],[],a generic static site generator built using and marked
+476166,,[],[],jquery lint is a simple script you can download and use with jquery it works over the top of jquery and diligently reports errors and any incorrect usage of jquery
+8993254,,[],[],an android toast similar to the one seen in the gmail app
+4382236,,[],[],a personal paas for mac and linux
+763605,,[],[],an objective c wrapper around core text for creating multi column text and loading custom fonts
+3279226,,[],[],zero downtime reloads and requests load balancer based on distribute
+1275916,,[],[],the open source game engine for ios
+4165901,,[],[],objc runtime additions
+2506397,,[],[],a out of order and real time typeahead search library
+1676524,,[],[],jquery mobile angular adapter
+1882992,,[],[],css d animation library
+1074826,,[],[],legacy openframeworks wrapper for the xbox kinect of pre    and only ofxkinect is now included and is being maintained in of releases
+7348960,,[],[],ibooks style d flip transition animation rendered in opengl es   and wrapped in a uistoryboardsegue subclass
+12072572,,[],[],thatpdf is an open source application for reading and annotating pdfs
+13510786,,[],[],problem you need to store a large amount of key value based data in and firefox
+16979,,[],[],rr double ruby is a test double framework that features a rich selection of double techniques and a terse syntax
+1473004,,[],[],bob mccune s collection of core animation demos
+14143900,,[],[],using svgs on websites is becoming more and more easy with great libraries like snap svg today we want to explore what we can do with it and animate some svg icons as a practical example
+9971880,,[],[],a small js library that makes it possible to trace function calls
+12364261,,[],[],a embeddable web server for objective c
+1032993,,[],[],collection of csshooks that work with jquery    and
+3046519,,[],[],backbone js stack boilerplates demonstrating integration with grails and more
+6633388,,[],[],write and read markdown in real time with anyone you want
+1175501,,[],[],a family of libraries and daemons for building scalable web infrastructure
+294069,,[],[],hpricot has ended please consider an alternative like nokogiri
+857598,,[],[],an extremely hackable full realtime twitter client
+2773714,,[],[],please use koreader instead a pdf plus html viewer made for e ink framebuffer using crengine
+10227416,,[],[],layersprites is a library designed to simplify the use of sprite sheets image maps containing multiple sub images in uikit applications without using opengl or rd party game libraries can load sprite sheets in the cocod format
+8383053,,[],[],one rest api client for all
+1194413,,[],[],a base for longform tablet typography in html
+7427888,,[],[],a library to work with css keyframe animations from javascript
+3204070,,[],[],modular http server framework for go
+1501267,,[],[],lightweight mapreduce in python
+335762,,[],[],a webkit based mac os x screensaver use any webpage or javascript program as a screensaver
+9212046,,[],[],this is a historical repository of satoshi nakamoto s original bitcoin sourcecode
+3924478,,[],[],deprecated pointer js consolidates pointer like input models across browsers and devices
+8414241,,[],[],a set of angularjs directives that provide common d visualizations for elasticsearch
+745626,,[],[],the objective c http library that apple should have seriously
+3923123,,[],[],dsl to document and test web services
+9464744,,[],[],drag to go back interaction implementaion
+662194,,[],[],jquery d transformation plugin
+6187890,,[],[],a library greatly enhancing the features of the google maps external library effortless map gesture map callout built in user tracking etc
+7165429,,[],[],generic interactive d transformation tweaking tool for ios development
+179087,,[],[],vim plugin for debugging ruby applications using ruby debug ide gem
+2097345,,[],[],a lightweight d particle engine in compatible with three js and tween js
+3378706,,[],[],a simple focussing on using html notification support in chrome and safari works with mountain lion s notification center
+12644632,,[],[],circular progress view button inspired by ffcircularprogressview
+6033194,,[],[],a http proxy that lets you map subdomains to git branches for site testing
+2262034,,[],[],alicejs a lightweight independent css engine is a micro javascript library for a click the link below
+7099873,,[],[],sequencer is an ios library for asynchronous flow control
+7847738,,[],[],css spinner for modern built with sass
+1880002,,[],[],a fast peg parser written in javascript with first class errors
+591795,,[],[],android plugin for the gradle build system
+5760207,,[],[],delta jquery ui theme
+4445125,,[],[],a cowboy websocket demo
+10761652,,[],[],a tutorial on how to create some subtle and modern caption hover effects
+11714507,,[],[],highly customizable calendar component for ios apps
+13304991,,[],[],historically first actually   release of linux kernel made by linus torvalds
+2925873,,[],[],advanced analytics engine for nosql data
+787835,,[],[],open transactions democratizes financial and monetary actions you can use it for issuing currencies and paying creating asset sending and receiving digital writing and depositing cashier s creating basket trading on scripting custom recurring etc open transactions uses strong crypto the balances are unchangeable even by a malicious server the receipt history is destructible the transactions are unforgeable the cash is unlinkable the cheques are non repudiable etc
+3570375,,[],"['album', 'document', 'gallery', 'image', 'ios', 'library', 'pdf', 'photo', 'showcase', 'video']",an initial implementation of a showcase view controller for ios apps visualizes videos and pdf files beautifully by pittleorg meta viewer
+11559584,,[],[],high performance opengl fluid solver in c and and
+4868926,,[],[],drop in ios component to easily import photos from and more
+11116298,,[],[],automatic squash and stretch animated subclasses of uiview and calayer
+10256757,,[],[],a custom table view with highly detailed ripple animations
+7550537,,[],[],instrumentation for objective c for debugging and profiling
+8836945,,[],[],yet another write optimized storage using buffered b tree algorithm inspired by tokudb
+1602284,,[],[],the command line client for cloud foundry the open platform as a service project
+6021895,,[],[],a cli share link generator
+11295981,,[],[],super simple countdowns
+3247154,,[],[],a lightweight query api for backbone collections
+3027172,,[],[],the and nebulizer for indextank
+10436592,,[],[],a listview and scrollview header that hides when scrolling down and reappears immediately when scrolling regardless of how far down the list we ve gone like the one from the google keep app
+6538491,,[],[],demonstration of using corebluetooth on mac and ios
+7087398,,[],[], swf   office and pdf and txt and html 
+12395584,,[],[],an all in one jquery plugin that let you change your browser s title and more to reflect new notifications
+3722494,,[],[],xdebug interface for sublime text 
+189325,,[],[],a non instrusive gem which helps you search and manage your data using browser
+1290426,,[],[],adaptations and extensions of twitter related examples from mining the social web
+13417449,,[],[],this subclass of nsview can be used to get an ios  like blurred background to mimic a frosted glass effect
+8004779,,[],[],paperfoldgallery for ios
+14851192,,[],[],clapper source code of imax im
+181346,,[],[],don t delete your move them to a different table
+8296812,,[],[],chrome developer tools extension for debugging backbone based apps
+2413268,,[],[],an experimental web framework
+4416752,,[],[],unofficial whatsapp client for meego and harmattan
+7281004,,[],[],get the size of the css viewport using javascript
+11097354,,[],[],dhtcrawler is a dht crawler written in erlang it can join a dht network and crawl many pp torrents the program save all torrent info into database and provide an http interface to search a torrent by a keyword
+14905791,,[],[],an example of a gridview with various column span items and drag and drop support like google keep has
+13517563,,[],[],ibeacons and corebluetooth
+5697382,,[],[],an experiment to control a photo carousel using getusermedia to watch for swipes left and right with a hand
+11842466,,[],[],transition from uitableviewcell to detail controller with animation on enter and exit this can be seen in multiple apps right it is totally customizable there are  sections for these animations  initially set frames for all ui elements  now the animation on enter is completed and you have to set the frames according to the detail ui you need  this is the section where exit animation will apply these frames will be equal to the frames which were initially set all these sections are totally customizable and user can set it according to their own needs
+7353700,,[],[],jbcroppableview is a subclass of uiview built with uikit and coregraphics that adds n points on an uiimageview allowing to modify them by drag drop to trim the extra space of an image
+11923310,,[],[],fling media to a chromecast device
+10086817,,[],[],the example source code for the book functional javascript by michael published by o reilly
+8069971,,[],[],a language that compiles to css
+6459782,,[],[],execute javascript in slow motion
+14432340,,[],[],tool to visualize your git in a pretty graph
+8063466,,[],[],a test app to visualize view transformation when value in catransformd matrices change
+5464728,,[],[],a slide out navigation a k a drawer implementation for android applications
+5484271,,[],[],introduction to python and django
+9452875,,[],[],google mirror api s quickstart for python
+13041437,,[],[],tiny shell is an open source unix backdoor
+13464748,,[],[],chrome very easy to use cookies from javascript document cookie and wireshark cookies etc
+3537449,,[],[],a simple utility for profile allocation and garbage collection activity in the jvm
+3873324,,[],[],chef cookbook for libqt
+4437769,,[],[],a prototype trying to create a simple videoediting tool in the browser using javascript
+5614225,,[],[],domvas implements the missing piece that connects the dom and canvas
+12657746,,[],[],a more sophisticated bitcoin powered crowdfunder
+10405378,,[],[],an inline repl for ruby more in sublime text  and 
+422331,,[],[],sometimes you need a repl sorry
+12948993,,[],[],dagger and otto and retrofit and robolectric and picasso and okhttp
+1258829,,[],[],lightweight node and service registry inspired by apache zookeeper
+5306424,,[],[],browserver proxy for node js
+6049521,,[],"['moderation', 'neural-network', 'nlp', 'sentiment', 'sentiment-analysis']",language sentiment analysis and neural networks for trolls
+12917308,,[],[],go on an educational web security adventure
+12308823,,[],[],tstableview is ui component for displaying multi columns tabular data
+1575328,,[],[],spdy is a protocol designed to reduce latency of web pages
+4716147,,[],[],implementation of side navigation or fly in app menu pattern for android based on google and app
+9925668,,[],[],a visualization of github users throughout the globe
+9154170,,[],[],a hackday project run the speak into your microphone and hear the response from your speakers
+392264,,[],[],unmaintained recompiling nes roms into native executables
+9092063,,[],[],android plugin framework
+6196097,,[],[],a rails plugin for scaffolding views using angular twitter bootstrap and font awesome
+8978221,,[],[],detect if the chrome inspector is open or closed
+1155062,,[],[],add touch support to your browser with thumbs js a and syntax less library
+949339,,[],[],swank and nrepl servers for clojure providing jpda based debuggers
+13551739,,[],[],qqrobotc and and   qt qt c and and linux mac oswindows  http and and qt project org and  qqrobotwebqq qq  qqrobot qqwebqq qq  robot  qq    qq  qq robot qtplugin  plugins qq robotrobotinterfacenamelistenandsayok namerobot listenandsay robot
+1371723,,[],[],socket io server for erlang
+1228777,,[],[],the px css fluid to mobile
+5619324,,[],[],the open source teaching materials site for git and github technologies
+6552314,,[],[],an alternative to that doesn t tightly couple your view to your model
+3727301,,[],[],the sample application to accompany my conference talk enter the matrix on matrix transformations abstract matrix transformations can make your user interfaces come to life and rotate each on its own is relatively simple and straightforward yet many developers are daunted when  or more operations need to be combined what if you need to rotate or zoom about an off center or even off screen point how do you combine multiple transformations into a single animation learn everything you need to know to get started with complex matrix transformations in coregraphics and coreanimation
+2577004,,[],[],html audio benchmarks
+538835,,[],[],simple ruby authorization system
+7411723,,[],[],clean jquery mobile theme pack and theme generator
+4803506,,[],[],daanisotropicimage is an anisotropic uiimage generator for a metallic slider knob
+8957326,,[],[],utility to connect to open wifi and click through captive portal type agreements
+3115793,,[],[],normalized address bar hiding for ios android
+550530,,[],[],javascript library for multi step asynchronous logic
+4269842,,[],[],a scrolling view of a number of columns containing multiple cells with variable different heights for inspired by pinterest
+3647321,,[],[],pull to refresh controller
+5247794,,[],[],webrtc io multi user chat demo highly experimental technology
+6509937,,[],[],swipe in view controllers from off screen similar to check the weather
+1580296,,[],[],the instagram node lib is a helper library for node that makes communicating with the instagram api easy
+3079723,,[],[],gae and backbone and require js todo web app example
+2607283,,[],[],plugin for cakephp to use from twitter css js framework
+7855032,,[],[],ios markdown notebook
+5783199,,[],[],golanger web framework is a lightweight framework for writing web applications in go
+8582798,,[],[],a horizontal gradient which adjusts its appearance based on the positional attitude of an ios device
+12334751,,[],[],flipping elements and show a loading indicator easily
+2014445,,[],[],a fast json parser for ios and macos
+5594091,,[],[],a browser extension that finds all the fonts on a page
+6343553,,[],[],a pull to refresh view for ios  api compatible with uirefreshcontrol in ios 
+10766031,,[],[],implementation of the new ios style masking transparency using stackblur
+14291024,,[],[],team buffalox predicts directional movement of stock prices
+12944981,,[],[],jos mit   operating system engineering
+7895284,,[],[],an application that shows a wall of popular or vines from a specified tag
+7681910,,[],[],ios audio trim similar to the one seen in default iphone voice memos app
+7586729,,[],[],ios breadcrumb ui control
+548935,,[],[],command line interface and ruby client for the tumblr api v
+11772649,,[],[],angularjs shopping cart modified to support stripe js includes google wallet and paypal already support
+4202722,,[],[],an inbox for your dropbox
+36971,,[],[],erlang bittorrent client
+8013982,,[],[],not maintained prefer the use of http and and stack gl or gl react a light javascript glsl library for vizualisation and game purposes d or d
+6321536,,[],[],cssconsole is a jquery plugin that allows you to transform dom element into console and terminal like input
+4118405,,[],[],angularjs features for the intellij platform etc
+12199877,,[],[],an example application using wordvec given a list of it finds the one which isn t like the others a typical language understanding evaluation task
+1996188,,[],[],popcorn authoring library
+3896471,,[],[],a web based compiler for c and vb powered by the roslyn project
+4029430,,[],[],this project is closed if i begin it will be from scratch
+308649,,[],[],note find the offical repo at http and and github com and robotlegs and swiftsuspenders
+1602289,,[],[],cloud foundry the open platform as a service project
+7245906,,[],[],a grunt enabled head start with hbp and jquery and modernizr and respond and box sizing border box
+8918474,,[],[],a keyboard accessory that blends in with the default ios keyboard
+3940296,,[],[],crowd sourced ruby conference wiki
+12152452,,[],[],create python web applications for google glass
+7581556,,[],[],an ofun prototype of an ultra modern perl 
+875389,,[],[],an experiment into open web apps
+8181429,,[],[],dump various types of windows credentials without injecting in any process
+9284153,,[],[],vertical implementation of android viewpager
+10187639,,[],[],store arbitrary data on flickr
+600102,,[],[],reusable package level functions that solve common problems
+3069882,,[],[],a php implementation of the stack exchange mvc mini profiler
+10769528,,[],[],a repository of processing examples for itp fall workshop about face and miscellaneous tracking methods
+828109,,[],[],a jquery based alternative facebook multi friend selector that uses the graph api
+13214187,,[],[],a tutorial on how to create a off canvas icon navigation with an animated border effect
+6427398,,[],[],a javascript library to access mp sources for youtube videos
+1893904,,[],[],framework for test driven infrastructure development
+11370097,,[],[],an example of how to use the new ios  apis to create custom view controller transitions
+6086631,,[],[],a open source remote administrator tool
+758689,,[],[],simple lib to track events in mixpanel service it can be used in any rack based framework
+14266237,,[],[],this is a mini firewall that completely isolates a target device from the local network
+6794164,,[],[],an experimental jquery plugin that will group thumbnails by a shared data attribute into a pile when clicking on the the thumbnails that belong to that pile will be spread into a grid using css transitions
+14203,,[],[],restful blog for google app engine
+59032,,[],"['gmail', 'gmail-notifier', 'macruby', 'rubycocoa']",a macruby gmail notifier for mac os x
+9942958,,[],[],javascript code blocks
+2344385,,[],[],apify is a small open source library that delivers new levels of developer productivity by simplifying the creation of restful architectures it helps development teams deliver quality web services and applications in reduced amounts of time if you are familiar with the zend then you already know how to use apify
+1725179,,[],[],a home for rich ui components based on knockoutjs
+107630,,[],[],the magpie programming language
+11863138,,[],[],a simple hello world sender and receiver for chromecast
+9051958,,[],[],tool for studying gfw
+2814320,,[],"['color-scheme', 'neovim', 'vim']",a vim color scheme with dark and light variants
+1281084,,[],[],encode animated gif files on the iphone
+9732726,,[],[],visualize when your system was running no longer maintained
+8848607,,[],[],show type signatures when logging blocks
+5845542,,[],[],black box tool to bypass ssl verification on even when pinning is used
+1567174,,[],[],samples for cloud foundry
+13987991,,[],[],the repository for this article http and and tympanus net and codrops and  and  and  and medium style page transition and
+3170038,,[],[],a collection of ui elements and widgets coded with and sass
+3896955,,[],[],contains scipy and r code providing solutions to exercises in elements of statistical learning tibshirani friedman
+4998730,,[],[],a loyal data retriever for your rails development databases
+8536928,,[],[],pipeable bash script that prints current time while waiting for an input from stdin
+8743309,,[],[],profile ruby code and find out exactly how slow it runs
+6211162,,[],[],the information can be shown on a toolbar is more than you can imagine ios toolbar extension library
+3954203,,[],[],simply reactive declarative orchestration in haskell using rdp
+11993635,,[],[],hacker news mobile app
+4823494,,[],[],a cocoa audio player component which displays the waveform of the audio file
+10845453,,[],[],quick and easy performance analyzer library for golang
+1420617,,[],[],ar augmented reality framework for based on a visual code like artoolkit
+12489205,,[],[],convert word to with images and math
+7341810,,[],[],detecting ios screenshots ala snapchat and facebook poke
+9970810,,[],[],appscroll is a tiny  lines js library that fixes the website dragging issue caused on idevices
+8108978,,[],[],an android library to enable swipe to dismiss and undo functionality on listviews
+4229981,,[],[],a vagrant base box that closely mirrors the celadon cedar stack on heroku
+3267670,,[],[],a micro lisp implementation in  lines of ruby
+6403491,,[],[],serve high resolution graphics to high density retina like displays with sass
+3672047,,[],[],font sass with assets for rails   and
+6847112,,[],[],cksidebarcontroller is a uitabbarcontroller like uiviewcontroller for ipad inspired by twitter for as well as my own work
+1781184,,[],[],a simple lua web framework for mongrel
+7264187,,[],[],checkedthreads no race condition goes unnoticed simple automatic load valgrind based checking
+9235644,,[],[],android a viewpager page indicator that displays the current page number and optionally the page count
+6650556,,[],[],ios autolayout backport to ios
+4935611,,[],[],a node js powered rapid front end development utility
+10019217,,[],[],a jquery plugin that turns a one line div into a sweet color swatch
+1136112,,[],[],a collection of useful objective c and ios classes
+12339565,,[],[],front end for acko net 
+2880591,,[],[],plugins for your mongoose schemas
+8323759,,[],[],basic wrapper for seaofclouds and tweet js that incorporates functionality with twitter s v  api
+2303340,,[],[],a better asset management package for laravel
+7535778,,[],[],circular layout for android
+1246024,,[],[],geospatial database for the cloud deprecated
+2434586,,[],[],windows gui framework for go
+9867430,,[],[],twitter music like pull to refresh controller but a bit more enhanced and flexible
+14274941,,[],[],examples of uidynamic behaviour of ios
+8827770,,[],[],demo of a custom uicollectionviewflowlayout subclass implementation of a roulette wheel of in the style of the yahoo timetraveler app
+3240598,,[],[],rawson js is a camera raw previewer in pure javascript
+10978068,,[],[],unofficial mirror of hardware video encoding on iphone rtsp server example
+384669,,[],[],utility to assist the ajax loading of html containing script tags that use document write mailing list http and and groups google com and group and writecapturejs users
+12287957,,[],[],sae java spring and springmvc and mybatis  http and and aixuexiao sinaapp com
+12071584,,[],[],thatcloud is an open source ios application that allows you to and work with all of the content you have online
+1710651,,[],[],the flixel power tools are a set of plug ins for flixel   and to assist with your game development
+9228265,,[],[],star wars jedi knight jedi academy
+11389331,,[],[],waterfall style implementation of uicollectionview layout
+7849940,,[],[],caldav synch adapter for android
+8251418,,[],[],an easy to use library that lets you implement background updates in your app that run whenever the user enters or exits a specified location
+2808275,,[],[],foursquare api v for ios
+2127316,,[],[],a javascript vnc client
+2422681,,[],[],the kademlia dht in javascript for node js and browsers
+7143131,,[],[],a javascript script to create a  color palette based on an image inspired by itunes 
+3760843,,[],[],pdf from html generation library for ios
+8691504,,[],[],non blocking gevent gunicorn example
+14510206,,[],[],the server side javascript for glitch that determined all game behavior
+6006459,,[],[],a delightful extension to the delightful afnetworking to provide accelerated and resumable downloads
+3151061,,[],[],couchdb compatible mobile database android version
+476414,,[],[],a node js module for delivering static files
+7437202,,[],[],mega man  password generator
+6525647,,[],[],got bored of using other so made my own
+8742936,,[],[],just like instant saves  of your time on android s custom adapters
+14267587,,[],[],an additive synth for clojure and overtone
+2601967,,[],[],looking for maintainer oauth   authorization server as a rack module
+1688824,,[],[],lightweight and minimalist orm for java and android works with sqlite mysql not actively maintained
+182356,,[],[],a python client for accessing the google analytics api
+7386592,,[],[],a php library to use the snapchat api
+12129587,,[],[],a driver module to make animate css work with angularjs  
+4555319,,[],[],genesis texas hold em game server
+4697004,,[],[],example animation for ios that sends one view into the background as another view slides up
+9295345,,[],[],drag and drop for angularjs
+11424141,,[],[],uiscrollview subclass that reuses its tile views
+208859,,[],[],port of redis example twitter app to ruby and sinatra
+6696037,,[],[],client side web framework for clojurescript
+6016224,,[],[],uitableview subclass that abstracts away the ugliness involved with creating static or modular uitableviews settings and menu pages are a snap to create with damodulartableview
+7484767,,[],[],a letter to my in ruby
+1219981,,[],[],a javascript library to preload all kinds of be it video or with simple syntax
+5597755,,[],[],a nodejs server for sending notifications to osx mountain lion s notification center
+15209160,,[],[],promise chains with angularjs q tutorial
+4936825,,[],[],automatically generates analog circuits using evolutionary algorithms
+3793621,,[],['tornado'],pypress rework by tornado
+10292696,,[],[],a module for freestanding rust programs
+7502565,,[],[],an example of how to do deep routing in an angularjs application when ngview is not enough
+6054962,,[],[],fangle creates interactive pages from plain text
+11580738,,[],[],easy regular expression building
+8570854,,[],[],one does not simply log a message
+12559993,,[],[],nslog replacement for coders
+7229343,,[],[],scaffolding for your core data models
+11505912,,[],[],an on scroll effect template that animates the sides of sections once they are in the viewport
+6382493,,[],[],simple library which enable you to add a drawer slide out navigation to your android application
+916970,,[],[],watcher is a daemon that watches specified files and folders for changes and fires commands in response to those changes it is similar to configuration uses a simpler to read yaml file instead of a plain text file it s also written in making it easier to hack
+1439382,,[],[],nodejs object relational mapping
+9198813,,[],[],demonstrates how to manage two fragments where portrait displays them in a viewpager and landscape displays them side by side
+8453404,,[],[],cms developed with laravel  php framework and angularjs
+1565025,,[],[],ryan zezeski s working blog
+11758219,,[],[],a simple starter kit for constructing twitter bootstrap  and themes
+6328341,,[],[],technical interview workshop
+1434717,,[],[],mp voice recorder sample for android
+3973266,,[],[],the app scrolls is a magical tool to generate new rails apps and modify existing rails applications coming to include your powerful magic
+1611009,,[],[],open source web based media streamer and jukebox fork of subsonic supports aac and other streamable audio and video formats runs on gnu and linux and mac using java
+15434820,,[],[],search stackoverflow and paste code snippets without leaving sublime text
+11451430,,[],[],python code for creating a dataset for a dot density map for every person in the u s color coded by race and ethnicity
+642536,,[],[],eeepub is a ruby epub generator
+254184,,[],[],zero downtime table migrations in mysql
+9276490,,[],[],custom uinavigationcontroller
+9805058,,[],[],a way to enable wink to take a photo with google glass
+8284020,,[],[],port of libmplame to javascript using emscripten
+505633,,[],[],pure javascript epub reader
+4744047,,[],[],a go package to observe notable events in a decoupled fashion
+3225624,,[],[],blossom is an ios style user interface framework for the web javascript canvas and implicit animation
+10026965,,[],[],a talking jarvis program written in python
+7717823,,[],[],iiithumbflow is a simple ios view component for presenting images in a vertical flow style
+14417601,,[],[],python oauth   client and server library
+1515695,,[],"['build-system', 'nodejs', 'unsupported']",the java and coffee script and css and less builder and bundler and packer and minifier and merger and checker
+3416668,,[],[],code examples for my java artificial intelligence book
+12156440,,[],[],render coretext use gcd
+3249576,,[],[],a framework to optmize swc and swf files
+4040531,,[],"['capistrano', 'chef-solo']",combines capistrano with chef solo
+7434812,,[],[],a list of  javascript refactoring based on the  days of refactoring book by sean chambers and simone with the applied solutions
+5650739,,[],[],true bittorrent dht in javascript
+2929332,,[],[],deprecated chef fundamentals training materials
+2138219,,[],[],symfony  tutorial creating a blogging website http and and tutorial symblog co uk
+194810,,[],[],contact and invitation management for the django web framework
+8472940,,[],[],teamtoytodo  teamtoy net teamtoypocket gplv  phonegap  phonegap and phonegap phonegap js
+2819421,,[],[],deprecated see below gradual typing for clojure
+7723108,,[],[],artisan is a simple ios application to search for and display information and related mixes from a particular musical artist
+494591,,[],[],ronin is a ruby platform for vulnerability research and exploit development ronin allows for the rapid development and distribution of exploits or via repositories
+6475872,,[],[],state machine library for objective c
+4961712,,[],[],throttle is a simple node js app that makes it easier to test how a website performs on poor network connections for testing a responsive website on a poor g connection without actually having to have a poor g connection simply connect your mac to share the network connection via run and any connected device will then be throttled to the the network speed you specified throttle was designed to be used in conjunction with a device lab and products like shim or adobe shadow where a shared connection is expected
+5107084,,[],[],jmap enhanced edition
+7670877,,[],[],simple http client in c
+6106867,,[],[],a library for doing stuff to other stuff
+3177629,,[],[],mobile first boilerplate focusing on readability
+13723768,,[],[],uicollectionviewlayout for displaying cells in groups highlighting one of them
+5233277,,[],[],autocomplete redis is a quora like automatic autocompletion based on redis
+5552562,,[],[],an implementation of deferred irradiance volumes in webgl
+11854629,,[],[],amazon employee access challenge
+1938079,,[],[],ios library for connecting photo editing apps
+156225,,[],[],nickel extracts and message information from naturally worded text
+9860420,,[],[],a tool belt for ios concurrency
+7298259,,[],[],simple xcode plugin to visualize view autoresizing if it s set from code
+1319436,,[],[],a graphical view into your rails app s performance
+10009208,,[],[],whit is an open source sms which allows you to query and several other data apis
+6646167,,[],[],sparky js is an idea about client side javascript organization
+2717158,,[],[],mou http and and mouapp com and theme for markdown syntax highlighting using ethan schoonover s solarized color scheme
+5122525,,[],[],pinch to reveal animation transition built with layer as seen in boeing app for ipad
+1502311,,[],[],in use when looking at a javascript this extension will offer to beautify it for you uses http and and jsbeautifier org
+3888919,,[],[],a web based d gcode viewer to help understand d printer models
+8134470,,[],[],create a cloud syncing mobile app in  minutes
+10851746,,[],[],javascript and less and css for creating bootstrap themed trees to display hierarchical data
+7795747,,[],[],ios image view with transition between images
+10310671,,[],[],basic example of a chrome devtools extension with communication between the inspected page and the panel
+6254495,,[],[],arduino library for remote control lelo vibrators
+3598059,,[],[],digsby im and email and social networks
+7321417,,[],[],visualize your javascript with a cps metacircular interpreter
+862610,,[],[],deprecated a tool that rewrites your css adding vendor prefixed versions of css rules
+1210329,,[],[],fake touch events in desktop browsers unsupported
+882891,,[],[],parse markdown syntax with node js
+1159273,,[],[],please submit issues and pull requests to the main repository
+12220065,,[],[],demo django app using docker
+3826809,,[],[],mmir is an experimental rule engine written in clojure
+8231348,,[],[],crowy is a communication dashboard supports multiple group communications incluging twitter with hashtag support facebook profile and page and cybozu live and youroom
+5076908,,[],[],an html  gaming environment based on raspberry pi
+11854477,,[],[],a simple sample showing the different types of notifications on andoid
+3510292,,[],[],keeping the project alive with this clone of mauricemach and coffeekup
+6030365,,[],[],sample project to use monigusto with vagrant
+2580900,,[],[],calayer style api for building high performance ui graphics in webkit
+4484315,,[],[],easy to clean calendar view
+7809570,,[],[],hadoop log aggregator and dashboard
+8355883,,[],[],example of recording then stitching together multiple video segments taken from the camera of an ios device
+12689970,,[],[],compares the prices sell and buy for various altcoins on the exchanges coins btc vircurex and crypto trade it executes the sell and buy trades as arbitrage of given percentage is found
+7117937,,[],[],porting panic s itunes album art color algortithm http and and www panic com and blog and  and  and itunes  and colors and to javascript
+9912689,,[],[],a javascript tool which was made to monitor performance of has a very useful tool named taskmanager can help developers to manage the js tasks in order to pervent page stuck
+3492752,,[],[],versatile pull gesture for ios perfectionists comes with pull to create and pull to refresh
+3799851,,[],[],class to make a easily customisable action sheet for ios
+5358383,,[],[],a scala web application demonstrating event sourcing best practices
+13792983,,[],[],art and source for glitch s customizable avatars
+1424730,,[],[],the all new clean and ui callback enabled app formerly known as kepler aka pollen planets
+5488015,,[],[],and run scripts for the desktop build of open webos
+4608909,,[],[],the simplest section adapter for android
+138012,,[],[],if you re using you should use sinatra flash instead
+14305536,,[],[],ios  colors and gradients
+2728643,,[],[],coffeescript and javascript method combinations for underscore projects
+4316389,,[],[],a lisp system for the browser
+10166640,,[],[],inspired by mailboxapp http and and mailboxapp com a uitableviewcell subclass that makes it easy to add left and right swiping of content in your table views features  swipe zones with customizable colors and sizes
+5413380,,[],[],a distributed load test framework using amazon ec instances
+2431023,,[],[],ruby and rails centric vimfiles with support for rvm and more
+8435786,,[],[],a simple and fast weibo
+11284642,,[],[],color picker for android
+14835020,,[],[],python orm and odm for the sleepy
+1087628,,[],[],diy font face web service
+1569925,,[],[],spine demo contact manager
+5374173,,[],[],first class postgres feature support for the django orm
+8640200,,[],[],a quick custom android dialog project
+8232533,,[],[],a library for simulating parallel in clojure
+4368432,,[],[],functions for transforming postgresql and pl and v into a totally awesome json document store
+1957343,,[],[],a pure js and html markdown editor with live preview and syntax highlighting
+11990080,,[],[],perl for ios and os x
+10582476,,[],[],give the nsa free backdoor access to your flask app
+1646242,,[],[],android location service cache dumper
+12389834,,[],[],jquery fullscreen editor
+7865360,,[],[],intel s software occlusion culling demo with my modifications
+1470507,,[],[],a flask skeleton for google app using html boilerplate templating
+11460912,,[],[],this is a text steganography application optimized for use on written in clojure
+988678,,[],[],input type range polyfill for firefox
+3119164,,[],[],software transactional memory implementation for the jvm
+518809,,[],[],lua bindings for qt by mauro iazzi
+5405760,,[],[],some dtrace tools written for the smartos and smartdatacenter cloud illumos based
+2828482,,[],[],don t allow elements to scroll out of view by having them stick to the top or bottom of a window
+1234730,,[],[],key shortcuts made simple
+6347457,,[],[],deprecated please use the vitamiobundle and sample
+5672117,,[],[],sidebar with folding effect for ios
+11348463,,[],[],a replacement for  button uialertview that uses blurring and uikit dynamics on ios 
+6941372,,[],[],amazon s multipart file upload for made simple
+14497781,,[],[],library for streaming audio over nsstream
+13275394,,[],[],simple android view to display list of colorful tags efficiently
+7801845,,[],[],von is an opinionated redis stats tracker
+4146761,,[],[],a node js cms written in with a user friendly backend
+2941226,,[],[],modular restricted boltzmann machine rbm implementation using theano
+13168669,,[],[],a library to add peeling to the center of your content
+12704847,,[],[],uml files to reverse android frameworks
+4697436,,[],[],custom uitableviewcell for ios that supports multiple row selection
+1703377,,[],[],a plugin that integrates jshint with vim
+10444483,,[],[],bootstrapping an blog using rails and angularjs
+13853378,,[],[],an objective c implementation of vector based original implementation by hannu kankaanp http and and www niksula hut fi and hkankaan and homepages and index html
+3373795,,[],[],dareloadactivity is a uibutton subclass with a refresh arrow by default with uiactivityindicatorview properties
+7399420,,[],[],offheap java pojos with guaranteed memory alignment
+6894693,,[],[],ruby binlog based mysql replication listener
+9835285,,[],[],for uiview separation with animation
+2432283,,[],[],a build server in the cloud
+6737170,,[],[],all your lib are belong to us
+3474961,,[],[],js based finite state machine for backbone js
+13875287,,[],[],a demo of the private blur apis in ios 
+14089607,,[],[],a verlet based physics library for svg files written in coffeescript
+7227839,,[],[],clockface timepicker for twitter bootstrap
+10619731,,[],[],save time add the latest version of gems to your gemfile from the command line
+867467,,[],[],a jquery ui theme that uses absolute css power
+9931090,,[],[],socket io mongodb demo
+6193567,,[],[],experimental sdl based terminal with gnu unifont font rendering using libvterm
+8534532,,[],[],configure servers in a snap with these concise ansible playbooks
+1309789,,[],[],a jquery plugin to enable the scoped attribute on style blocks
+6737965,,[],[],custom emoji formatters for rspec
+5087313,,[],[],javascript terminal for firefox
+4448890,,[],[],uiimage category which have vimage wrapper functions and the demo project
+3697283,,[],[],implementation of google s fastbutton javascript and jquery and xui js integration
+6018772,,[],[],archive current work happening at https and and github com and the grid and the graph
+8422648,,[],[],ffmpeg  openal openglquartzcore  ffplayios  ffplaysdlopengl es    
+7772213,,[],[],a gem for building mobile optimized rails applications using media query based device detection and server side component optimization
+1863833,,[],[],create tabbarcontroller with more customization than uitabbarcontroller
+10801226,,[],[],integration test between nodejs and php
+6414509,,[],[],hungry hero is an open source flash game built on starling framework
+1884096,,[],[],first alpha and initial concept of phpspec moved to phpspec and phpspec repo
+4788242,,[],[],a lightweight opengl es   framework for ios
+246825,,[],[],a c wrapper for the ghostscript library  
+10476219,,[],[],a tool to display gesture hints to your users
+3930334,,[],[],single page application rocketship
+8734563,,[],[],a sublime text plugin which allows using laravel  generators by jeffrey way via the command palette
+9795443,,[],[],seahorse is a way to describe your api
+8777656,,[],[],a bookmarklet for prettifying your css
+14458190,,[],[],web app for interviewing technical candidates in the browser
+9634381,,[],[],web api authentication with ssh public keys
+2697304,,[],[],simple visualisations of backbone collections via d visualisation library
+5557913,,[],[],css kaleidoscope effect
+1550805,,[],[],jquery plugin for google maps v api
+9423536,,[],[],an android application that rounds the corners of the screen
+14433799,,[],[],and other assorted things from www glitchthegame com
+9498659,,[],[],use an expanded notification as a makeshift android log output console
+6056276,,[],[],java port of arc s readability js parses html as input and returns easy to read text
+1493284,,[],[],the junkyard jumbotron is a web tool that makes it really easy to combine a bunch of random displays into a large virtual display it works with smartphones anything that can run a web browser and the magic is that all you need to do to configure one is take a photograph of all the screens
+123650,,[],[],make your elements glow ooooh
+4655214,,[],[],a cli tool for managing your dotfiles
+4154068,,[],[],expanding support for constant space tail calls in the clojure language
+7329949,,[],[],browser details is a rack middleware that logs information about the browser used to make a request
+7714057,,[],[],aaron swartz s blog posts in and mobi
+8280896,,[],[],meteor js smartpackage to publish associated collections at once
+2098535,,[],[],an open source payment processing library for codeigniter
+9126257,,[],[],this project is meant for people who want to display a calendar view and show that there are events on certain days
+4026081,,[],[],rails one click installer for mac os x
+2565808,,[],[],a javascript library for building out the logic and ui for business rules
+1620849,,[],[],glassy ios buttons with only one color to set
+14077067,,[],[],crawling japanese laws
+10314195,,[],[],facebook like uinavigationcontroller to slide back to previous view controller
+2740353,,[],[],parallax scrolling library javascript
+2114475,,[],[],not maintained improve your navigation experience this jquery lib improves a webpage navigation and helps to visualize different sections of a an any web page
+6805464,,[],[],master your scroll events
+1538255,,[],[],datastax brisk distribution
+13306196,,[],[],sample project showing a common architecture i use when creating ios projects
+14989296,,[],[],simple scripts to setup a fresh data science box using an ubuntu   lts  bit server running on an ec
+530281,,[],[],archived new test framework for clojure
+7007153,,[],[],a virtual d universe in your web browser
+9501059,,[],[],show view hierarchy in d
+7538981,,[],[],measure a function s runtime without adding a single line of code to the original function nothing more
+8293120,,[],[],moost last fm s collection of c and and utility libraries
+11454201,,[],[],q js has a lot of helpful javascript and works well with other libraries such as jquery
+14161710,,[],[],iphone is the new idevice in town yet no longer maintained
+3213781,,[],[],ios ui control displaying a set of thumbnails resembling ipad s photos app toolbar thumbnails view
+14878542,,[],[],source code for the actionscript virtual machine
+6141965,,[],"['cloud', 'iaas', 'openstack-folsom']",a full installation guide for openstack folsom with quantum
+5386286,,[],[],a pure css responsive navigation menu
+1505103,,[],[],graphite dashboard system
+2975780,,[],[],see what your jquery code does inside like a boss
+8027643,,[],[],micro responsive that works in every browser
+5303571,,[],[],a simple theme for a knowledge base based on kirby
+6292589,,[],[],building static empires with node js
+1680851,,[],[],jquery slideshow and carousel plugin
+12719648,,[],[],advanced jquery boilerplate
+9994058,,[],[],a simple example of how to do optical character recognition ocr on ios
+2821925,,[],[],these are the supporting materials for my popular series of tutorials on the arduino microcontroller platform
+14743998,,[],[],v javascript engine binding for golang
+9622149,,[],[],enhanced router is an extension to the laravel  router and provides some enhanced functionality
+1672343,,[],[],http interface to libspotify
+9374613,,[],[],sublimetext plugin for scope context coloring st and st
+12215470,,[],[],data href put an href on it
+3833357,,[],[],pitch detection in javascript
+5241965,,[],[],an example rails application that uses the jquery fileupload rails and paperclip gems to upload files
+2934564,,[],[],a rails engine for kneath s kss documentation
+10732620,,[],[],a simple distributed spider in java java
+13197928,,[],[],the dock like control for ios
+653511,,[],[],elasticsearch ruby client deprecated
+7915260,,[],[],expose the django shell as an ssh server
+3479562,,[],[],exploration of scala macros
+6930390,,[],[],an automatic web app tester
+2601600,,[],[],a free and open source bitcoin ecommerce with several representative clients online admin etc uses mongodb etc
+7113762,,[],[],dom promises idl and polyfill
+8041417,,[],[],veewee definitions for a set of generic vagrant boxes
+7604359,,[],[],laravel  ide helper for jetbrains phpstorm
+9228529,,[],[],star wars jedi knight ii jedi outcast
+10277920,,[],[],make your own crowdfunding site tutorial source code
+845940,,[],[],compass plugin for providing cross browser compatible rgba support by creating transparent pngs on the fly for browsers that don t support rgba uses the pure ruby chunkypng library for hassle free install and deployment
+6410709,,[],[],ios library to manage caches of images and resize transformations
+9775950,,[],[],demo of effect of tweetbot profile image
+4993973,,[],[],quick start with flask
+9015137,,[],[],mongodb   text search support for mongoose
+624728,,[],[],rack middleware for captcha verification via recaptcha api
+8243331,,[],[],app store like horizontal view control that can be used in a uitableview
+5269375,,[],[],m is a port of underscore js to objective c
+8847651,,[],[],sqlite sqlitensuserdefaults
+8608383,,[],[],dropdownmenu for android
+6025137,,[],[],deprecated infinite grid view with uitableview esque data source methods
+6036663,,[],[],uses bootstrap and jquery to provide a highly customizable and powerful wizard ui to your project
+1753142,,[],[],an online rss reader written in clojure javascript java
+12516124,,[],[],study form here http and and flavienlaurent com and blog and  and  and  and each navigation drawer hides a viewdraghelper and
+1873787,,[],[],a node js blogging platform
+3076009,,[],[],python css and javascript minifier
+547593,,[],[],a hash based high performance data store
+9770340,,[],[],an implementation of the voxel cone tracing global illumination technique proposed by cyril crassin http and and perso telecom paristech fr and eisemann and publications and crassinvoxelglobalpg and pg sub pdf
+9929356,,[],[],clojurehomepage is a compojure based web framework that allows you to write the backend and frontend with clojure
+6897885,,[],[],converted dart shaky boxes demo to coffeescript
+15039615,,[],[],private api showcase for nsusernotification on os x
+1507091,,[],[],mysql database bindings for node js
+4700852,,[],[],fresh food finder phonegap application
+10128257,,[],[],a git hook plugin system built using python
+2679367,,[],[],unity ios  android  web view 
+6429603,,[],[],vim scala ide vimside built upon ensime
+10152566,,[],[],an enhanced version of the volley networking toolkit for android
+7722711,,[],"['decoding', 'fft', 'fsk', 'fun', 'microphone']",description and unofficial implementation of furby s audio protocol
+8297160,,[],[],scrolling for single page websites
+2160255,,[],[],collection of blackberry webworks sample applications
+3533981,,[],[],a scrapy based hacker news crawler
+2366023,,[],[],new sbt project generation made simple r
+411774,,[],[],unsupported jasmine jstestdriver adapter write jasmine bdd and run it on jstd
+2541726,,[],[],when your git repo needs to lose some weight
+10765492,,[],[],html canvas experiment
+1941656,,[],[],hooks to support data binding between virtually any object
+2390234,,[],[],a metrics aggregator for graphite
+7972514,,[],[],john papa s asp net mvc spa template durandal
+13016689,,[],[],deprecated the missing blacklist app for your ios  and  with private apis no jailbreak required
+3411805,,[],[],faked out in memory mongo for java
+10002690,,[],[],an experimental framework for low high fps multiplayer games
+1517865,,[],[],minimalistic authentication plugin for rails  apps
+2731990,,[],[],bootstrap heroku easily customizable marketing landing page that integrates with mailchimp simple sinatra server app
+7311289,,[],[],an express and socket io based chat app that uses redis as session store rabbitmq for pubsub
+2054055,,[],[],teleport opinionated server setup with ruby
+7401172,,[],[],quartz composer to js and webgl compiler
+4864594,,[],[],twitbase is a running example used throughout hbase in action
+5114310,,[],[],a powerful and hackable service for running a beta release with invite codes
+14248505,,[],[],archived code for lastgraph
+4969455,,[],[],a progresshud similar to https and and github com and jdg and mbprogresshud but for android
+11321834,,[],[],webrtc pp chat go golang stun websocket
+10477613,,[],"['design-pattern', 'design-patterns']",a minimal and conceptual php   and pattern collection that will cover design patterns not only gof s anti closure refactoring patterns
+2596695,,[],[],  qq  demo http and and mystory cc and 
+9004963,,[],[],findyyetsalfredworkflow yyets    workflow
+898063,,[],[],javascript testing made easy and explicit
+7368314,,[],[],frictionless ios animations
+939008,,[],[],node js pubsubhubbub client and server implementation
+12463754,,[],[],all the support file for my code by voice setup using dragon naturally speaking and dragonfly
+451465,,[],[],evaluate any text against a collection of match rules
+3112733,,[],[],a category on uiview to create an instance with a block for its drawrect
+2269637,,[],['sample-app'],codestrong mobile companion
+9214831,,[],[],a jquery and zepto plugin that provides an easy way to implement an off canvas toggling a navigation metaphor made popular by mobile applications
