@@ -104,7 +104,7 @@ class Sumreadme (Collect_Research_Data):
         if Readme == None and not os.path.exists (RepoDir):
             with open(self.SfFile, 'a', encoding='utf-8') as CsvFile:       
                 writer = csv.writer(CsvFile)
-                writer.writerow([ReppId, '', '', repo_item.topics, repo_item.description])
+                writer.writerow([ReppId, '', [], repo_item.topics, repo_item.description])
             self.Index += 1
         else:
             RepoDir += "/" + os.path.basename (repo_item.url)

@@ -883,3 +883,119 @@ id,summarization,tokens,topics,description
 16585506,,[],"['docker', 'docker-compose', 'rails']",opinionated rails application templates
 811687,,[],[],perl extensions for the rxvt unicode terminal emulator
 6813862,,[],"['personal-website', 'portfolio']",ovilia s personal site
+42751014,,[],['clipboard'],scissors modern copy to clipboard no flash just kb gzipped clipboard
+1844251,,[],[],helping you select an mv framework todo apps for react ember and many more
+481366,,[],[],git extensions to provide high level repository operations for vincent driessen s branching model
+12244426,,[],[],for slim progress bars like on etc
+33895378,,[],"['component', 'drag-and-drop', 'drag-drop', 'dragging', 'front-end', 'vanilla']",drag and drop so simple it hurts
+7240954,,[],[],patched fonts for powerline users
+619849,,[],[],the ultimate vim distribution
+151300862,,[],"['deep-learning', 'deep-learning-tutorial', 'tensorflow']",simple and ready to use tutorials for tensorflow
+19757917,,[],[],javascript library to make drawing animation on svg
+131789494,,[],"['learning', 'shiro', 'spring-boot', 'spring-boot-learning', 'spring-cloud', 'spring-security', 'springboot']", spring boot spring boot shiro spring cloud spring security spring security oauth spring
+189890377,,[],"['graphql', 'plaid', 'react', 'react-native-web']",react and apollographql and node and mongo demo written in typescript
+22282353,,[],[],color framework for swift objective c gradient hexcode colors from images more
+14376285,,[],"['bitbar', 'mac', 'macosx', 'menubar', 'scripting']",put the output from any script or program in your mac os x menu bar
+65219131,,[],"['api', 'community', 'curated', 'education', 'interactive', 'knowledge', 'mindmaps', 'react', 'research', 'resources', 'search-engine']",organize world s explore connections and curate learning paths
+11133743,,[],[],this repo is archived thanks
+4637221,,[],"['bash', 'fish', 'ipython', 'powerline', 'prompt', 'statusline', 'tmux', 'vim', 'zsh']",powerline is a statusline plugin for and provides statuslines and prompts for several other including awesome and qtile
+10518659,,[],[],the ultimate generator based flow control goodness for nodejs supports etc
+122775780,,[],"['beautifulsoup', 'css-selectors', 'http', 'kennethreitz', 'lxml', 'pyquery', 'requests', 'scraping']",pythonic html parsing for humans
+75701562,,[],[],a study path for game programmer
+15642233,,[],[],deep learning in javascript train convolutional neural networks or ordinary ones in your browser
+69739040,,[],[],super resolution for images using deep learning
+1358497,,[],[],this script is the defacto way to enable use of html sectioning elements in legacy internet explorer
+53228513,,[],[],turn your two bit doodles into fine artworks with deep neural generate seamless textures from transfer style from one image to perform example based but wait there s more an implementation of semantic style transfer
+1963063,,[],"['job-queue', 'priority-queue', 'worker-queue']",kue is a priority job queue backed by built for node js
+20430314,,[],[],swift implementation of flappy bird more at fullstackedu com
+12434060,,[],[],babun a windows shell you will love
+275604,,[],[],resque is a redis backed ruby library for creating background placing them on multiple and processing them later
+8936633,,[],[],snowflake a short introduction to node js
+129388994,,[],"['android', 'apps', 'cross-platform', 'dartlang', 'flutter', 'flutter-apps', 'flutter-plugin', 'ios', 'material-design']",example apps basic flutter for flutter devs
+16469292,,[],[],execute sql against structured text like csv or tsv
+747512,,[],[],the clojure programming language
+48301282,,[],"['aws', 'aws-lambda', 'faas', 'golang', 'lambda', 'node', 'serverless']",and manage aws lambda functions with ease
+128658421,,[],"['cli', 'console', 'hackable', 'logger', 'nodejs']",highly configurable logging utility
+82468492,,[],"['awesome', 'awesome-list', 'collection', 'curated-list', 'hacking', 'list', 'movies', 'sexy-lists']",a curated list of movies every hacker cyberpunk must watch
+622166,,[],[],a simple php web scraper
+55584626,,[],"['autocomplete', 'cli', 'developer-tools', 'development', 'http', 'http-client', 'json', 'rest-api', 'syntax-highlighting', 'terminal', 'web-development']",httpie and an interactive command line http client featuring autocomplete and syntax highlighting
+286061,,[],[],hosting git repositories gitolite allows you to setup git hosting on a central with very fine grained access control and many many more powerful features
+51480,,[],[],surround vim quoting and parenthesizing made simple
+94949504,,[],"['api', 'api-gateway', 'aws', 'aws-infrastructure', 'aws-lambda', 'deploy-tool', 'deployment', 'golang', 'graphql', 'heroku', 'http', 'lambda', 'microservice', 'microservices', 'nodejs', 'serverless', 'static', 'up']",deploy infinitely scalable serverless and sites in seconds to aws
+45363955,,[],"['clang', 'golang', 'ip-address', 'ip-location', 'ip-lookup', 'lua-bindings', 'nodejs']",ipregion is a offline ip location library with accuracy rate of   and  x millseconds searching performance db file is less then mb with all ip address stored binding for searching algorithm
+121204738,,[],"['board', 'cli', 'note', 'task', 'todo']",boards notes for the command line habitat
+14224695,,[],"['macos', 'mysql', 'sequelpro']",mysql and mariadb database management for macos
+2965621,,[],"['backbone', 'backbone-framework', 'framework', 'frontend', 'marionette', 'marionettejs']",the backbone framework
+28801013,,[],[],public facing notes page
+3959394,,[],[],pythonic command line arguments that will make you smile
+65593050,,[],"['gfw', 'proxy', 'shadowrocket', 'shadowsocks', 'shadowsocksr', 'ssr', 'surge']", shadowrocket    ios 
+66557478,,[],"['gif', 'qrcode']",artistic qr code in python animated gif qr code python  gif 
+1903338,,[],[],a web front end for an elastic search cluster
+2960985,,[],"['chroma', 'color-conversion', 'color-manipulation', 'colors', 'javascript-library', 'manipulate-colors']",javascript library for all kinds of color manipulations
+12495928,,[],[],date and time picker widget based on twitter bootstrap
+175176201,,[],"['animation', 'effects', 'parallax', 'scroll', 'transitions']",simple light weight kb minified zipped vanilla javascript plugin to create smooth beautiful animations when you scrolllll harness the power of the most intuitive interaction and make your websites come alive
+9155431,,[],"['approximate-nearest-neighbor-search', 'c-plus-plus', 'golang', 'locality-sensitive-hashing', 'nearest-neighbor-search']",approximate nearest neighbors in c and and and python optimized for memory usage and loading and saving to disk
+82436691,,[],"['adult', 'adult-video', 'avmoo', 'crawler', 'database', 'guzzlehttp', 'javbus', 'javlibrary', 'laravel', 'magnet', 'magnet-link', 'scraper', 'spider']",av  avmoo javbus javlibrary   av  av  japanese adult video video magnet links japanese adult video database
+16957000,,[],[],vk kittenphp and db and engine suite
+33323837,,[],[],customisable coding font with ligatures and contextual positioning crazy crisp at px and pt http and and larsenwork com and monoid and
+9779017,,[],[],laravel proxy package for handling sessions when behind load balancers or other intermediaries
+175366155,,[],"['agent-pool', 'crawler', 'example', 'fund', 'multithreading', 'pyquery', 'selenium', 'spider', 'stock', 'taobao', 'tmall', 'wechat', 'wechat-report']",   qq some interesting examples of python crawlers that are friendly to beginners
+375388,,[],[],authorization gem for ruby on rails
+41482296,,[],"['android', 'droid-plugin', 'hook', 'plugin', 'pluginframework', 'virtualization']",a plugin framework on any third party apk without modification or repackage
+170777132,,[],"['algorithms', 'artificial-intelligence', 'machine-learning', 'machine-learning-algorithms']",machine learning course with python refer to the course page for step by step explanations
+29882262,,[],[],public slack organizations made easy
+3361835,,[],[],the page flip effect for html
+37787433,,[],"['cli', 'cli-app', 'cross-platform', 'fabulous', 'kill', 'nodejs', 'process', 'unicorns']",fabulously kill processes cross platform
+774606,,[],[],unix command line utilities installer for windows
+1238201,,[],[],methods to allow using html code with coretext
+21294600,,[],[], redis    annotated redis   source code
+1381275,,[],[],precision colorscheme for the vim text editor
+34045,,[],[],easy to use cfnetwork wrapper for http objective mac os x and iphone
+19360616,,[],[],swarm a docker native clustering system
+747722,,[],[],a utility for arming creating many bees micro ec instances to attack load test targets web applications
+2321051,,[],"['hook', 'http', 'preload', 'proxy', 'proxychains', 'socks']",proxychains ng new generation a preloader which hooks calls to sockets in dynamically linked programs and redirects it through one or more socks and http proxies continuation of the unmaintained proxychains project the sf net page is currently not use releases from github release page instead
+9950667,,[],"['golang', 'mssql', 'mysql', 'orm', 'postgres', 'postgresql', 'sqlite', 'tidb']",simple and powerful orm for support moved to https and and gitea com and xorm and xorm
+4445324,,[],"['package-manager', 'plugin-manager', 'zsh']",the plugin manager for zsh
+3450268,,[],[],a rails app that generates bootstrap color scheme from an image
+52301805,,[],[],the interactive extensions for javascript
+562972,,[],[],a small peg based parser library see the hacking page in the wiki as well
+126996636,,[],[],javascript library to draw and animate images on hover
+59538658,,[],"['ethernet', 'golang', 'linux', 'network-programming', 'software-defined-network', 'tcp', 'zsocket']",zero copy sockets for linux in golang
+369782,,[],[],roundhouse is a database migration utility for net using sql files and versioning based on source control
+2233194,,[],[],python extract transform and load tables of data
+2640093,,[],[],my octave exercises for  stanford machine learning posted after the due date of course
+2213243,,[],[],jquery annotated source
+17035365,,[],[],projectionist vim granular project configuration
+569495,,[],[],openvbx is a web based open source phone system for business
+15199188,,[],[],bluetooth low energy phonegap plugin
+56460797,,[],"['ant-design', 'antd', 'dashboard', 'data-science', 'flask', 'interactive', 'jupyter', 'plotly', 'react', 'socket-io', 'visualization', 'webapp']",bowtie create a dashboard with python
+189715345,,[],[],a collaborative list of awesome ui animation only in swift include quick preview
+53374688,,[],"['bayesian-classifiers', 'machine-learning', 'react', 'tornado']",bayesian text classification service based on redis built on top of tornado and react js
+48581043,,[],[],blackjack game made with cocos creator
+66083213,,[],[],optimizedhtml is all optimized for google pagespeed start html template with bootstrap grid only clean vinyl ftp and rsync and bower libs path support the template contains a htaccess file with caching rules for web server
+48394154,,[],[],create boxes in the terminal
+21405570,,[],[],implementation of t sne visualization algorithm in javascript
+1468022,,[],[],this software cmvs takes the output of a structure from motion sfm software as then decomposes the input images into a set of image clusters of managable size an mvs software can be used to process each cluster independently and in where the union of reconstructions from all the clusters should not miss any details that can be otherwise obtained from the whole image set cmvs should be used in conjunction with an sfm software bundler and an mvs software pmvs pmvs version 
+1872254,,[],[],programmatic web browsing module with ajax support for python
+56901410,,[],[],python interface to the webrtc voice activity detector
+209379,,[],[],the ruby gem for querying maxmind com s geoip which returns the geographic location of a server given its ip address
+592109,,[],[],fast python bloom filter using mmap
+16865424,,[],"['caldav', 'calendar', 'carddav', 'cli', 'contacts', 'icalendar', 'pim', 'sync', 'synchronisation', 'tasks', 'todo', 'vcard', 'vevent', 'vobject', 'vtodo', 'webdav']",synchronize calendars and contacts
+99309593,,[],[],xx led cube powered by an arduino
+6308751,,[],"['eye-tracking', 'opencv']",a webcam based pupil tracking implementation
+32198196,,[],[],scaffold out a node module
+66172698,,[],"['data-mining', 'sentiment-analysis', 'twitter']",data collection tool for social media analytics
+745678,,[],[],scripts from pixelbeat org
+1177157,,[],[],a jquery ui range selection slider that supports dates
+12667726,,[],"['aac', 'browser-game', 'html5-audio', 'ion-sound', 'ionsound', 'mp3', 'ogg', 'play-sounds', 'web-audio-api', 'web-audio-library']",javascript plugin for playing sounds and music in browsers
+16990539,,[],"['charts', 'geometry', 'mesh-generation', 'obj', 'opengl', 'ply', 'stl', 'subdivision', 'svg', 'visualization', 'voxel', 'webgl']",d and d geometry toolkit for clojure and clojurescript
+727813,,[],[],on the fly recompiling and reloading in erlang code without friction
+150235,,[],[],simple rails deployment and configuration management  minute deploys of rails or  apps
+92443859,,[],"['cms', 'cmsscanner', 'scanner', 'wordpress', 'wordpress-security-scanner']",wpseku wordpress security scanner
+298328,,[],[],jansi is a small java library that allows you to use ansi escape sequences to format your console output which works even on windows
+143447275,,[],[],https and and pan baidu com and s and tqgcanlosqzvopbq  izm
+28914987,,[],[],a cross platform library that allows you to call for standard user dialogs from a core net standard toast async just for fun
+46328,,[],[],a jquery plugin for searching through etc quickly
+49821132,,[],[],a fake mailer for laravel applications for testing mail
+847744,,[],[],net port of tobias ltke s liquid template language
+10620469,,[],"['chart', 'charting-library', 'chartjs', 'charts', 'django', 'flask', 'google-charts', 'highcharts', 'visualization']",create beautiful javascript charts with minimal code

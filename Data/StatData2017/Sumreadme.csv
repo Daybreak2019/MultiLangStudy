@@ -861,3 +861,141 @@ id,summarization,tokens,topics,description
 83416974,,[],"['beauty', 'firebase', 'ssr', 'vuessr', 'vuex', 'website']",vue and vuex and firebase and bulma  spa ssr  demo
 79790291,,[],"['computer-vision', 'object-detection', 'ssd', 'tensorflow', 'traffic-signs']",implementation of single shot multibox detector in to detect and classify traffic signs
 77251767,,[],"['3rd-party-libraries', 'android', 'encryption', 'scytale']",one tool to manage key key storing and encryption on different apis of android
+341626,,[],[],octopress is an obsessively designed framework for jekyll blogging it s easy to configure and easy to deploy sweet huh
+2404027,,[],[],distributed and fault tolerant realtime computation stream continuous distributed and more
+12708085,,[],[],make use of your favicon with images or videos
+32512065,,[],[],teamtalk is a solution for enterprise im
+6804324,,[],[],yeoman generator for angularjs
+12977854,,[],[],a browser written in js free modular hackable
+692798,,[],[],vim the text editor for mac os x
+27244649,,[],[],neuraltalk is a python and numpy project for learning multimodal recurrent neural networks that describe images with sentences
+3548254,,[],[],distributed graph database
+5363235,,[],[],frontend package manager and build tool for modular web applications
+1786438,,[],[],css backed javascript animation framework
+15221739,,[],[],a css preprocessor that acts like a polyfill for future versions of the spec
+766625,,[],[],embedded javascript templates for node
+3769419,,[],[],beautiful wysiwyg editor
+242262,,[],[],tap and haiku a well crafted open source ios framework
+18609451,,[],[],a next generation package manager for the front end
+76486448,,[],"['home-automation', 'nodejs', 'phone', 'raspberry', 'react-native']",raspberry pi  based home automation with nodejs and react native
+19248542,,[],[],container data volume manager for your dockerized application
+605999,,[],[],a fault tolerant graph database
+2848123,,[],[],modern nsurlsession based networking framework with built in authentication and http   caching standards support for ios  and devices
+14050203,,[],"['demo', 'toy']",simple chat program that communicates using inaudible sounds
+1734612,,[],[],deprecated https and and github com and chocolatey and choco chocolatey nuget like apt but for windows
+13260326,,[],[],the best jquery plugin to validate form fields designed to use with bootstrap and zurb foundation and pure and semanticui and uikit and your own frameworks
+5032833,,[],[],plugin framework for css preprocessing in node js
+714959,,[],[],perform all your vim insert mode completions with tab
+3318531,,[],[],quake gpl source release
+1525163,,[],[],a suite of scala libraries for building and consuming restful web services on top of akka non actor testable
+1060073,,[],[],django social authentication made simple
+85344516,,[],"['animated-icons', 'icons']",a set of animated icons and code to insert them into the webpages
+2474718,,[],[],dumps decrypted mach o files from encrypted iphone applications from memory to disk this tool is necessary for security researchers to be able to look under the hood of encryption
+1841033,,[],[],jquery powered parallaxing
+30111555,,[],[],a spring indicator like morning routine guide
+2280086,,[],[],python subprocesses for humans
+37076,,[],[],create reports based on your log files supports delayed and other formats
+597131,,[],[],an async control flow library that makes stepping through logic easy
+853845,,[],[],a software update kit for ios and android provided as is for more functionality and maintained check out hockeyapp
+597840,,[],[],archived a flexible sharding framework for creating eventually consistent distributed datastores
+679377,,[],[],the html media framework unmaintained see https and and github com and menismu and popcorn js for activity
+1262196,,[],[],the goto in app purchases framework for ios  and
+22738072,,[],[],stores your data in icmp ping packets
+92179188,,[],"['assemblyscript', 'compiler', 'wasm']",deprecated the journey continues at asnext https and and github com and assemblyscript and assemblyscript
+71531,,[],[],fast text replacement with canvas and vml no flash or images required
+54457029,,[],"['android', 'animation', 'audio', 'eqwaves', 'visualization']",horizon simple visual equaliser for android
+2579069,,[],[],a simple but powerful library for building data applications in pure javascript and html
+1432291,,[],[],nowjs makes it easy to build real time web apps using javascript
+54113284,,[],[],vue js official website tutorials contains video baudi youtube  vue                 mvvm   ng    mvvm
+22905414,,[],"['laravel', 'laravel-china-community', 'phphub']",deprecated see https and and github com and summerblue and phphub phphub is a forum project written in laravel  and it is also the project build up php laravel china community http and and phphub org
+12198882,,[],[],freewall is a cross browser and responsive jquery plugin to help you create image and masonry layouts for and tablet
+8063073,,[],[],laravel  starter site is a basic blog application using several nice community packages
+379199,,[],[],a graph traversal language no longer active see apache tinkerpop
+9378371,,[],[],rewind is an intelligent archivist
+40112237,,[],[],a recurrent neural network designed to generate classical music
+1400125,,[],[],procedural noise shader routines compatible with webgl
+1368189,,[],[],a dynamic microorm for net that will love you forever
+1303411,,[],[],selectivizr is a javascript utility that emulates css pseudo classes and attribute selectors in internet explorer  
+655087,,[],[],an easy to use jquery plugin for making zooming web pages
+1777643,,[],['baremetal'],baremetal is a  bit os for x  based computers the os is written entirely in assembly while applications can be written in c and c and and and rust
+5579613,,[],[],content and site generator for single page apps in depth my book on single page applications
+4127307,,[],[],deprecated a framework agnostic authentication authorization system
+2121160,,[],[],the polipo caching http proxy
+537622,,[],['sample-app'],titanium mobile kitchen sink demo
+1674193,,[],[],scrapy project to scrape public web directories educational deprecated
+16328098,,[],[],async and await for ecmascript
+102067496,,[],"['awesome', 'chatbot', 'corpus', 'seq2seq', 'seq2seq-chatbot', 'seq2seq-model', 'tensorflow', 'tutorial']",awesome chatbot chinese chatbot
+25093568,,[],[],get password access from iterm
+25830235,,[],[],run phantomjs from node
+4449246,,[],[],fast delaunay triangulation in javascript
+1454096,,[],[],imgareaselect is a jquery plugin for selecting a rectangular area of an image it allows web developers to easily implement image cropping as well as other user interface such as photo notes like those on flickr
+25556740,,[],[],a micro web framework using asyncio coroutines and chained middleware
+54478052,,[],[],chateau is a framework for adding or improving chat functionality in any android app
+105300726,,[],[],home page of yacygrid com
+87450096,,[],[],the async and await utility for browsers and node js
+25836645,,[],[],prototype code for a view that shows icons in an apple watch like homescreen layout video on https and and www youtube com and watch v uggygthmfeo list
+45985056,,[],[],a simple polyfill that fetches external svgs referenced in use elements when the browser itself fails to do so demo https and and icomoon io and svgxuse demo and
+17241211,,[],[],markdown based styleguide generator
+20762631,,[],"['gulp', 'sass', 'starter-theme', 'theme', 'wordpress', 'wordpress-theme', 'wordpress-theme-development', 'workflow']",not maintained a starter kit for developing wordpress themes with gulp
+54206415,,[],"['adventure-game-engine', 'avg', 'galgame', 'game', 'game-development', 'game-engine', 'game-frameworks', 'gamemaker', 'react', 'visual-novel', 'visual-novel-engine', 'webgl']",a future oriented adventure game framework based on react pixi js docs https and and avgjs github io and docs and
+3583468,,[],[],flask extension to help writing external scripts for flask applications
+90059014,,[],"['eventlog', 'windows']",windows event log killer
+4178521,,[],[],a jquery plugin that will count up or down to a target number at a specified speed
+2001476,,[],[],awayd engine for flash player 
+13008743,,[],[],customer manager angularjs and breezejs application
+6804239,,[],[],scaffold out a backbone js project
+9783692,,[],"['ipython-notebook', 'kaggle-competition', 'kaggle-titanic', 'machine-learning']",a tutorial for kaggle s titanic machine learning from disaster competition demonstrates basic data and visualization techniques shows examples of supervised machine learning techniques
+1176073,,[],[],python based delicious com replacement
+1587338,,[],[],your continuous testing server
+1604131,,[],[],script project a c to javascript to power your html and node js web development
+11349194,,[],[],dog seamlessly create web workers
+73543277,,[],[],uses deep learning to caption images in an html file and fills out its alternative text attributes with the related caption
+24445829,,[],[],a project management system for artisans
+662715,,[],[],rotated backups of mongodb port of automysqlbackup for use with mongo
+77391109,,[],"['android', 'lyrics', 'musicplayer']",lyricview is a powerful and flexible custom view to display lyrics within music player under android
+10147128,,[],[],phantompy is a headless webkit engine with powerful pythonic api build on top of qt webkit
+14156,,[],[],an implementation of markdown in using a peg grammar
+906794,,[],"['form', 'forms', 'jquery', 'jquery-plugin']",javascript library for collecting form data
+84427866,,[],"['angularjs', 'ecommerce', 'event-driven', 'event-sourcing', 'eventually-consistent', 'microservice', 'mongodb', 'neo4j', 'oauth2', 'spring-boot', 'springcloud']",microservices event sourcing  spring boot spring cloud spring reactor oauth cqrs  event sourcing 
+3416974,,[],[],html and js experiments from paulrhayes com
+15436675,,[],[],a small less than kb css framework
+50673334,,[],[],a tool for programmatically verifying database backups
+5656402,,[],[],tikz library for drawing bayesian graphical models and directed factor graphs in latex
+40736127,,[],[],automatically exported from code google com and p and cityhash
+5684604,,[],[],not accepting please see readme
+5457018,,[],[],the best admin interface framework for flask with scaffolding for django and sqlalchemy
+46750784,,[],[],faster and simpler way to create graphql servers
+18078767,,[],[],a library version of freebsd s tcp and ip stack plus extras
+197185,,[],[],local git repository hosting with a friendly web interface and bonjour discovery it s like your own little network aware github
+48551832,,[],[],bringing ios charts to react native
+1100285,,[],"['face-recognition', 'machine-learning', 'opencv']",opencv projects face machine local binary examples
+5832842,,[],[],a lightweight wrapper around mysqldb originally part of the tornado framework
+9468743,,[],[],a cuda accelerated litecoin mining application based on pooler s cpu miner
+40254634,,[],"['hot-reload', 'react', 'redis', 'redux', 'spring-boot', 'spring-session']",a starter application with spring boot and react
+964604,,[],[],jquery rss and atom feed parser plugin
+57408329,,[],"['chrome-extension', 'deprecated', 'twitter']",deprecated chrome extension that enforces the mobile web version of twitter and improves its interface
+38655560,,[],"['algorithms', 'ctci', 'interviews']",books cracking the coding interview th edition problems
+3917530,,[],[],this is an objective c library that helps to easily convert a uiimage with a qr code from nsstring with just one line of code
+46302884,,[],[],haskell programming from first principles follow up resources
+82801092,,[],[],a new react native app every  weeks with tutorial
+1498377,,[],[],self hosted javascript implementation of a webidl compliant html dom
+2208520,,[],[],betamax is a tool for mocking external http resources such as web services and rest apis in your tests the project was inspired by the vcr library for ruby
+11223149,,[],[],a durable message queue system for go based on see also https and and github com and adjust and rmq
+33873707,,[],[],scrapy extension to write scraped items using django models
+4130140,,[],[],adding a second face to your application s javascript
+21371577,,[],[],terminal spinner package for golang
+1654700,,[],[],a tool for automated mitm attacks on ssl connections
+514315,,[],[],a graph server no longer active see apache tinkerpop
+37033135,,[],[],shipit the open source launchrock alternative build beautiful splash pages to collect emails more primarily focused on performance and rapid development
+4598546,,[],[],identity management for flask applications
+51216919,,[],[],lve ported to the web using emscripten
+8378840,,[],[],code editor color theme that lets you focus on the content available for sublime and more
+3156819,,[],[],an actionscript  entity system framework for game development
+7398634,,[],[],an angularjs service for uploading files using iframe
+4351375,,[],[],tables that work responsively on small devices
+159648,,[],"['async', 'eventmachine', 'rack', 'sinatra', 'thin']",a plugin for sinatra to provide a dsl extension for using thin for asynchronous responses
+82183462,,[],"['awesome', 'fmt', 'format', 'formatter', 'object', 'pretty']",stringifies any javascript object in your console for cli inspection sparkles
+2555759,,[],[],face substitution experiments using ofxfacetracker
+2277086,,[],[],string object coder for objective c
+3996212,,[],[],a template python project with a focus on best practices
+2469771,,[],[],an opinionated ckeditor editor for rails with flexible image uploads

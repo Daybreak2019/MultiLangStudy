@@ -892,3 +892,110 @@ id,summarization,tokens,topics,description
 8832136,,[],[],linux speech recognition
 71553693,,[],[],an media player for android
 75188386,,[],"['animation', 'animations', 'cross-browser-animations', 'web-animations-api']",animatelo is a bunch of and cross browser animations for you to use in your projects this is a porting to web animation api of the fabulous animate css project
+36027077,,[],[],multi layer recurrent neural networks rnn for character level language models in torch
+50803610,,[],[],an student led replication of deepmind s  nature mastering the game of go with deep neural networks and tree search nature   jan  details of which can be found on their website https and and deepmind com and publications html
+642222,,[],[],wrong project you should head over to http and and github com and sshuttle and sshuttle
+3633690,,[],[],timelinejs a storytelling timeline built in javascript
+75566993,,[],[],universe a software platform for measuring and training an ai s general intelligence across the world s supply of websites and other applications
+45300,,[],[],compass is no longer actively maintained compass is a stylesheet authoring environment that makes your website design simpler to implement and easier to maintain
+2280459,,[],[],a simple micro library for defining and dispatching keyboard shortcuts it has no dependencies
+2564712,,[],[],gate one is an html powered terminal emulator and ssh client
+9787757,,[],[],dependency tool for go
+14640245,,[],[],instantclick makes following links in your website instant
+5057307,,[],"['command-line', 'notifications', 'osx']",send user notifications on macos from the command line
+4822113,,[],[],a guide for styling your node js and javascript code fork adjust to your taste
+12464962,,[],"['editor', 'pen', 'pen-editor', 'wysiwyg']",enjoy live editing and markdown
+2721761,,[],[],autosize is a stand alone script to automatically adjust textarea height to fit text
+2242214,,[],[],a lightweight javascript library for money and currency formatting fully zero dependencies
+41545519,,[],[],a simple static site generator for photoessays
+24518232,,[],"['api', 'chat-api', 'library', 'whatsapp']",whatsapp s private api
+184311,,[],[],objective c code apple style documentation set generator
+21994526,,[],"['bell-labs', 'berkeley', 'evolution', 'freebsd', 'history', 'snapshot', 'unix']",continuous unix commit history from  until today
+24773666,,[],[],chat and messaging ui components for built to work with layer
+20451520,,[],[],full stack web development with flask
+914985,,[],"['framework', 'silex', 'symfony']",deprecated use symfony instead the php micro framework based on the symfony components
+2207789,,[],[],command line utility that extracts streams from various services and pipes them into a video player of choice no longer use streamlink or youtube dl instead
+5169475,,[],[],awesome media queries in javascript
+800115,,[],"['string', 'utility']",string manipulation helpers for javascript
+37791069,,[],[],actor messaging platform
+30812374,,[],[],get the password of the wifi you re on bash
+3586487,,[],[],a script and resource loader for caching loading files with localstorage
+3736374,,[],[],reveal side viewcontrollers similar to facebook and path s menu
+48759915,,[],[],webpack react redux babel autoprefixer hmr postcss css modules rucksack boilerplate i don t use it anymore
+5499296,,[],[],this repository is not maintained
+560347,,[],[],a behavior for internet explorer allowing it to recognize and render various css box decoration properties
+2469037,,[],[],plugin for some git integration into sublime text
+2822459,,[],[],webkit based scriptable web browser for python
+118996,,[],[],an xml and html parser for objective inspired by hpricot
+58351876,,[],"['aop', 'aop-architecture', 'apt', 'aspectj', 'databinding', 'gradle', 'javassist', 'material-design', 'mvp', 'mvp-architecture', 'okbus', 'realm', 'retrofit', 'router', 'rxjava', 'rxjava2']",android aop architecture by based on realm and databinding and mvp and retrofit and rxjava
+3339276,,[],[],how to and distribute ios static frameworks quickly and efficiently
+1707696,,[],"['image-processing', 'ios', 'uiimage', 'vimage']",a set of efficient categories for uiimage class it allows enhancing and more
+3083478,,[],[],glue is a simple command line tool to generate css sprites
+4380514,,[],[],sqli labs to test error blind boolean time based
+980240,,[],[],python command line application tools
+629921,,[],[],zsh and fish completion support for git flow
+1840417,,[],[],luna programming language a elegant vm implemented in c
+32958,,[],[],ruby algorithms and data structures c extensions
+1955800,,[],"['dms', 'document-management', 'edms', 'gtk', 'gtk3', 'indexing', 'ocr', 'paperwork', 'pdf', 'personal-document-system', 'python3', 'sane', 'scanner']",personal document manager linux and windows moved to gnome s gitlab
+8643038,,[],[],make streaming http requests
+20693,,[],[],a micro php framework that s clean and restful the framework does not do a lot of magic under the hood it by very simple and very powerful
+20633049,,[],[],reviewninja is a code review tool for github that lets you merge pull requests with confidence
+121763122,,[],"['aws-lambda', 'cloudformation', 'golang', 'sam', 'serverless']",a boilerplate go and aws lambda app demonstrates an expert configuration of  and aws services to support running go functions as a service faas
+20321662,,[],[],jqueryzepto an jquery and zepto plugin for lazy loading images
+515947,,[],[],net port of the ruby less css lib
+48233764,,[],[],a cozy fireplace for emacs
+2025288,,[],[],a fast circular buffer implementation
+244427,,[],[],c library for consistent and langauge bindings
+83315560,,[],"['dob', 'dynamic', 'dynamic-object', 'observable', 'observe', 'observer', 'proxy', 'react']",light and fast state management tool using proxy
+4885140,,[],[],simple way to create a readablewritable stream that works
+2327995,,[],[],getting square objects down round holes
+93544971,,[],"['core-ml', 'ios', 'machine-learning', 'mobilenet']",the mobilenet neural network using apple s new coreml framework
+1195935,,[],[],unmaintained online restructuredtext editor
+645968,,[],[],nugget for easily paging through any ienumerable and iqueryable in asp net mvc
+677050,,[],['pinyin'],translate chinese hanzi to pinyin by python
+11491130,,[],[],an input manager for unity that tames the cross platform controller beast
+46759593,,[],[],unity   vertex painter
+118130,,[],[],machine learning and natural language processing and information retrieval
+3407135,,[],"['2d-game-engine', 'solarus', 'zelda']",this repository was moved to gitlab https and and gitlab com and solarus games and solarus
+463695,,[],[],ironjs a javascript implementation for net
+14702,,[],[],a general classifier module to allow bayesian and other types of classifications
+65022951,,[],[],install serverspeeder and lotserver for linux
+69430287,,[],[],laravel project with vue and element
+92391715,,[],[],ios url list schemes this is a github solution from my gist of ios list for urls schemes https and and gist github com and phynet and abfffb a list of different url schemes for ios swift  and objc
+3844934,,[],[],discontinued please use ios  s drag drop capability instead
+332509,,[],[],an extensible webgl based d engine this is an archived project
+610382,,[],[],frapi is an api open source run it within your hosting environment parallel to your web mobile service or legacy system
+465365,,[],[],source list control for the mac
+48408367,,[],"['beautyfilter', 'livestream', 'recorder']",androidsdk livestream sdk  and  beauty filter  beauty voice  software and hardware encoder  network auto adapt  voice mixer  reverb  pip  rtc  sticker  bigger eyes and smaller faces
+3310274,,[],[],declarative data visualization in clojure script
+1173049,,[],[],check for passive weasel duplicate typographical errors and words strunk white don t like
+20348941,,[],[],a gnu and gpl telnet client for connecting to bbs site ptt cc
+11624586,,[],[],it s your fault my site is down
+19132500,,[],[],this is a demonstration for pocketsphinx on android
+15361362,,[],[],asciidoc is a text document format for writing man pages blogs asciidoc can be translated to many formats including and man pages note this implementation is written in python which eols in jan  asciidoc development is being continued under asciidoctor
+105371543,,[],"['adb', 'android-library', 'logcat', 'unroot']",android system log viewer on android phone without root
+828623,,[],['search-engine'],picky is an easy to use and fast ruby semantic search engine that helps your users find what they are looking for
+76069164,,[],[],environment for reinforcement learning algorithmic trading models
+59925167,,[],[],libzeroevil the research rootkit project
+49986492,,[],['tutorial'],an example elm single page application
+476961,,[],[],tools to simplify creating dialogs with the user using monotouch
+534037,,[],[],presentation on how the linux kernel is developed
+3971199,,[],[],directx capture and overlays by using directd api hooks
+12412412,,[],[],rapid form generation with bootstrap  and laravel
+11790396,,[],[],themekraft starter theme
+3206202,,[],[],html dom bindings for the reactive extensions for javascript
+38775,,[],"['bytecode', 'compiler', 'language', 'parser', 'vm']",a tiny subset of ruby with a lua esc vm
+949879,,[],[],official fbreader c and and project repository
+13694352,,[],[],python flexible slugify function
+11171345,,[],[],it s an ezine do not fuck with a hacker
+126248809,,[],"['benchmark', 'cli', 'cpu', 'damage', 'impact', 'memory', 'nodejs', 'pid', 'pids', 'process', 'profile', 'resources', 'system', 'usage']",simple stupid cpu and mem profiler for your js code
+118365738,,[],"['cli', 'command-line', 'crate']",quickly build cool cli apps in rust
+7743162,,[],[],v jquery touch fingers in the nose
+2180796,,[],[],collection of packages about html and xml tags
+9929641,,[],"['cocoapods', 'database', 'database-library', 'leveldb']",an objective c database library built over google s leveldb
+12848640,,[],[],run ipython notebooks as command line generate html reports
+1423105,,[],[],server monitoring and data collection daemon
+65323417,,[],[],write reproducible reports in markdown
+2060612,,[],[],kanji description and vectorial data in correct stroke order
+7060030,,[],"['wordpress', 'wordpress-development']",a bunch of gear for wp developers
+3131961,,[],[],legacy browser and xul application integration with keepass password safe see https and and github com and kee org and browser addon for the new version for firefox  and
