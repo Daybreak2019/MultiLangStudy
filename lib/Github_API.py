@@ -114,8 +114,8 @@ class Github_API():
         self.remove_invalid_repositories()
 
         # Obtains and displays the final amount of repositories compared to the starting amount
-        if (year):
-            self.list_of_repositories = self.list_of_repositories[1:1001:1]
+        #if (year):
+        #    self.list_of_repositories = self.list_of_repositories[1:1001:1]
         final_repo_count = len(self.list_of_repositories)
         print("Valid Repositories Remaining %d of %d [%.2f%%]" % (final_repo_count, original_repo_count,
                                                                   (final_repo_count / original_repo_count) * 100))
