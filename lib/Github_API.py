@@ -169,7 +169,7 @@ class Github_API():
         print("Date Update Time-Span (months): %d"  %months)
         days = months * 30
 
-        date = datetime.strptime("2022-09-30", "%Y-%m-%d") - timedelta(days=days)
+        date = datetime.strptime("2022-10-25", "%Y-%m-%d") - timedelta(days=days)
         self.updated_time[UPDATE_MAX] = "+pushed:<=" + date.strftime("%Y-%m-%d")
         self.updated_time[UPDATE_ACTIVE] = "+pushed:>=" + date.strftime("%Y-%m-%d")
 
