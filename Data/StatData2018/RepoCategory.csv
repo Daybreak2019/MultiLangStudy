@@ -424,3 +424,55 @@ repo_id,message,cate_id,cate,fuzz_res
 88288783,"['the', 'official', 'chain', 'react', 'conf', '', 'app', 'chainreact', 'conference', 'react-native', 'redux', 'redux-saga']",6,end user application,{'app': 100}
 20797854,"['a', 'vim', 'plugin', 'for', 'more', 'pleasant', 'editing', 'on', 'commit', 'messages', 'commit', 'git', 'vim', 'vim-plugin']",6,end user application,{'plugin': 100}
 75188386,"['animatelo', 'is', 'a', 'bunch', 'of', 'and', 'cross', 'browser', 'animations', 'for', 'you', 'to', 'use', 'in', 'your', 'projects', 'this', 'is', 'a', 'porting', 'to', 'web', 'animation', 'api', 'of', 'the', 'fabulous', 'animate', 'css', 'project', 'animation', 'animations', 'cross-browser-animations', 'web-animations-api']",6,end user application,{'browser': 100}
+50803610,"['an', 'student', 'led', 'replication', 'of', 'deepmind', 's', '', 'nature', 'mastering', 'the', 'game', 'of', 'go', 'with', 'deep', 'neural', 'networks', 'and', 'tree', 'search', 'nature', '', '', 'jan', '', 'details', 'of', 'which', 'can', 'be', 'found', 'on', 'their', 'website', 'https', 'and', 'and', 'deepmind', 'com', 'and', 'publications', 'html']",6,end user application,{'game': 100}
+75566993,"['universe', 'a', 'software', 'platform', 'for', 'measuring', 'and', 'training', 'an', 'ai', 's', 'general', 'intelligence', 'across', 'the', 'world', 's', 'supply', 'of', 'websites', 'and', 'other', 'applications']",6,end user application,{'applications': 96}
+2280459,"['a', 'simple', 'micro', 'library', 'for', 'defining', 'and', 'dispatching', 'keyboard', 'shortcuts', 'it', 'has', 'no', 'dependencies']",5,application libraries,{'library': 100}
+2564712,"['gate', 'one', 'is', 'an', 'html', 'powered', 'terminal', 'emulator', 'and', 'ssh', 'client']",17,content Access,{'client': 100}
+9787757,"['dependency', 'tool', 'for', 'go']",6,end user application,{'tool': 100}
+5057307,"['send', 'user', 'notifications', 'on', 'macos', 'from', 'the', 'command', 'line', 'command-line', 'notifications', 'osx']",17,content Access,{'command-line': 100}
+12464962,"['enjoy', 'live', 'editing', 'and', 'markdown', 'editor', 'pen', 'pen-editor', 'wysiwyg']",7,word process,{'editor': 100}
+2242214,"['a', 'lightweight', 'javascript', 'library', 'for', 'money', 'and', 'currency', 'formatting', 'fully', 'zero', 'dependencies']",5,application libraries,{'library': 100}
+24518232,"['whatsapp', 's', 'private', 'api', 'api', 'chat-api', 'library', 'whatsapp']",5,application libraries,{'library': 100}
+21994526,"['continuous', 'unix', 'commit', 'history', 'from', '', 'until', 'today', 'bell-labs', 'berkeley', 'evolution', 'freebsd', 'history', 'snapshot', 'unix']",4,middleware,{'until': 89}
+24773666,"['chat', 'and', 'messaging', 'ui', 'components', 'for', 'built', 'to', 'work', 'with', 'layer']",14,communication,{'messaging': 100}
+20451520,"['full', 'stack', 'web', 'development', 'with', 'flask']",20,engineering and development,{'development': 100}
+914985,"['deprecated', 'use', 'symfony', 'instead', 'the', 'php', 'micro', 'framework', 'based', 'on', 'the', 'symfony', 'components', 'framework', 'silex', 'symfony']",4,middleware,{'framework': 100}
+2207789,"['command', 'line', 'utility', 'that', 'extracts', 'streams', 'from', 'various', 'services', 'and', 'pipes', 'them', 'into', 'a', 'video', 'player', 'of', 'choice', 'no', 'longer', 'use', 'streamlink', 'or', 'youtube', 'dl', 'instead']",10,multimedia,{'video player': 100}
+37791069,"['actor', 'messaging', 'platform']",14,communication,{'messaging': 100}
+30812374,"['get', 'the', 'password', 'of', 'the', 'wifi', 'you', 're', 'on', 'bash']",17,content Access,{'bash': 100}
+3736374,"['reveal', 'side', 'viewcontrollers', 'similar', 'to', 'facebook', 'and', 'path', 's', 'menu']",14,communication,{'facebook': 100}
+48759915,"['webpack', 'react', 'redux', 'babel', 'autoprefixer', 'hmr', 'postcss', 'css', 'modules', 'rucksack', 'boilerplate', 'i', 'don', 't', 'use', 'it', 'anymore']",4,middleware,{'modules': 100}
+2469037,"['plugin', 'for', 'some', 'git', 'integration', 'into', 'sublime', 'text']",6,end user application,{'plugin': 100}
+2822459,"['webkit', 'based', 'scriptable', 'web', 'browser', 'for', 'python']",6,end user application,{'browser': 100}
+58351876,"['android', 'aop', 'architecture', 'by', 'based', 'on', 'realm', 'and', 'databinding', 'and', 'mvp', 'and', 'retrofit', 'and', 'rxjava', 'aop', 'aop-architecture', 'apt', 'aspectj', 'databinding', 'gradle', 'javassist', 'material-design', 'mvp', 'mvp-architecture', 'okbus', 'realm', 'retrofit', 'router', 'rxjava', 'rxjava2']",6,end user application,{'android aop': 91}
+3339276,"['how', 'to', 'and', 'distribute', 'ios', 'static', 'frameworks', 'quickly', 'and', 'efficiently']",4,middleware,{'frameworks': 95}
+3083478,"['glue', 'is', 'a', 'simple', 'command', 'line', 'tool', 'to', 'generate', 'css', 'sprites']",6,end user application,{'tool': 100}
+980240,"['python', 'command', 'line', 'application', 'tools']",6,end user application,{'tools': 89}
+1840417,"['luna', 'programming', 'language', 'a', 'elegant', 'vm', 'implemented', 'in', 'c']",3,programming,{'programming': 100}
+32958,"['ruby', 'algorithms', 'and', 'data', 'structures', 'c', 'extensions']",4,middleware,{'algorithms': 95}
+1955800,"['personal', 'document', 'manager', 'linux', 'and', 'windows', 'moved', 'to', 'gnome', 's', 'gitlab', 'dms', 'document-management', 'edms', 'gtk', 'gtk3', 'indexing', 'ocr', 'paperwork', 'pdf', 'personal-document-system', 'python3', 'sane', 'scanner']",20,engineering and development,{'gitlab': 100}
+8643038,"['make', 'streaming', 'http', 'requests']",10,multimedia,{'streaming': 100}
+20693,"['a', 'micro', 'php', 'framework', 'that', 's', 'clean', 'and', 'restful', 'the', 'framework', 'does', 'not', 'do', 'a', 'lot', 'of', 'magic', 'under', 'the', 'hood', 'it', 'by', 'very', 'simple', 'and', 'very', 'powerful']",4,middleware,{'framework': 100}
+20633049,"['reviewninja', 'is', 'a', 'code', 'review', 'tool', 'for', 'github', 'that', 'lets', 'you', 'merge', 'pull', 'requests', 'with', 'confidence']",20,engineering and development,{'pull requests': 96}
+121763122,"['a', 'boilerplate', 'go', 'and', 'aws', 'lambda', 'app', 'demonstrates', 'an', 'expert', 'configuration', 'of', '', 'and', 'aws', 'services', 'to', 'support', 'running', 'go', 'functions', 'as', 'a', 'service', 'faas', 'aws-lambda', 'cloudformation', 'golang', 'sam', 'serverless']",6,end user application,{'app': 100}
+20321662,"['jqueryzepto', 'an', 'jquery', 'and', 'zepto', 'plugin', 'for', 'lazy', 'loading', 'images']",6,end user application,{'plugin': 100}
+244427,"['c', 'library', 'for', 'consistent', 'and', 'langauge', 'bindings']",5,application libraries,{'library': 100}
+83315560,"['light', 'and', 'fast', 'state', 'management', 'tool', 'using', 'proxy', 'dob', 'dynamic', 'dynamic-object', 'observable', 'observe', 'observer', 'proxy', 'react']",6,end user application,{'tool': 100}
+93544971,"['the', 'mobilenet', 'neural', 'network', 'using', 'apple', 's', 'new', 'coreml', 'framework', 'core-ml', 'ios', 'machine-learning', 'mobilenet']",4,middleware,{'framework': 100}
+1195935,"['unmaintained', 'online', 'restructuredtext', 'editor']",7,word process,{'editor': 100}
+118130,"['machine', 'learning', 'and', 'natural', 'language', 'processing', 'and', 'information', 'retrieval']",7,word process,{'language processing': 100}
+3407135,"['this', 'repository', 'was', 'moved', 'to', 'gitlab', 'https', 'and', 'and', 'gitlab', 'com', 'and', 'solarus', 'games', 'and', 'solarus', '2d-game-engine', 'solarus', 'zelda']",20,engineering and development,{'gitlab': 100}
+14702,"['a', 'general', 'classifier', 'module', 'to', 'allow', 'bayesian', 'and', 'other', 'types', 'of', 'classifications']",4,middleware,{'module': 92}
+48408367,"['androidsdk', 'livestream', 'sdk', '', 'and', '', 'beauty', 'filter', '', 'beauty', 'voice', '', 'software', 'and', 'hardware', 'encoder', '', 'network', 'auto', 'adapt', '', 'voice', 'mixer', '', 'reverb', '', 'pip', '', 'rtc', '', 'sticker', '', 'bigger', 'eyes', 'and', 'smaller', 'faces', 'beautyfilter', 'livestream', 'recorder']",1,driver,{'hardware': 100}
+20348941,"['a', 'gnu', 'and', 'gpl', 'telnet', 'client', 'for', 'connecting', 'to', 'bbs', 'site', 'ptt', 'cc']",17,content Access,{'client': 100}
+15361362,"['asciidoc', 'is', 'a', 'text', 'document', 'format', 'for', 'writing', 'man', 'pages', 'blogs', 'asciidoc', 'can', 'be', 'translated', 'to', 'many', 'formats', 'including', 'and', 'man', 'pages', 'note', 'this', 'implementation', 'is', 'written', 'in', 'python', 'which', 'eols', 'in', 'jan', '', 'asciidoc', 'development', 'is', 'being', 'continued', 'under', 'asciidoctor']",20,engineering and development,{'development': 100}
+76069164,"['environment', 'for', 'reinforcement', 'learning', 'algorithmic', 'trading', 'models']",4,middleware,{'algorithmic': 90}
+49986492,"['an', 'example', 'elm', 'single', 'page', 'application', 'tutorial']",15,education,{'example': 93}
+476961,"['tools', 'to', 'simplify', 'creating', 'dialogs', 'with', 'the', 'user', 'using', 'monotouch']",6,end user application,{'tools': 89}
+534037,"['presentation', 'on', 'how', 'the', 'linux', 'kernel', 'is', 'developed']",11,presentation,{'presentation': 100}
+38775,"['a', 'tiny', 'subset', 'of', 'ruby', 'with', 'a', 'lua', 'esc', 'vm', 'bytecode', 'compiler', 'language', 'parser', 'vm']",3,programming,{'compiler': 89}
+126248809,"['simple', 'stupid', 'cpu', 'and', 'mem', 'profiler', 'for', 'your', 'js', 'code', 'benchmark', 'cli', 'cpu', 'damage', 'impact', 'memory', 'nodejs', 'pid', 'pids', 'process', 'profile', 'resources', 'system', 'usage']",20,engineering and development,{'benchmark': 86}
+118365738,"['quickly', 'build', 'cool', 'cli', 'apps', 'in', 'rust', 'cli', 'command-line', 'crate']",17,content Access,{'command-line': 100}
+9929641,"['an', 'objective', 'c', 'database', 'library', 'built', 'over', 'google', 's', 'leveldb', 'cocoapods', 'database', 'database-library', 'leveldb']",8,database,{'database': 100}
+1423105,"['server', 'monitoring', 'and', 'data', 'collection', 'daemon']",15,education,{'data collection': 89}
+3131961,"['legacy', 'browser', 'and', 'xul', 'application', 'integration', 'with', 'keepass', 'password', 'safe', 'see', 'https', 'and', 'and', 'github', 'com', 'and', 'kee', 'org', 'and', 'browser', 'addon', 'for', 'the', 'new', 'version', 'for', 'firefox', '', 'and']",6,end user application,{'application': 100}
