@@ -94,6 +94,7 @@ class Github_API():
 
     def sw_categorized_update (self):
         updated_list = []
+        pbar = ProgressBar()
         for repo in pbar(self.list_of_repositories):
             message = repo['topics'] + repo['description']
             message = ' '.join (message)
@@ -104,7 +105,7 @@ class Github_API():
         
     def collect_repositories_by_year(self, year=0):
         if (year):
-            self.init_star  = 1500
+            self.init_star  = 2000
             self.delta_star = 50
             self.min_star   = 50
         
