@@ -102,12 +102,14 @@ class Sumreadme (Collect_Research_Data):
         
         Readme = self.ReadMeInfo.get (ReppId)
         if Readme == None and not os.path.exists (RepoDir):
+            with open(self.SfFile, 'a', encoding='utf-8') as CsvFile:       
+                writer = csv.writer(CsvFile)
+                writer.writerow([ReppId, '', '', repo_item.topics, repo_item.description])
             self.Index += 1
-            return
-   
-        RepoDir += "/" + os.path.basename (repo_item.url)
-        self.SumText(ReppId, RepoDir, repo_item.topics, repo_item.description, Readme)
-        self.Index += 1
+        else:
+            RepoDir += "/" + os.path.basename (repo_item.url)
+            self.SumText(ReppId, RepoDir, repo_item.topics, repo_item.description, Readme)
+            self.Index += 1
 
     def IsHtml (self, Line):
         for filter in self.Filters:
