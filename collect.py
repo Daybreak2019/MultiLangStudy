@@ -607,7 +607,7 @@ def main(argv):
                     continue
                 print ("\nYear-%d" %year, end="")
                 System.setdir (str(year), str(year))
-                RepoStats(None)
+                RepoStats(None, TopLangNum)
         else:
             RepoStats(None, TopLangNum)
     elif (step == "langstats"):
