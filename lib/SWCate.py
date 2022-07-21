@@ -119,4 +119,12 @@ class SWCate():
                     self.SaveResult (row['id'], Message, cate_id, result, str(score))
 
 
+    def CategorizeOne (self, Message):
+        cate_id, result, score = self.FuzzMatch (Message, 0)
+        if result == None:
+            cate_id, result, score = self.FuzzMatch (Message, app_lib_cate_id)
+        
+        return result
+
+
  

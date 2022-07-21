@@ -17,6 +17,10 @@ from lib.TextModel import TextModel
 text_model = TextModel()
 
 
+from lib.SWCate import SWCate
+
+SWCateEngine = SWCate ()
+
 """
        * Overall Github API V3 Guide: https://developer.github.com/v3/
 
@@ -88,9 +92,19 @@ class Github_API():
         Process_Data.store_data(file_path=self.file_path, file_name=file_name, data=self.list_of_repositories)
         self.write_csv(file_name)
 
+    def sw_categorized_update (self):
+        updated_list = []
+        for repo in pbar(self.list_of_repositories):
+            message = repo['topics'] + repo['description']
+            message = ' '.join (message)
+            result = SWCateEngine.CategorizeOne(message)
+            if result != None:
+                updated_list.append (repo)
+        self.list_of_repositories = updated_list
+        
     def collect_repositories_by_year(self, year=0):
         if (year):
-            self.init_star  = 1500
+            self.init_star  = 15000
             self.delta_star = 50
             self.min_star   = 50
         
@@ -114,8 +128,9 @@ class Github_API():
         self.remove_invalid_repositories()
 
         # Obtains and displays the final amount of repositories compared to the starting amount
-        #if (year):
-        #    self.list_of_repositories = self.list_of_repositories[1:1001:1]
+        if (year):
+            self.sw_categorized_update ()
+            self.list_of_repositories = self.list_of_repositories[1:2001:1]
         final_repo_count = len(self.list_of_repositories)
         print("Valid Repositories Remaining %d of %d [%.2f%%]" % (final_repo_count, original_repo_count,
                                                                   (final_repo_count / original_repo_count) * 100))
@@ -153,7 +168,7 @@ class Github_API():
         print("Date Update Time-Span (months): %d"  %months)
         days = months * 30
 
-        date = datetime.strptime("2021-06-30", "%Y-%m-%d") - timedelta(days=days)
+        date = datetime.strptime("2022-06-30", "%Y-%m-%d") - timedelta(days=days)
         self.updated_time[UPDATE_MAX] = "+pushed:<=" + date.strftime("%Y-%m-%d")
         self.updated_time[UPDATE_ACTIVE] = "+pushed:>=" + date.strftime("%Y-%m-%d")
 
@@ -297,7 +312,7 @@ class Github_API():
             self.get_basic_auth()
             self.get_date_created()
             
-            months = (2020-year) * 12
+            months = (2022-year) * 12
             self.get_date_updated (year, months)
             
             #get repositories end at the end of the year
@@ -313,7 +328,7 @@ class Github_API():
                     list_of_repositories.append(repo)
                     
             print ("[%d]collect repositories %d/%d" %(self.cur_year, len(list_of_repositories), len(repositories_max)))
-            self.list_of_repositories = list_of_repositories[1:1501:1]
+            self.list_of_repositories = list_of_repositories
 
     def init_release_field(self, repo):
          for year in range(START_YEAR, END_YEAR+1, 1):
