@@ -105,7 +105,7 @@ class Github_API():
     def collect_repositories_by_year(self, year=0):
         if (year):
             self.init_star  = 15000
-            self.delta_star = 50
+            self.delta_star = 200
             self.min_star   = 50
         
         # Obtains initial 'unclean' repositories
