@@ -96,8 +96,7 @@ class Github_API():
         updated_list = []
         pbar = ProgressBar()
         for repo in pbar(self.list_of_repositories):
-            message = repo['topics'] + repo['description']
-            message = ' '.join (message)
+            message = ' '.join (repo['topics']) + repo['description']
             result = SWCateEngine.CategorizeOne(message)
             if result != None:
                 updated_list.append (repo)
