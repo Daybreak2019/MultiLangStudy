@@ -19,7 +19,7 @@ text_model = TextModel()
 
 from lib.SWCate import SWCate
 
-SWCateEngine = SWCate ()
+SWCateEngine = SWCate (CateAct=False)
 
 """
        * Overall Github API V3 Guide: https://developer.github.com/v3/
