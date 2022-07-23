@@ -121,12 +121,13 @@ class SWCate():
 
     def CategorizeOne (self, Message):
         cate_id, result, score = self.FuzzMatch (Message, 0)
-        print ("[%d]%s  ----> %s" %(index, result, str(score)))
+        print ("%s  ----> %s" %(result, str(score)))
         if result == None:
             cate_id, result, score = self.FuzzMatch (Message, app_lib_cate_id)
-            print ("[%d]%s  ----> %s" %(index, result, str(score)))
-        
-        return result
+            print ("%s  ----> %s" %(result, str(score)))
+            return result
+        else:
+            return result
 
 
  
