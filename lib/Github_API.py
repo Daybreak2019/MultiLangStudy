@@ -129,8 +129,8 @@ class Github_API():
 
         # Obtains and displays the final amount of repositories compared to the starting amount
         if (year):
-            self.sw_categorized_update ()
-            self.list_of_repositories = self.list_of_repositories[1:2001:1]
+            #self.sw_categorized_update ()
+            self.list_of_repositories = self.list_of_repositories[1:3001:1]
         final_repo_count = len(self.list_of_repositories)
         print("Valid Repositories Remaining %d of %d [%.2f%%]" % (final_repo_count, original_repo_count,
                                                                   (final_repo_count / original_repo_count) * 100))
